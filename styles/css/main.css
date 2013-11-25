@@ -1,0 +1,295 @@
+@font-face {
+  font-family: 'chunkfiveroman';
+  src: url('../../fonts/chunkfive-webfont.eot');
+  src: url('../../fonts/chunkfive-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/chunkfive-webfont.woff') format('woff'), url('../../fonts/chunkfive-webfont.ttf') format('truetype'), url('../../fonts/chunkfive-webfont.svg#chunkfiveroman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'din_30640_stdneuzeitgroteskLt';
+  src: url('../../fonts/dinneuzeitgroteskstd-light-webfont.eot');
+  src: url('../../fonts/dinneuzeitgroteskstd-light-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/dinneuzeitgroteskstd-light-webfont.woff') format('woff'), url('../../fonts/dinneuzeitgroteskstd-light-webfont.ttf') format('truetype'), url('../../fonts/dinneuzeitgroteskstd-light-webfont.svg#din_30640_stdneuzeitgroteskLt') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'league_gothicregular';
+  src: url('../../fonts/league_gothic-webfont.eot');
+  src: url('../../fonts/league_gothic-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/league_gothic-webfont.woff') format('woff'), url('../../fonts/league_gothic-webfont.ttf') format('truetype'), url('../../fonts/league_gothic-webfont.svg#league_gothicregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+  margin: 0;
+  padding: 0;
+  color: #b60050;
+  text-decoration: none;
+}
+a:hover {
+  /* background-color: @pink;*/
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+p {
+  font-family: 'din_30640_stdneuzeitgroteskLt', 'PT Sans', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  text-align: left;
+  line-height: 1.2em;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'chunkfiveroman', 'Arvo', Georgia, Times, serif;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 1em;
+}
+li {
+  display: inline-block;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #ffffff;
+  font-family: 'din_30640_stdneuzeitgroteskLt', 'PT Sans', Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  color: #b3b3b3;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.titles {
+  width: 100%;
+}
+.titles h1 {
+  float: left;
+  display: inline-block;
+  width: 33%;
+  margin: 0 1.815%;
+  margin: 0;
+  padding: 25px 0 24px;
+}
+.titles p {
+  float: left;
+  display: inline-block;
+  width: 67%;
+  margin: 0 3.685%;
+  padding: 10px 10% 10px 20px;
+  text-transform: none;
+  margin: 0;
+  font-size: 1.2em;
+}
+/*HEADER -----------------------------------------------*/
+header#header {
+  background: #505353;
+  text-transform: uppercase;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+header#header nav#topNav img {
+  padding: 10px;
+  background-color: #ffffff;
+  margin: 10px 10px 5px 18px;
+  float: left;
+}
+header#header nav#topNav ul.social {
+  padding: 0;
+  display: inline;
+  float: right;
+  margin: 12px 2% 0;
+}
+header#header nav#topNav ul.social li {
+  display: inline;
+  width: 40px;
+  height: 40px;
+}
+header#header nav#topNav ul.social li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  text-indent: -9999px;
+}
+header#header nav#topNav ul.social li a.facebook {
+  background: url(../../images/wwccSocialSprites.png) 0 0px no-repeat;
+}
+header#header nav#topNav ul.social li a.facebook:hover {
+  background: url(../../images/wwccSocialSprites.png) 0 -40px no-repeat;
+}
+header#header nav#topNav ul.social li a.youtube {
+  background: url(../../images/wwccSocialSprites.png) -40px 0px no-repeat;
+}
+header#header nav#topNav ul.social li a.youtube:hover {
+  background: url(../../images/wwccSocialSprites.png) -40px -40px no-repeat;
+}
+header#header nav#topNav ul.social li a.linkedin {
+  background: url(../../images/wwccSocialSprites.png) -80px 0px no-repeat;
+}
+header#header nav#topNav ul.social li a.linkedin:hover {
+  background: url(../../images/wwccSocialSprites.png) -80px -40px no-repeat;
+}
+header#header nav#topNav ul.social li a.twitter {
+  background: url(../../images/wwccSocialSprites.png) -120px 0px no-repeat;
+}
+header#header nav#topNav ul.social li a.twitter:hover {
+  background: url(../../images/wwccSocialSprites.png) -120px -40px no-repeat;
+}
+header#header nav#mainNav {
+  background: #7c807f;
+  height: 50px;
+  clear: both;
+}
+header#header nav#mainNav ul.navigation {
+  margin-left: 18px;
+  float: left;
+}
+header#header nav#mainNav li {
+  padding: 17px 31px 18px 0;
+}
+header#header nav#mainNav li a {
+  color: #ffffff;
+  padding: 12px 7px;
+}
+header#header nav#mainNav li a:hover {
+  background-color: #b60050;
+}
+header#header nav#mainNav #btn {
+  float: right;
+  margin: 17px 3% 0 0;
+  -webkit-transition: 0.25s linear;
+  transition: 0.25s linear;
+}
+header#header nav#mainNav #btn a {
+  color: #ffffff;
+}
+header#header nav#mainNav #btn a:hover.volunteer {
+  background-color: #9a0546;
+}
+header#header nav#mainNav #btn a:hover.donate {
+  background-color: #047796;
+}
+header#header nav#mainNav #btn .volunteer {
+  background-color: #b60050;
+  padding: 10px 8px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+header#header nav#mainNav #btn .donate {
+  background-color: #008db3;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+/*<-----header --*/
+.divider {
+  height: 5px;
+  background-color: #b60050;
+}
+.divider2 {
+  height: 15px;
+  background-color: #b60050;
+}
+section#hero {
+  background: url(../../images/hero.jpg);
+  background-position: center bottom;
+  width: 74%;
+  margin: 0 auto;
+  padding: 173px 0 0 33px;
+  min-height: 350px;
+}
+.parallelogram {
+  width: 407px;
+  height: auto;
+  -webkit-transform: skew(5deg);
+  -moz-transform: skew(5deg);
+  -o-transform: skew(5deg);
+  background: rgba(0, 141, 179, 0.73);
+}
+.parallelogram p {
+  -webkit-transform: skew(-5deg);
+  color: #fff;
+  text-transform: none;
+  padding: 5px 19px 5px 27px;
+}
+section#iconNav {
+  min-height: 295px;
+  background: #ffffff;
+}
+section#what {
+  width: 100%;
+  min-height: 755px;
+  background: url(../../images/pattern.png);
+  margin: 0;
+  padding: 0;
+}
+section#what h1 {
+  background: #505353;
+  color: #fff;
+}
+section#what p {
+  background: #b60050;
+  color: #ffffff;
+}
+section#why {
+  width: 100%;
+  min-height: 1430px;
+  background-color: #505353;
+  margin: 0;
+  padding: 0;
+}
+section#why h1 {
+  background: #b60050;
+  color: #fff;
+}
+section#why p {
+  background: #ffffff;
+  color: #505353;
+}
+section#graphs {
+  min-height: 340px;
+  background: url(../../images/pattern.png);
+}
+section#how {
+  width: 100%;
+  min-height: 920px;
+  background: url(../../images/pattern.png);
+  margin: 0;
+  padding: 0;
+}
+section#how h1 {
+  background: #7c807f;
+  color: #ffffff;
+}
+section#how p {
+  color: #ffffff;
+  background-color: #505353;
+}
+section#years {
+  min-height: 315px;
+  background-color: #008db3;
+}
+section#cta {
+  min-height: 270px;
+  background: url(../../images/pattern.png);
+}
+footer#footer {
+  height: 260px;
+  background-color: #505353;
+}

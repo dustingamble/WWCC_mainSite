@@ -1,0 +1,263 @@
+@import 'includes/brand.less';
+@import 'includes/typography.less';
+@import 'includes/mixins.less';
+
+* {
+  .box-sizing;
+}
+
+body {
+  background:@white;
+  font-family: @bodyfont;
+  font-size: 1.5em;
+  color: @lightgrey;
+
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+   transition:all .5s ease-in-out; 
+    -o-transition:all .5s ease-in-out; 
+    -moz-transition:all .5s ease-in-out; 
+    -webkit-transition:all .5s ease-in-out;
+}
+.titles{
+  width:100%;
+  h1{
+     .widthfloat(33%);
+    margin:0;
+    padding: 25px 0 24px;
+  }
+  p {
+     .widthfloat(67%);
+    padding: 10px 10% 10px 20px;
+    text-transform: none;
+    margin:0;
+    font-size: 1.2em;
+  }
+}
+
+
+/*HEADER -----------------------------------------------*/
+header#header{
+    background:@headergrey;
+  text-transform: uppercase;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  nav#topNav {
+   
+    img {
+      padding:10px;
+      background-color: @white;
+      margin:10px 10px 5px 18px;
+      float:left;
+    }
+    ul.social {
+        padding: 0;
+        display: inline;
+        float:right;
+        margin: 12px 2% 0;
+        li{
+          display:inline;
+          width:40px;
+          height:40px;
+          a{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            margin-right: 16px;
+            text-indent: -9999px;
+          }
+          a.facebook{
+            background: url(../../images/wwccSocialSprites.png) 0 0px no-repeat;
+          }
+          a.facebook:hover{
+            background: url(../../images/wwccSocialSprites.png) 0 -40px no-repeat;
+          }
+          a.youtube{
+            background: url(../../images/wwccSocialSprites.png) -40px 0px no-repeat;
+          }
+          a.youtube:hover{
+            background: url(../../images/wwccSocialSprites.png) -40px -40px no-repeat;
+          }
+          a.linkedin{
+            background: url(../../images/wwccSocialSprites.png) -80px 0px no-repeat;
+          }
+          a.linkedin:hover{
+            background: url(../../images/wwccSocialSprites.png) -80px -40px no-repeat;
+          }
+          a.twitter{
+            background: url(../../images/wwccSocialSprites.png) -120px 0px no-repeat;
+          }
+          a.twitter:hover{
+            background: url(../../images/wwccSocialSprites.png) -120px -40px no-repeat;
+        }
+      }
+    }
+  }
+  nav#mainNav {
+    background:@headerlightgrey;
+    height:50px;
+    clear:both;
+    ul.navigation{
+      margin-left: 18px;
+      float:left;
+    }
+    li {
+      padding:17px 31px 18px 0;
+      a {
+      color:@white;
+      padding:12px 7px;
+      }
+      a:hover {
+        background-color: @pink;
+      }
+    }
+    #btn{
+      float:right;
+      margin:17px 3% 0 0;
+      -webkit-transition: 0.25s linear;
+      transition: 0.25s linear;
+      a{
+        color:@white;
+      }
+      a:hover.volunteer{
+        background-color: #9a0546;
+      }
+      a:hover.donate{
+        background-color: #047796;
+      }
+     .volunteer{
+      background-color: @pink;
+      padding:10px 8px;
+      border-radius: 8px;
+      margin-right: 10px;
+      }
+     .donate{
+      background-color: @blue;
+      padding:10px 20px;
+      border-radius: 8px;
+      }
+    }
+  }
+} /*<-----header --*/
+
+.divider{
+  height:5px;
+  background-color:@pink;
+}
+
+.divider2{
+  height:15px;
+  background-color:@pink;
+}
+
+section#hero {
+  background: url(../../images/hero.jpg);
+  background-position: center bottom;
+  width:74%;
+  margin:0 auto;
+  padding:173px 0 0 33px;
+  min-height: 350px;
+}
+.parallelogram {
+  width: 407px;
+  height: auto;
+  -webkit-transform: skew(5deg);
+  -moz-transform: skew(5deg);
+  -o-transform: skew(5deg);
+  background: rgba(0, 141, 179, 0.73);
+  p{
+    -webkit-transform: skew(-5deg);
+    color: #fff;
+    text-transform: none;
+    padding:5px 19px 5px 27px;
+  }
+}
+section#iconNav {
+  min-height:295px;
+  background:@white;
+}
+
+section#what {
+  width:100%;
+  min-height:755px;
+  background: url(../../images/pattern.png);
+  margin:0;
+  padding:0;
+  h1{
+    background:@headergrey;
+    color:#fff;
+  }
+  p {
+    background:@pink;
+    color:@white;
+ 
+  }
+}
+
+section#why {
+  width:100%;
+  min-height:1430px;
+  background-color: @headergrey;
+  margin:0;
+  padding:0;
+  h1{
+    background:@pink;
+    color:#fff;
+  }
+  p {
+    background:@white;
+    color:@headergrey;
+  }
+}
+section#graphs{
+  min-height:340px;
+  background: url(../../images/pattern.png);
+
+}
+
+section#how {
+  width:100%;
+  min-height:920px;
+  background: url(../../images/pattern.png);
+
+  margin:0;
+  padding:0;
+  h1{
+    background:@headerlightgrey;
+    color:@white;
+  }
+  p {
+    color:@white;
+    background-color:@headergrey;
+  }
+}
+
+section#years{
+  min-height:315px;
+  background-color:@blue;
+}
+
+section#cta{
+  min-height:270px;
+  background: url(../../images/pattern.png);
+
+}
+
+footer#footer{
+  height:260px;
+  background-color:@headergrey;
+}
+
+
+
+
+
+
+
+
+
+
