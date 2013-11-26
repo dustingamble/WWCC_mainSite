@@ -40,7 +40,11 @@ body {
   }
 }
 
-
+.containText{
+  width:82%;
+  margin:0 auto;
+  overflow: hidden;
+}
 /*HEADER -----------------------------------------------*/
 header#header{
     background:@headergrey;
@@ -154,7 +158,7 @@ header#header{
   height:15px;
   background-color:@pink;
 }
-
+/*-------HERO-------*/
 section#hero {
   background: url(../../images/hero.jpg);
   background-position: center bottom;
@@ -178,11 +182,15 @@ section#hero {
     font-size: 0.8em;
   }
 }
+
+/*-------ICON SECTION-------*/
 section#iconNav {
   min-height:295px;
   background:@white;
 }
 
+
+/*-------WHAT SECTION-------*/
 section#what {
   width:100%;
   min-height:755px;
@@ -200,6 +208,7 @@ section#what {
   }
 }
 
+/*-------WHY SECTION-------*/
 section#why {
   width:100%;
   min-height:1430px;
@@ -220,7 +229,7 @@ section#graphs{
   background: url(../../images/pattern.png);
 
 }
-
+/*-------HOW SECTION-------*/
 section#how {
   width:100%;
   min-height:920px;
@@ -248,11 +257,76 @@ section#cta{
   background: url(../../images/pattern.png);
 
 }
-
+/*-------FOOTER-------*/
 footer#footer{
-  height:260px;
-  background-color:@headergrey;
+  background-color:@headerlightgrey;
+  overflow: hidden;
+
+  .emailSignUp{
+    float:left;
+    width:100%;
+    background-color: @headergrey;
+    p{
+      font-family: @bodyfont;
+      color:@white;
+      text-transform: none;
+      float:left;
+      font-size: .8em;
+      padding: 15px 15px 15px 21%
+    }
+    form{
+        font-family: @bodyfont;
+        float:left;
+        padding:7px;
+        label{
+          width:100%;
+          input[type="text"]{
+            height:38px;
+            margin-top: -5px;
+            width:200px;
+            font-size: 12px;
+            text-transform: lowercase;
+            border:none;
+            padding-left: 10px;
+            color:@headergrey;
+          }
+        }
+        input[type="submit"]{
+          width:100px;
+          height:40px;
+          margin-left:-10px;
+          background-color: @pink;
+          border:none;
+          color:@white;
+          text-transform: uppercase;
+          font-size: 16px;
+          letter-spacing: 1px;
+        }    
+    }
 }
+
+.containText{
+      ul.column{
+        color:@white;
+        text-align: center;
+        line-height: 1.5em;
+        font-size: .625em;
+        padding: 30px 14% 50px 0;
+        float:left;
+        display:inline-block;
+         &:last-of-type{
+          padding-right:0;
+          }
+        li{
+          display: block;
+          a{
+            color:@white;
+         }
+        }
+      }
+    }
+   }
+
 
 
 

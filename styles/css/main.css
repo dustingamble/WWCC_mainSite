@@ -40,8 +40,7 @@ p {
 }
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: 'chunkfiveroman', 'Arvo', Georgia, Times, serif;
   line-height: 1em;
   text-transform: uppercase;
@@ -51,6 +50,12 @@ h1 {
 }
 h2 {
   font-size: 1em;
+}
+h4 {
+  font-family: 'din_30640_stdneuzeitgroteskLt', 'PT Sans', Helvetica, Arial, sans-serif;
+  font-size: .750em;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 li {
   display: inline-block;
@@ -97,6 +102,11 @@ body {
   text-transform: none;
   margin: 0;
   font-size: 0.8em;
+}
+.containText {
+  width: 82%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 /*HEADER -----------------------------------------------*/
 header#header {
@@ -207,6 +217,7 @@ header#header nav#mainNav #btn .donate {
   height: 15px;
   background-color: #b60050;
 }
+/*-------HERO-------*/
 section#hero {
   background: url(../../images/hero.jpg);
   background-position: center bottom;
@@ -230,10 +241,12 @@ section#hero {
   padding: 5px 19px 5px 27px;
   font-size: 0.8em;
 }
+/*-------ICON SECTION-------*/
 section#iconNav {
   min-height: 295px;
   background: #ffffff;
 }
+/*-------WHAT SECTION-------*/
 section#what {
   width: 100%;
   min-height: 755px;
@@ -249,6 +262,7 @@ section#what p {
   background: #b60050;
   color: #ffffff;
 }
+/*-------WHY SECTION-------*/
 section#why {
   width: 100%;
   min-height: 1430px;
@@ -268,6 +282,7 @@ section#graphs {
   min-height: 340px;
   background: url(../../images/pattern.png);
 }
+/*-------HOW SECTION-------*/
 section#how {
   width: 100%;
   min-height: 920px;
@@ -291,7 +306,68 @@ section#cta {
   min-height: 270px;
   background: url(../../images/pattern.png);
 }
+/*-------FOOTER-------*/
 footer#footer {
-  height: 260px;
+  background-color: #7c807f;
+  overflow: hidden;
+}
+footer#footer .emailSignUp {
+  float: left;
+  width: 100%;
   background-color: #505353;
+}
+footer#footer .emailSignUp p {
+  font-family: 'din_30640_stdneuzeitgroteskLt', 'PT Sans', Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-transform: none;
+  float: left;
+  font-size: .8em;
+  padding: 15px 15px 15px 21%;
+}
+footer#footer .emailSignUp form {
+  font-family: 'din_30640_stdneuzeitgroteskLt', 'PT Sans', Helvetica, Arial, sans-serif;
+  float: left;
+  padding: 7px;
+}
+footer#footer .emailSignUp form label {
+  width: 100%;
+}
+footer#footer .emailSignUp form label input[type="text"] {
+  height: 38px;
+  margin-top: -5px;
+  width: 200px;
+  font-size: 12px;
+  text-transform: lowercase;
+  border: none;
+  padding-left: 10px;
+  color: #505353;
+}
+footer#footer .emailSignUp form input[type="submit"] {
+  width: 100px;
+  height: 40px;
+  margin-left: -10px;
+  background-color: #b60050;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+footer#footer .containText ul.column {
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: .625em;
+  padding: 30px 14% 50px 0;
+  float: left;
+  display: inline-block;
+}
+footer#footer .containText ul.column:last-of-type {
+  padding-right: 0;
+}
+footer#footer .containText ul.column li {
+  display: block;
+}
+footer#footer .containText ul.column li a {
+  color: #ffffff;
 }
