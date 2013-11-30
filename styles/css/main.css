@@ -51,6 +51,10 @@ h1 {
 h2 {
   font-size: 1em;
 }
+h3 {
+  font-size: 0.9em;
+  color: #505353;
+}
 h4 {
   font-family: 'din_30640_stdneuzeitgroteskLt', 'PT Sans', Helvetica, Arial, sans-serif;
   font-size: .750em;
@@ -60,6 +64,7 @@ h4 {
 li {
   display: inline-block;
 }
+/*GLOBAL STYLES -----------------------*/
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -82,6 +87,28 @@ body {
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
 }
+.innerContainer {
+  margin: 0 auto;
+  max-width: 65%;
+}
+.largeInnerContainer {
+  margin: 0 auto;
+  max-width: 85%;
+}
+.parallelogram {
+  height: auto;
+  -webkit-transform: skew(5deg);
+  -moz-transform: skew(5deg);
+  -o-transform: skew(5deg);
+  background: rgba(0, 141, 179, 0.73);
+}
+.parallelogram p {
+  -webkit-transform: skew(-5deg);
+  color: #fff;
+  text-transform: none;
+  padding: 5px 19px 5px 27px;
+}
+/*--- Section Title headings ----*/
 .titles {
   width: 100%;
 }
@@ -92,6 +119,7 @@ body {
   margin: 0 1.815%;
   margin: 0;
   padding: 29px 0 24px;
+  min-height: 89px;
 }
 .titles p {
   float: left;
@@ -102,6 +130,7 @@ body {
   text-transform: none;
   margin: 0;
   font-size: 0.8em;
+  min-height: 89px;
 }
 .containText {
   width: 82%;
@@ -228,23 +257,116 @@ section#hero {
 }
 .parallelogram {
   width: 407px;
-  height: auto;
-  -webkit-transform: skew(5deg);
-  -moz-transform: skew(5deg);
-  -o-transform: skew(5deg);
-  background: rgba(0, 141, 179, 0.73);
 }
 .parallelogram p {
-  -webkit-transform: skew(-5deg);
-  color: #fff;
-  text-transform: none;
-  padding: 5px 19px 5px 27px;
   font-size: 0.8em;
 }
-/*-------ICON SECTION-------*/
+/*-------ICON NAV SECTION----------------------*/
 section#iconNav {
   min-height: 295px;
   background: #ffffff;
+}
+section#iconNav ul.icon-grid {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+section#iconNav ul.icon-grid li {
+  width: 168px;
+  height: 168px;
+  display: inline-block;
+  margin: 15px 100px;
+}
+section#iconNav ul.icon-grid li .icon-img-1 {
+  background-image: url(../../images/what-icon.png);
+}
+section#iconNav ul.icon-grid li .icon-img-2 {
+  background-image: url(../../images/why-icon.png);
+}
+section#iconNav ul.icon-grid li .icon-img-3 {
+  background-image: url(../../images/how-icon.png);
+}
+section#iconNav ul.icon-grid li .icon-item:hover {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+section#iconNav ul.icon-grid li h3 {
+  margin-top: 25px;
+}
+section#iconNav ul.icon-grid li h3 a {
+  color: #505353;
+}
+section#iconNav ul.icon-grid li h3 a:hover {
+  color: #b60050;
+}
+.icon-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  cursor: default;
+  box-shadow: inset 0 0 0 9px rgba(255, 255, 255, 0.7), 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.icon-info {
+  position: absolute;
+  background: #b70050;
+  background-image: url(../../images/qmark.png);
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-backface-visibility: hidden;
+}
+.icon-info p {
+  color: #fff;
+  padding-top: 70px;
+  text-align: center;
+  margin: 0 0;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out 0.4s;
+  -moz-transition: all 1s ease-in-out 0.4s;
+  -o-transition: all 1s ease-in-out 0.4s;
+  -ms-transition: all 1s ease-in-out 0.4s;
+  transition: all 1s ease-in-out 0.4s;
+}
+.icon-info p a {
+  display: block;
+  color: #fff;
+  font-size: 2.2em;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+.icon-info p a:hover {
+  color: #505353;
+}
+.icon-item:hover .icon-info {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.icon-item:hover .icon-info p {
+  opacity: 1;
 }
 /*-------WHAT SECTION-------*/
 section#what {
@@ -258,9 +380,44 @@ section#what h1 {
   background: #505353;
   color: #fff;
 }
-section#what p {
+section#what p.main {
   background: #b60050;
   color: #ffffff;
+}
+.languages {
+  margin-top: 25px;
+  float: left;
+}
+.languages .boxWhat {
+  width: 206px;
+}
+.languages p {
+  padding: 5px 19px 5px 27px;
+  font-size: 1.1em;
+  font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
+}
+.languages img {
+  margin: -10px 0 0 75px;
+}
+.locations {
+  margin-top: 25px;
+  float: right;
+}
+.locations .boxWhatTwo {
+  width: 231px;
+}
+.locations p {
+  padding: 5px 19px 5px 27px;
+  font-size: 1.1em;
+  font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
+}
+.locations img {
+  margin-bottom: -10px;
+}
+.peoplegraph {
+  clear: both;
+  text-align: center;
+  padding-top: 25px;
 }
 /*-------WHY SECTION-------*/
 section#why {
@@ -274,10 +431,82 @@ section#why h1 {
   background: #b60050;
   color: #fff;
 }
-section#why p {
+section#why p.main {
   background: #ffffff;
   color: #505353;
 }
+.world {
+  background: url(../../images/worldmap.png) no-repeat;
+  background-position: 50% 186px;
+  background-size: 100%;
+  min-height: 1340px;
+}
+.world .boxWhy {
+  width: 450px;
+  float: left;
+  margin: 25px 0 0 20%;
+}
+.world .boxWhy .percent {
+  font-family: "Georgia Italic", Georgia, serif;
+  font-size: 3.3em;
+  float: left;
+  display: inline-block;
+  width: 30%;
+  margin: 0 1.65%;
+  color: #636363;
+}
+.world .boxWhy p {
+  float: right;
+  font-size: 1.1em;
+  font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
+  float: left;
+  display: inline-block;
+  width: 60%;
+  margin: 0 3.3%;
+  padding: 12px 0 12px 10px;
+}
+.world .toronto {
+  float: right;
+  margin: 5% 20% 0 0;
+}
+.world .toronto img {
+  z-index: 1000;
+  display: block;
+  height: auto;
+}
+.world .toronto .boxWhyTwo {
+  width: 270px;
+  margin: -310px 0 0 -145px;
+}
+.world .toronto .boxWhyTwo p {
+  font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
+  font-size: 1.1em;
+}
+.world .womenPink {
+  width: 380px;
+  float: left;
+  margin: 27% 0 0 10%;
+}
+.world .womenPink img {
+  float: left;
+  margin-right: 10px;
+}
+.world .womenPink p {
+  font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+.world .boxWhyThree {
+  clear: both;
+  margin: 0 auto;
+  width: 600px;
+  height: auto;
+}
+.world .boxWhyThree p {
+  font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
+  font-size: 1.4em;
+}
+/*PieGraphs-----------------------*/
 section#graphs {
   min-height: 340px;
   background: url(../../images/pattern.png);

@@ -47,25 +47,94 @@
       <div class="divider"></div>
 
       <section id="hero">
-         <div class="parallelogram"><p>We provide immigrant women and their families with opportunities to improve the quality of their lives through self-development and community action.</p></div>
+         <div class="parallelogram"><p>We provide immigrant women and their families with opportunities to improve the quality of their lives through self-development and community action.</p>
+         </div>
       </section>
 
       <div class="divider2"></div>
 
       <section id="iconNav">
 
+        <ul class="icon-grid">
+          <li>
+            <div class="icon-item icon-img-1">
+              <div class="icon-info"> 
+                <p><a href="#what">WHAT</a></p>
+              </div>
+            </div>
+            <h3><a href="#what">What We Do</a></h3>
+          </li>
+          <li>
+            <div class="icon-item icon-img-2">
+              <div class="icon-info">
+                <p><a href="#why">WHY</a></p>
+              </div>
+            </div>
+            <h3><a href="#why">Why We Help</a></h3>
+          </li>
+          <li>
+            <div class="icon-item icon-img-3">
+              <div class="icon-info">
+                <p><a href="#how">HOW</a></p>
+              </div>
+            </div>
+            <h3><a href="#how">How We Help</a></h3>
+          </li>
+        </ul>
       </section>
 
-      <section id="what" class="titles">
-        <h1 class="container">WHAT WE DO</h1>
-        <p>Working Women Community Centre is a charitable organization that provides immigrant women with opportunities to improve the quality of their lives, as well as the lives of those in their families and community.
-        </p>
+      <section id="what">
+        <div class="titles">
+          <h1 class="container">WHAT WE DO</h1>
+          <p class="main">Working Women Community Centre is a charitable organization that provides immigrant women with opportunities to improve the quality of their lives, as well as the lives of those in their families and community.
+          </p>
+        </div>
+        <div class="innerContainer">
+          <div class="languages">
+            <div class="parallelogram boxWhat">
+              <p>We provide programs & services in over</p>
+            </div>
+            <img src="images/language.png">
+          </div>
+          <div class="locations">
+             <img src="images/to-map.png">
+            <div class="parallelogram boxWhatTwo">
+              <p>throughout four locations across the city</p>
+            </div>
+          </div>
+          <div class="peoplegraph">
+            <img src="images/people.png">
+          </div>
+        </div>
       </section>
 
-       <section id="why" class="titles">
-        <h1 class="container">Why We Help</h1>
-        <p>Did you know that in addressing immigrant women and their families, Working Women is addressing the needs of a significant portion of our society.
-        </p>
+       <section id="why">
+        <div class="titles">
+          <h1 class="container">Why We Help</h1>
+          <p class="main">Did you know that in addressing immigrant women and their families, Working Women is addressing the needs of a significant portion of our society.
+          </p>
+        </div>
+        <div class="largeInnerContainer world">
+          <div class="parallelogram boxWhy">
+            <div class="percent">96&#37;</div>
+            <div><p>of Canadians are immigrants or descendents of immigrants.</p>
+            </div>
+          </div>
+          <div class="toronto">
+            <img src="images/cntower.png">
+            <div class="parallelogram boxWhyTwo">
+              <p>Half of Toronto’s population was born outside of Canada</p>
+            </div>
+          </div>
+          <div class="womenPink">
+            <img src="images/pink-woman.png">
+            <p>Immigrant women account for 47&#37; of the female population in Toronto - the largest in Canada</p>
+          </div>
+          <div class="parallelogram boxWhyThree">
+            <p>Despite high skills & education levels, immigrants can face barriers entering the Toronto labour market
+            </p>
+          </div>
+        </div>
       </section>
 
         <div class="divider2"></div>
@@ -76,10 +145,12 @@
 
        <div class="divider2"></div>
 
-      <section id="how" class="titles">
-        <h1 class="container">How We Help</h1>
-        <p>Working Women shows immigrant women that  they have the ability to live a fully productive and engaged life and that doing so has a positive effect on those around them.
-        </p>
+      <section id="how">
+        <div class="titles">
+          <h1 class="container">How We Help</h1>
+          <p>Working Women shows immigrant women that  they have the ability to live a fully productive and engaged life and that doing so has a positive effect on those around them.
+          </p>
+        </div>
       </section>
 
       <section id="years">
@@ -149,8 +220,15 @@
 
 	
    
-
-
+<script type="text/javascript">
+  $("#iconNav").find("a").click(function(e) {
+    e.preventDefault();
+    var section = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(section).offset().top
+    });
+});
+</script>
 
 
 
