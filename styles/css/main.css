@@ -661,48 +661,156 @@ section#how p.main {
 section#how .greyline {
   width: 100%;
   clear: both;
-  background: rgba(89, 91, 91, 0.11);
+  background: rgba(89, 91, 91, 0.09);
   height: 15px;
   margin: 15px 0;
   float: left;
 }
 section#how .howtop {
-  margin-top: 50px;
+  margin-top: 90px;
+}
+section#how .howbottom {
+  margin-bottom: 75px;
 }
 section#how .heart {
   width: 100%;
-  background: rgba(89, 91, 91, 0.11);
+  background: rgba(89, 91, 91, 0.05);
   max-height: 190px;
   float: left;
-  text-align: center;
 }
 section#how .heart .heartText {
   float: left;
   display: inline-block;
-  width: 23%;
-  margin: 0 1.265%;
+  width: 30%;
+  margin: 0 1.65%;
 }
 section#how .heart .heartText p {
   font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
   color: #505353;
+  font-size: 1.2em;
+  margin: 10px;
 }
 section#how .heart img {
   float: left;
   display: inline-block;
-  width: 23%;
-  margin: 0 1.265%;
-  margin-top: -20px;
+  width: 30%;
+  margin: 0 1.65%;
+  margin-top: -5%;
+  max-width: 350px;
+  height: auto;
 }
-/*color: rgba(255,255,255,0.9);*/
+section#how .helped .support {
+  text-align: center;
+  font-size: 1.2em;
+  color: #505353;
+  padding-top: 50px;
+  text-transform: uppercase;
+}
+section#how .helped ul {
+  text-align: center;
+  color: #505353;
+  font-size: 0.9em;
+  margin-top: 35px;
+}
+section#how .helped ul li {
+  float: left;
+  display: inline-block;
+  width: 30%;
+  margin: 0 1.65%;
+}
+section#how .helped ul li img {
+  height: 130px;
+  width: auto;
+}
+section#how .helped ul li .facts {
+  margin-bottom: 15px;
+  height: 90px;
+}
+section#how .helped ul li p {
+  text-align: center;
+}
+section#how .helped ul li p .btn {
+  background: #505353;
+  border-radius: 8px;
+  text-transform: uppercase;
+  padding: 7px 9px;
+  width: 140px;
+  font-size: 0.8em;
+  color: #ffffff;
+}
+section#how .helped ul li p .btn:hover {
+  background: #b60050;
+  color: #343433;
+}
 /*------------ 35 YEARS SECTION -------------*/
 section#years {
+  overflow: hidden;
   min-height: 315px;
-  background-color: #008db3;
+  background-color: #ffffff;
+  background-image: url(../../images/35.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section#years h3 {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 70px 0 30px;
+  color: #7c807f;
+}
+section#years .yearsHeader {
+  color: #343433;
+}
+section#years p {
+  color: #505353;
+  font-size: 0.8em;
+  max-width: 55%;
+  margin: 0 auto;
 }
 /*------------ CTA'S -------------*/
 section#cta {
-  min-height: 270px;
+  padding: 50px 0;
   background: url(../../images/pattern.png);
+}
+section#cta .involved {
+  margin: 0 auto;
+  overflow: hidden;
+  -webkit-transition: 0.25s linear;
+  transition: 0.25s linear;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+section#cta .involved img {
+  float: left;
+}
+section#cta .involved .ctaLeft {
+  float: left;
+  margin-right: 7%;
+}
+section#cta .involved .ctaRight {
+  float: left;
+}
+section#cta .involved a {
+  color: #ffffff;
+}
+section#cta .involved a:hover.volunteer:hover {
+  background-color: #9a0546;
+}
+section#cta .involved .volunteer {
+  float: left;
+  background-color: #b60050;
+  padding: 10px 8px;
+  border-radius: 8px;
+  margin: 30px 0 0 10px;
+}
+section#cta .involved .donate {
+  float: left;
+  background-color: #008db3;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 30px 0 0 10px;
+}
+section#cta .involved .donate:hover {
+  background-color: #047796;
 }
 /*-------FOOTER-------*/
 footer#footer {

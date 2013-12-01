@@ -606,48 +606,160 @@ section#how {
   .greyline{
     width:100%;
     clear:both;
-    background:rgba(89,91,91, 0.11);
+    background:rgba(89,91,91, 0.09);
     height:15px;
     margin:15px 0;
     float: left;
   }
   .howtop{
-    margin-top: 50px;
+    margin-top: 90px;
+  }
+  .howbottom{
+     margin-bottom: 75px;
   }
   .heart{
      width:100%; 
-     background:rgba(89,91,91, 0.11);
+     background:rgba(89,91,91, 0.05);
      max-height:190px;
      float: left;
-     text-align: center;
-     
+
     .heartText{
-      .widthfloat(23%);
+      .widthfloat(30%);
       p{
         font-family: @fontgothic;
         color:@headergrey;
+        font-size: 1.2em;
+        margin:10px;
       }
     }
     img{
-     .widthfloat(23%);
-     margin-top:-20px;
+     .widthfloat(30%);
+     margin-top:-5%;
+     max-width:350px;
+     height:auto;
+    }
+  }
+  .helped{
+    .support{
+    text-align: center;
+    font-size: 1.2em;
+    color:@headergrey;
+    padding-top: 50px;
+    text-transform: uppercase;
+    }
+    ul{
+      text-align: center;
+      color: @headergrey;
+      font-size: 0.9em;
+      margin-top: 35px;
+      li{
+        .widthfloat(30%);
+        img{
+          height:130px;
+          width:auto;
+        }
+        .facts{
+          margin-bottom: 15px;
+          height:90px;
+         }
+        p{
+          text-align: center;
+          .btn{
+          background:@headergrey;
+          border-radius: 8px;
+          text-transform: uppercase;
+          padding:7px 9px;
+          width:140px;
+          font-size: 0.8em;
+          color:@white;
+          }
+          .btn:hover{
+            background:@pink;
+            color:@darkestgrey;
+          }
+        } 
+      }
     }
   }
 }
-/*color: rgba(255,255,255,0.9);*/
+
 
 /*------------ 35 YEARS SECTION -------------*/
 section#years{
+  overflow: hidden;
   min-height:315px;
-  background-color:@blue;
+  background-color:@white;
+  background-image:url(../../images/35.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  h3{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 70px 0 30px;
+    color:@headerlightgrey;
+  }
+  .yearsHeader{
+    color:@darkestgrey;
+  }
+  p{
+    color:@headergrey;
+    font-size: 0.8em;
+    max-width: 55%;
+    margin: 0 auto;
+  }
 }
 
 /*------------ CTA'S -------------*/
 section#cta{
-  min-height:270px;
+  padding: 50px 0;
   background: url(../../images/pattern.png);
-
+   .involved{
+      margin: 0 auto;   
+      overflow:hidden;
+      -webkit-transition: 0.25s linear;
+      transition: 0.25s linear;
+      text-transform: uppercase;
+      font-size: 0.8em;
+      img{
+        float:left;
+      }
+      .ctaLeft{
+        float:left;
+        margin-right:7%;
+      }
+      .ctaRight{
+        float: left;
+      }
+      a{
+        color:@white;
+      }
+      a:hover.volunteer{
+        &:hover{
+          background-color: #9a0546;
+        }
+      }
+    
+     .volunteer{
+        float:left;
+        background-color: @pink;
+        padding:10px 8px;
+        border-radius: 8px;
+        margin:30px 0 0 10px;
+      }
+     .donate{
+        float:left;
+        background-color: @blue;
+        padding:10px 20px;
+        border-radius: 8px;
+        margin:30px 0 0 10px;
+        &:hover{
+          background-color: #047796;
+        }
+      }
+    }
 }
+
+
 /*-------FOOTER-------*/
 footer#footer{
   background-color:@headerlightgrey;
