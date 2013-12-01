@@ -32,7 +32,7 @@ body {
 }
 .largeInnerContainer {
   margin: 0 auto;
-  max-width:85%;
+  max-width:88%;
 }
 
 .parallelogram {
@@ -376,24 +376,26 @@ section#what {
 /*-------WHY SECTION-------*/
 section#why {
   width:100%;
-  min-height:1430px;
-  background-color: @headergrey;
+  min-height:1278px;
+  background-color: @worldgrey;
   margin:0;
   padding:0;
+  p{
+    font-family: @fontgothic;
+  }
   h1{
     background:@pink;
     color:#fff;
   }
   p.main {
     background:@white;
-    color:@headergrey;
+    color:@worldgrey;
   }
-}
 .world {
   background: url(../../images/worldmap.png)no-repeat;
   background-position: 50% 186px;
   background-size: 100%;
-  min-height:1340px;
+  min-height:800px;
   .boxWhy{
     width:450px;
     float:left;
@@ -407,14 +409,13 @@ section#why {
     p{
       float:right;
       font-size: 1.1em;
-      font-family: @fontgothic;
       .widthfloat(60%);
       padding: 12px 0 12px 10px;
     }
   }
   .toronto{
     float:right;
-    margin:5% 20% 0 0;
+    margin:3% 13% 0 0;
     img{
       z-index: 1000;
       display:block;
@@ -424,7 +425,6 @@ section#why {
       width:270px;
       margin: -310px 0 0 -145px;
      p{
-       font-family: @fontgothic;
        font-size: 1.1em;
       } 
     }
@@ -438,7 +438,6 @@ section#why {
       margin-right:10px;
     }
     p{
-      font-family: @fontgothic;
       font-size:1.2em;
       color:@white;
     }
@@ -449,17 +448,129 @@ section#why {
     width:600px;
     height:auto;
     p{ 
-      font-family: @fontgothic;
       font-size:1.4em;
+      }
     }
   }
+  .skyline{
+    position: relative;
+    background: rgba(64,64,63,1);
+    background: rgba(64,64,63,1);
+    background: -moz-linear-gradient(top, rgba(64,64,63,1) 0%, rgba(64,64,63,1) 45%, rgba(140,139,139,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(64,64,63,1)), color-stop(45%, rgba(64,64,63,1)), color-stop(100%, rgba(140,139,139,1)));
+    background: -webkit-linear-gradient(top, rgba(64,64,63,1) 0%, rgba(64,64,63,1) 45%, rgba(140,139,139,1) 100%);
+    background: -o-linear-gradient(top, rgba(64,64,63,1) 0%, rgba(64,64,63,1) 45%, rgba(140,139,139,1) 100%);
+    background: -ms-linear-gradient(top, rgba(64,64,63,1) 0%, rgba(64,64,63,1) 45%, rgba(140,139,139,1) 100%);
+    background: linear-gradient(to bottom, rgba(64,64,63,1) 0%, rgba(64,64,63,1) 45%, rgba(140,139,139,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40403f', endColorstr='#8c8b8b', GradientType=0 );
+    min-height: 400px;
+    .city{
+      position:absolute;
+      width:100%;
+      bottom:0;
+      padding:0;
+      margin-bottom: -2px;
+    }
+    .barriers{
+      margin-top: 55px;
+      .pinkline{
+        height:30px;
+        background: @pink;
+      }
+      .blackline{
+        height:30px;
+        background: @darkestgrey;
+      }
+      background:@white;
+      ul{
+         display: inline-block;
+         text-align: center;
+        li{
+          clear:both;
+          width:19%;
+          vertical-align: top;
+          margin-top:-80px;
+          padding:10px 5px 20px;
+          p{
+            text-align: center;
+            color: @darkestgrey;
+          }
+        }
+      }
+    }
+  }
+  .settle{
+    background-color: @darkestgrey;
+      p{
+        color: @white;
+        text-align: center;
+        font-size: 1.5em;
+      }
+      .more{
+        font-size:2.2em;
+        padding-bottom: 15px;
+      }
+    }
 }
 
 /*PieGraphs-----------------------*/
 section#graphs{
   min-height:340px;
   background: url(../../images/pattern.png);
+  font-family: @fontgothic;
+  padding-top: 47px;
+  .circleGraphLeft{
+    float: left;
+    text-transform: uppercase;
+    max-width: 400px;
+    min-height:240px;
+    ul{
+      float:left;
+      li{
+        display:block;
+        padding-top:45px;
+        font-size: 1.2em;
+      }
+      li.TO{
+        color:@blue;
+      }
+      li.ML{
+        color:@lightgrey;
+      }
+      li.VN{
+        color:@pink;
+      }
+    }
+    .circleGraph{
+      float:right;
+    }
+  }
+  .circleGraphRight{
+    float:right;
+    min-height:240px;
+    max-width:800px;
+    .pieChart{
+      float:left;
+    }
+    .stackedText{
+      font-size: 1.35em;
+      font-family: @fontgothic;
+      float:right;
+      width:115px;
+      line-height: 30px;
+      color:@headergrey;
+      .uppercase{
+        text-transform: uppercase;
+      }
+      .number{
+        font-size: 96px;
+      }
+    }
+  }
 }
+
+
+
 /*-------HOW SECTION-------*/
 section#how {
   width:100%;

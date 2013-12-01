@@ -93,7 +93,7 @@ body {
 }
 .largeInnerContainer {
   margin: 0 auto;
-  max-width: 85%;
+  max-width: 88%;
 }
 .parallelogram {
   height: auto;
@@ -422,10 +422,13 @@ section#what p.main {
 /*-------WHY SECTION-------*/
 section#why {
   width: 100%;
-  min-height: 1430px;
-  background-color: #505353;
+  min-height: 1278px;
+  background-color: #40403f;
   margin: 0;
   padding: 0;
+}
+section#why p {
+  font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
 }
 section#why h1 {
   background: #b60050;
@@ -433,83 +436,187 @@ section#why h1 {
 }
 section#why p.main {
   background: #ffffff;
-  color: #505353;
+  color: #40403f;
 }
-.world {
+section#why .world {
   background: url(../../images/worldmap.png) no-repeat;
   background-position: 50% 186px;
   background-size: 100%;
-  min-height: 1340px;
+  min-height: 800px;
 }
-.world .boxWhy {
+section#why .world .boxWhy {
   width: 450px;
   float: left;
   margin: 25px 0 0 20%;
 }
-.world .boxWhy .percent {
+section#why .world .boxWhy .percent {
   font-family: "Georgia Italic", Georgia, serif;
   font-size: 3.3em;
   float: left;
   display: inline-block;
   width: 30%;
   margin: 0 1.65%;
-  color: #636363;
+  color: #40403f;
 }
-.world .boxWhy p {
+section#why .world .boxWhy p {
   float: right;
   font-size: 1.1em;
-  font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
   float: left;
   display: inline-block;
   width: 60%;
   margin: 0 3.3%;
   padding: 12px 0 12px 10px;
 }
-.world .toronto {
+section#why .world .toronto {
   float: right;
-  margin: 5% 20% 0 0;
+  margin: 3% 13% 0 0;
 }
-.world .toronto img {
+section#why .world .toronto img {
   z-index: 1000;
   display: block;
   height: auto;
 }
-.world .toronto .boxWhyTwo {
+section#why .world .toronto .boxWhyTwo {
   width: 270px;
   margin: -310px 0 0 -145px;
 }
-.world .toronto .boxWhyTwo p {
-  font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
+section#why .world .toronto .boxWhyTwo p {
   font-size: 1.1em;
 }
-.world .womenPink {
+section#why .world .womenPink {
   width: 380px;
   float: left;
   margin: 27% 0 0 10%;
 }
-.world .womenPink img {
+section#why .world .womenPink img {
   float: left;
   margin-right: 10px;
 }
-.world .womenPink p {
-  font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
+section#why .world .womenPink p {
   font-size: 1.2em;
   color: #ffffff;
 }
-.world .boxWhyThree {
+section#why .world .boxWhyThree {
   clear: both;
   margin: 0 auto;
   width: 600px;
   height: auto;
 }
-.world .boxWhyThree p {
-  font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
+section#why .world .boxWhyThree p {
   font-size: 1.4em;
+}
+section#why .skyline {
+  position: relative;
+  background: #40403f;
+  background: -moz-linear-gradient(top, #40403f 0%, #40403f 45%, #8c8b8b 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #40403f), color-stop(45%, #40403f), color-stop(100%, #8c8b8b));
+  background: -webkit-linear-gradient(top, #40403f 0%, #40403f 45%, #8c8b8b 100%);
+  background: -o-linear-gradient(top, #40403f 0%, #40403f 45%, #8c8b8b 100%);
+  background: -ms-linear-gradient(top, #40403f 0%, #40403f 45%, #8c8b8b 100%);
+  background: linear-gradient(to bottom, #40403f 0%, #40403f 45%, #8c8b8b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#40403f', endColorstr='#8c8b8b', GradientType=0);
+  min-height: 400px;
+}
+section#why .skyline .city {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0;
+  margin-bottom: -2px;
+}
+section#why .skyline .barriers {
+  margin-top: 55px;
+  background: #ffffff;
+}
+section#why .skyline .barriers .pinkline {
+  height: 30px;
+  background: #b60050;
+}
+section#why .skyline .barriers .blackline {
+  height: 30px;
+  background: #343433;
+}
+section#why .skyline .barriers ul {
+  display: inline-block;
+  text-align: center;
+}
+section#why .skyline .barriers ul li {
+  clear: both;
+  width: 19%;
+  vertical-align: top;
+  margin-top: -80px;
+  padding: 10px 5px 20px;
+}
+section#why .skyline .barriers ul li p {
+  text-align: center;
+  color: #343433;
+}
+section#why .settle {
+  background-color: #343433;
+}
+section#why .settle p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5em;
+}
+section#why .settle .more {
+  font-size: 2.2em;
+  padding-bottom: 15px;
 }
 /*PieGraphs-----------------------*/
 section#graphs {
   min-height: 340px;
   background: url(../../images/pattern.png);
+  font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
+  padding-top: 47px;
+}
+section#graphs .circleGraphLeft {
+  float: left;
+  text-transform: uppercase;
+  max-width: 400px;
+  min-height: 240px;
+}
+section#graphs .circleGraphLeft ul {
+  float: left;
+}
+section#graphs .circleGraphLeft ul li {
+  display: block;
+  padding-top: 45px;
+  font-size: 1.2em;
+}
+section#graphs .circleGraphLeft ul li.TO {
+  color: #008db3;
+}
+section#graphs .circleGraphLeft ul li.ML {
+  color: #b3b3b3;
+}
+section#graphs .circleGraphLeft ul li.VN {
+  color: #b60050;
+}
+section#graphs .circleGraphLeft .circleGraph {
+  float: right;
+}
+section#graphs .circleGraphRight {
+  float: right;
+  min-height: 240px;
+  max-width: 800px;
+}
+section#graphs .circleGraphRight .pieChart {
+  float: left;
+}
+section#graphs .circleGraphRight .stackedText {
+  font-size: 1.35em;
+  font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
+  float: right;
+  width: 115px;
+  line-height: 30px;
+  color: #505353;
+}
+section#graphs .circleGraphRight .stackedText .uppercase {
+  text-transform: uppercase;
+}
+section#graphs .circleGraphRight .stackedText .number {
+  font-size: 96px;
 }
 /*-------HOW SECTION-------*/
 section#how {
