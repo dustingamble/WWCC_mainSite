@@ -443,6 +443,7 @@ section#why h1 {
 section#why p.main {
   background: #ffffff;
   color: #40403f;
+  font-family: 'din_30640_stdneuzeitgroteskLt', 'PT Sans', Helvetica, Arial, sans-serif;
 }
 section#why .world {
   background: url(../../images/worldmap.png) no-repeat;
@@ -611,6 +612,7 @@ section#graphs .circleGraphRight .pieChart {
   float: left;
 }
 section#graphs .circleGraphRight .stackedText {
+  margin-left: 10px;
   font-size: 1.35em;
   font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
   float: right;
@@ -622,9 +624,25 @@ section#graphs .circleGraphRight .stackedText .uppercase {
   text-transform: uppercase;
 }
 section#graphs .circleGraphRight .stackedText .number {
-  font-size: 96px;
+  font-size: 2.9em;
+  line-height: 80px;
 }
-/*-------HOW SECTION-------*/
+section#graphs .circleGraphRight .stackedText .canadas {
+  padding-left: 7px;
+}
+section#graphs .circleGraphRight .stackedText .pop {
+  font-size: 1.05em;
+}
+section#graphs .circleGraphRight .stackedText .by {
+  font-size: 40px;
+  vertical-align: top;
+  padding-right: 5px;
+}
+section#graphs .circleGraphRight .stackedText .year {
+  font-size: 67px;
+  line-height: 50px;
+}
+/*------------ HOW SECTION -------------*/
 section#how {
   width: 100%;
   min-height: 920px;
@@ -636,14 +654,52 @@ section#how h1 {
   background: #7c807f;
   color: #ffffff;
 }
-section#how p {
+section#how p.main {
   color: #ffffff;
   background-color: #505353;
 }
+section#how .greyline {
+  width: 100%;
+  clear: both;
+  background: rgba(89, 91, 91, 0.11);
+  height: 15px;
+  margin: 15px 0;
+  float: left;
+}
+section#how .howtop {
+  margin-top: 50px;
+}
+section#how .heart {
+  width: 100%;
+  background: rgba(89, 91, 91, 0.11);
+  max-height: 190px;
+  float: left;
+  text-align: center;
+}
+section#how .heart .heartText {
+  float: left;
+  display: inline-block;
+  width: 23%;
+  margin: 0 1.265%;
+}
+section#how .heart .heartText p {
+  font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
+  color: #505353;
+}
+section#how .heart img {
+  float: left;
+  display: inline-block;
+  width: 23%;
+  margin: 0 1.265%;
+  margin-top: -20px;
+}
+/*color: rgba(255,255,255,0.9);*/
+/*------------ 35 YEARS SECTION -------------*/
 section#years {
   min-height: 315px;
   background-color: #008db3;
 }
+/*------------ CTA'S -------------*/
 section#cta {
   min-height: 270px;
   background: url(../../images/pattern.png);

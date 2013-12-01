@@ -390,6 +390,7 @@ section#why {
   p.main {
     background:@white;
     color:@worldgrey;
+    font-family:@bodyfont;
   }
 .world {
   background: url(../../images/worldmap.png)no-repeat;
@@ -553,6 +554,7 @@ section#graphs{
       float:left;
     }
     .stackedText{
+      margin-left: 10px;
       font-size: 1.35em;
       font-family: @fontgothic;
       float:right;
@@ -563,37 +565,84 @@ section#graphs{
         text-transform: uppercase;
       }
       .number{
-        font-size: 96px;
+        font-size: 2.9em;
+        line-height: 80px;
+      }
+      .canadas{
+        padding-left: 7px;
+
+      }
+      .pop{
+        font-size: 1.05em;
+      }
+      .by{
+        font-size: 40px;
+        vertical-align: top;
+        padding-right: 5px;
+      }
+      .year{
+        font-size: 67px;
+        line-height: 50px;
       }
     }
   }
 }
 
-
-
-/*-------HOW SECTION-------*/
+/*------------ HOW SECTION -------------*/
 section#how {
   width:100%;
   min-height:920px;
   background: url(../../images/pattern.png);
-
   margin:0;
   padding:0;
   h1{
     background:@headerlightgrey;
     color:@white;
   }
-  p {
+  p.main {
     color:@white;
     background-color:@headergrey;
   }
+  .greyline{
+    width:100%;
+    clear:both;
+    background:rgba(89,91,91, 0.11);
+    height:15px;
+    margin:15px 0;
+    float: left;
+  }
+  .howtop{
+    margin-top: 50px;
+  }
+  .heart{
+     width:100%; 
+     background:rgba(89,91,91, 0.11);
+     max-height:190px;
+     float: left;
+     text-align: center;
+     
+    .heartText{
+      .widthfloat(23%);
+      p{
+        font-family: @fontgothic;
+        color:@headergrey;
+      }
+    }
+    img{
+     .widthfloat(23%);
+     margin-top:-20px;
+    }
+  }
 }
+/*color: rgba(255,255,255,0.9);*/
 
+/*------------ 35 YEARS SECTION -------------*/
 section#years{
   min-height:315px;
   background-color:@blue;
 }
 
+/*------------ CTA'S -------------*/
 section#cta{
   min-height:270px;
   background: url(../../images/pattern.png);
