@@ -34,7 +34,6 @@ body {
   margin: 0 auto;
   max-width:88%;
 }
-
 .parallelogram {
   height: auto;
   -webkit-transform: skew(5deg);
@@ -48,7 +47,6 @@ body {
     padding:5px 19px 5px 27px;
   }
 }
-
 
 /*--- Section Title headings ----*/
 .titles{
@@ -260,7 +258,6 @@ section#iconNav {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-
 .icon-info {
   position: absolute;
   background: #b70050;
@@ -299,10 +296,10 @@ section#iconNav {
       color: rgba(255,255,255,0.9);
       text-transform: uppercase;
       text-decoration: none;
-      font-family: 'Open Sans', Arial, sans-serif;
+      font-family: @bodyfont;
     }
     a:hover {
-      color: @headergrey;
+      color: @lightgrey;
     }
   }
 }
@@ -320,6 +317,7 @@ section#iconNav {
 
 
 /*-------WHAT SECTION-------*/
+
 section#what {
   width:100%;
   min-height:755px;
@@ -370,6 +368,27 @@ section#what {
   clear:both;
   text-align: center;
   padding-top: 25px;
+  vertical-align:middle;
+  ul{
+    float: left;
+    text-transform: uppercase;
+    font-size: 19px;
+    margin-right: 20px;
+    li{
+      width:150px;
+      display: block;
+      float:left;
+      clear:both;
+      padding:4px;
+      p{
+        width:20px;
+        float: left;
+      }
+    }
+  }
+  img{
+    float:left;
+  }
 }
 
 
@@ -682,7 +701,6 @@ section#how {
     }
   }
 }
-
 
 /*------------ 35 YEARS SECTION -------------*/
 section#years{
@@ -1026,6 +1044,7 @@ strong{
 }
 
 /*-------FOOTER-------*/
+
 footer#footer{
   background-color:@headerlightgrey;
   overflow: hidden;
@@ -1072,8 +1091,7 @@ footer#footer{
         }    
     }
 }
-
-.containText{
+  .containText{
       ul.column{
         color:@white;
         text-align: center;
@@ -1089,16 +1107,11 @@ footer#footer{
           display: block;
           a{
             color:@white;
-         }
+          }
         }
       }
     }
-   }
-
-
-
-
-
+}
 
 
 

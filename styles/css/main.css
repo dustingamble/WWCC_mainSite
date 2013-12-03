@@ -358,10 +358,10 @@ section#iconNav ul.icon-grid li h3 a:hover {
   color: rgba(255, 255, 255, 0.9);
   text-transform: uppercase;
   text-decoration: none;
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'din_30640_stdneuzeitgroteskLt', 'PT Sans', Helvetica, Arial, sans-serif;
 }
 .icon-info p a:hover {
-  color: #505353;
+  color: #b3b3b3;
 }
 .icon-item:hover .icon-info {
   -webkit-transform: scale(1);
@@ -424,6 +424,27 @@ section#what p.main {
   clear: both;
   text-align: center;
   padding-top: 25px;
+  vertical-align: middle;
+}
+.peoplegraph ul {
+  float: left;
+  text-transform: uppercase;
+  font-size: 19px;
+  margin-right: 20px;
+}
+.peoplegraph ul li {
+  width: 150px;
+  display: block;
+  float: left;
+  clear: both;
+  padding: 4px;
+}
+.peoplegraph ul li p {
+  width: 20px;
+  float: left;
+}
+.peoplegraph img {
+  float: left;
 }
 /*-------WHY SECTION-------*/
 section#why {
