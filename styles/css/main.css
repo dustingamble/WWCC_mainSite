@@ -96,12 +96,15 @@ body {
 .innerContainer {
   margin: 0 auto;
   max-width: 900px;
-  width: 77%;
+  width: 100%;
+  display: block;
 }
 .largeInnerContainer {
   margin: 0 auto;
   max-width: 1170px;
   width: 88%;
+  display: block;
+  background: blue;
 }
 .parallelogram {
   height: auto;
@@ -119,6 +122,7 @@ body {
 /*--- Section Title headings ----*/
 .titles {
   width: 100%;
+  float: left;
 }
 .titles h1 {
   float: left;
@@ -141,7 +145,7 @@ body {
   min-height: 89px;
 }
 .containText {
-  width: 82%;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -441,6 +445,9 @@ section#what p.main {
   clear: both;
   padding: 4px;
 }
+.peoplegraph ul li img {
+  float: left;
+}
 .peoplegraph ul li p {
   width: 20px;
   float: left;
@@ -455,8 +462,8 @@ section#what p.main {
 .peoplegraph ul li p.grey {
   color: #4d4d4d;
 }
-.peoplegraph img {
-  float: left;
+.peoplegraph .people {
+  float: right;
 }
 /*-------WHY SECTION-------*/
 section#why {
@@ -739,6 +746,7 @@ section#how .helped .support {
   color: #505353;
   padding-top: 50px;
   text-transform: uppercase;
+  clear: both;
 }
 section#how .helped ul {
   text-align: center;
