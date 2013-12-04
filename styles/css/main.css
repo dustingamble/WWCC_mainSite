@@ -138,7 +138,7 @@ body {
   display: inline-block;
   width: 67%;
   margin: 0 3.685%;
-  padding: 10px 7% 10px 20px;
+  padding: 10px 5% 10px 20px;
   text-transform: none;
   margin: 0;
   font-size: 0.8em;
@@ -290,7 +290,7 @@ section#iconNav ul.icon-grid li {
   width: 168px;
   height: 168px;
   display: inline-block;
-  margin: 15px 100px;
+  margin: 15px 6%;
 }
 section#iconNav ul.icon-grid li .icon-img-1 {
   background-image: url(../../images/what-icon.png);
@@ -380,7 +380,7 @@ section#iconNav ul.icon-grid li h3 a:hover {
 .icon-item:hover .icon-info p {
   opacity: 1;
 }
-/*-------WHAT SECTION-------*/
+/*-------WHAT SECTION--------------*/
 section#what {
   width: 100%;
   min-height: 800px;
@@ -1145,4 +1145,91 @@ footer#footer .containText ul.column li {
 }
 footer#footer .containText ul.column li a {
   color: #ffffff;
+}
+/****************** MEDIA QUERIES ****************/
+@media only screen and (max-width: 1185px) and (min-width: 1096px) {
+  section#why .world {
+    background: url(../../images/worldmap.png) no-repeat;
+    background-position: 50% 186px;
+    background-size: 100%;
+    min-height: 800px;
+  }
+  section#why .world .toronto {
+    float: right;
+    margin: 6% 3% 0 0;
+  }
+  section#why .world .toronto img {
+    height: auto;
+    /*   width:80%;*/
+  }
+  section#why .world .womenPink {
+    width: 380px;
+    float: left;
+    margin: 33% 0 5% 3%;
+  }
+}
+section#how .heart .heartText {
+  float: left;
+  display: inline-block;
+  width: 32%;
+  margin: 0 1.76%;
+}
+section#how .heart .heartText p {
+  font-size: 1.1em;
+}
+section#how .heart img {
+  float: left;
+  display: inline-block;
+  width: 25%;
+  margin: 0 1.375%;
+  margin-top: -1%;
+  max-width: 350px;
+  height: auto;
+}
+/*----*/
+@media only screen and (max-width: 1095px) and (min-width: 983px) {
+  .titles p {
+    font-size: 0.75em;
+    padding: 10px 1% 10px 10px;
+  }
+  section#why .world .toronto {
+    float: right;
+    margin: 0 0% 0 0;
+  }
+  section#why .world .womenPink {
+    width: 380px;
+    float: left;
+    margin: 33% 0 5% 3%;
+  }
+  section#how .heart .heartText {
+    float: left;
+    display: inline-block;
+    width: 33%;
+    margin: 0 1.815%;
+  }
+  section#how .heart .heartText p {
+    font-size: 1.1em;
+  }
+  section#how .heart img {
+    float: left;
+    display: inline-block;
+    width: 24%;
+    margin: 0 1.32%;
+    margin-top: 0;
+    max-width: 350px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 982px) and (min-width: 768px) {
+  .titles p {
+    font-size: 0.63em;
+    padding: 16px 1% 10px 7px;
+    line-height: 20px;
+  }
+  section#iconNav {
+    min-height: 275px;
+  }
+  section#iconNav ul.icon-grid li {
+    margin: 15px 3%;
+  }
 }
