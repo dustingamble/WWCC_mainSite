@@ -15,7 +15,8 @@
   <link rel="stylesheet" href="styles/css/reset.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="styles/css/main.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="styles/css/print.css" type="text/css" media="print" >
-
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="js/jquery.heapbox-0.9.3.min.js"></script>
 </head>
 <body>
   <header id="header">
@@ -43,20 +44,139 @@
       </nav>
     </header>
 
-    <section id="thanks">
-      <div class="LargeInnerContainer">
-        <h3>Thank you for helping out!</h3>
-        <div class="dropdown">
-          <h4>Choose a project you would like to donate your funds to</h4>
-        </div>
-      </div>
-
-    </section>
-	   
-   
 
 
+    <div class="wrapper">
+    <form>
 
+<!-- THANKS SECTION -->
+      <section id="thanks">
+        <h2>Thank you for helping out!</h2>
+        <div class="bkgd-square donateContainer">
+          <p>Choose a project you would like to donate your funds to</p>
+          <div class="dropdown"></div>
+        </div> <!--bkgd-square-->
+      </section>
+
+
+<!-- SELECT AMOUNT -->
+      <section id="selectAmount">
+        <h3 class="donateTitle donateContainer">Select an Amount</h3>
+        <div class="line"></div>
+
+        <div class="buttons donateContainer">
+          <button class="donateButts">$200</button>
+          <button class="donateButts">$100</button>
+          <button class="donateButts">$50</button>
+          <button class="donateButts">$25</button>
+          <button class="donateButts">OTHER</button>
+        </div><!--buttons-->
+
+        <div class="donateContainer yourDonationAmount">
+          <p id="yourDonationPara">Your Donation <span class="pinkColour">*</span></p>
+          <h4>$</h4>
+          <input type="text" name="donationAmount"></input>
+          <p id="canadianDollars">Canadian dollars</p>
+
+          <div class="radio">
+            <input type="radio" checked="checked" align="baseline" name="group1" value="one-time donation" tabindex="">  
+            <label>One-time</label>
+            <input type="radio" checked="checked" align="baseline" name="group1" value="monthly donation">  
+            <label>Monthly</label>
+          </div> <!--radio-->
+
+        </div> <!--donateContainer yourDonationAmount-->
+      </section> <!--selectAmount-->
+
+
+<!-- YOUR INFORMATION -->
+      <section id="yourInformation">
+        <h3 class="donateTitle donateContainer">Your Information</h3>
+        <div class="line"></div>
+
+        <div class="donateContainer">
+          <label>Name <span class="pinkColour">*</span></label>
+
+          <input type="text" name="name" placeholder="First Name"></input>
+          <input type="text" name="name" placeholder="Last Name"></input>
+
+        <label>Email <span class="pinkColour">*</span></label>
+        <input type="email" name="email" class="oneInputLine"></input>
+
+        <label>Phone</label>
+        <input type="tel" name="telephone" class="oneInputLine"></input>
+
+        <label>Comments </label>
+        <textarea name="comments" placeholder="Write Your Comments here"></textarea>
+
+      </div> <!--donateContainer-->
+      </section> <!--yourInformation-->
+
+<!-- PAYMENT DETAILS -->
+      <section id="paymentDetails">
+        <h3 class="donateTitle donateContainer">Payment Details</h3>
+        <div class="line"></div>
+
+        <div class="donateContainer">
+          <label>Name <span class="pinkColour">*</span></label>
+          <input type="text" name="name" placeholder="First Name"></input>
+          <input type="text" name="name" placeholder="Last Name"></input>
+
+          <label>Card <span class="pinkColour">*</span></label>
+          <input type="text" name="name" placeholder="xxxx-xxxx-xxxx"></input>
+
+          <img src="images/visa.png">
+          <img src="images/mastercard.png">
+          <img src="images/paypal.png">
+
+          <label>Expiration <span class="pinkColour">*</span></label>
+          <input type="text" name="name" placeholder="month/year"></input>
+
+          <label class="longerLabel">Security Code <span class="pinkColour">*</span></label>
+          <input type="text" class="smallInput" maxlength="4"></input>
+          <a>What is this?</a>
+
+          <label>Country <span class="pinkColour">*</span></label>
+          <input type="text" name="name" class="oneInputLine" placeholder="Canada"></input>
+
+          <label>Address <span class="pinkColour">*</span></label>
+          <input type="text" name="name" class="oneInputLine" ></input>
+
+          <label>City <span class="pinkColour">*</span></label>
+          <input type="text" name="name" class="oneInputLine"></input>
+
+          <label>Province <span class="pinkColour">*</span></label>
+          <input type="text" name="name" placeholder="Province"></input>
+
+          <label class="longerLabel">Postal Code <span class="pinkColour">*</span></label>
+          <input type="text" class="smallInput" maxlength="4"></input>
+        </div> <!--donateContainer-->
+      </section> <!--paymentDetails-->
+
+<!-- DONATE NOW -->
+      <section id="donateNow">
+        <div class="line"></div>
+
+        <button>DONATE NOW!</button>
+        
+
+      </section> <!--donateNow-->
+
+  </form>
+   </div><!--wrapper-->
+
+<!-- dropdown functionality -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    
+  $(".dropdown").heapbox();
+  json = '[{"value":"value_1","text":"Any program is fine with me"},{"value":"value_2","text":"Action for Neighbourhood Change"},{"value":"value_3","text":"LINC"},{"value":"value_4","text":"On Your Mark"},{"value":"value_5","text":"HIPPY"},{"value":"value_6","text":"Employment Programs"},{"value":"value_7","text":"Community Engagement & Leadership"},{"value":"value_8","text":"Women Support Programs"},{"value":"value_9","text":"The Victoria Park Hub"},{"value":"value_10","text":"Special Projects"},{"value":"value_11","text":"Settlement Services"}]';
+  $(".dropdown").heapbox("set",json);
+
+  });
+
+
+  </script>
 	
 </body>
 </html>

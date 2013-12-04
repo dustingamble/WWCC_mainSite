@@ -32,12 +32,23 @@ body {
   width:100%;
   display:block;
 }
+.donateContainer{
+  margin:0 auto;
+  max-width: 65%;
+  display: block;
+}
 .largeInnerContainer {
   margin: 0 auto;
   max-width:1170px;
   width:88%;
   display:block;
   background: blue;
+}
+.wrapper{
+  overflow: hidden;
+  margin:0 auto;
+  max-width: 1170px;
+  width:100%;
 }
 .parallelogram {
   height: auto;
@@ -162,10 +173,10 @@ header#header{
         color:@white;
       }
       a:hover.volunteer{
-        background-color: #9a0546;
+        background-color: darken(@pink, 10%);
       }
       a:hover.donate{
-        background-color: #047796;
+        background-color: darken(@blue, 10%);
       }
      .volunteer{
         background-color: @pink;
@@ -1062,6 +1073,337 @@ strong{
     }
   }
 }
+/*-------DONATE PAGE-------*/
+.wrapper{
+  form{
+    float:left;
+    section#thanks{
+      width:100%;
+      float:left;
+      h2{
+        width:80%;
+        margin:0 auto;
+        text-align: center;
+        color:@headerlightgrey;
+        padding: 35px 0 28px 0;
+        text-transform: none;
+        font-size: 1.2em; //30px
+      }
+      .bkgd-square{
+        width:65%;
+        height:155px;
+        background-color: #f1efef;
+        margin: 0 auto 35px;
+        border-radius: 8px;
+        padding:25px 155px  25px 155px;
+        p{
+          font-size: .65em; //16px
+          text-align: center;
+          padding-bottom: 20px;
+          color:@headergrey;
+        }
+      }
+    }
+  }
+}
+/*drop down styling*/
+.heapBox
+{
+clear:both;
+display:inline-block;
+line-height:35px;
+position:relative;
+padding-left: 45px;
+}
+
+.heapBox *
+{
+margin:0;
+padding:0;
+outline: none;
+}
+
+.heapBox.disabled .holder
+{
+color:#49D083;
+}
+
+.heapBox a{
+text-decoration:none;
+color:#fff;
+}
+
+.heapBox .holder
+{
+width:325px;
+overflow:hidden;
+background:@headergrey;
+text-indent:20px;
+height:35px;
+font-size: .6em; //14px
+.border-radius(@radius:8px 0 0 8px);
+}
+
+.heapBox .handler
+{
+width:45px; //supposed to be 45px
+background:@headergrey url(../../images/heapbox_handler_bg.jpg) no-repeat;
+height:35px;
+.border-radius(@radius:0 8px 8px 0);
+}
+
+.heapBox .holder,.heapBox .handler
+{
+float:left;
+position:relative;
+z-index:10;
+}
+
+.heapBox div.heap //dropdown
+{
+display:none;
+position:absolute;
+list-style-type:none;
+left:0;
+width:415px;
+overflow:hidden;
+padding-left: 45px;
+font-size: .6em; //14px
+}
+
+.heapBox .heap .heapOptions
+{
+display:block;
+overflow:hidden;
+z-index:20;
+position:relative;
+.border-radius(@radius:8px);
+}
+
+.heapBox .heap a.sliderUp
+{
+display:block;
+width:100%;
+height:15px;
+background:#27ae60 url(../../images/slider_arrow_up.png);
+background-repeat:no-repeat;
+background-position:center center;
+border-bottom:1px solid #157a40;
+position:absolute;
+top:0px;
+z-index:30;
+}
+
+.heapBox .heap a.sliderDown
+{
+display:block;
+width:100%;
+height:15px;
+background:#27ae60 url(../../images/slider_arrow_down.png);
+background-repeat:no-repeat;
+background-position:center center;
+border-top:1px solid #157a40;
+position:absolute;
+bottom:0px;
+z-index:30;
+}
+
+
+.heapBox .heap .heapOptions .heapOption
+{
+z-index:20;
+position:relative;
+display:block;
+height:35px;
+}
+
+.heapBox .heap .heapOptions .heapOption a{
+width:100%;
+display:block;
+background:@headerlightgrey;
+text-indent:20px;
+}
+
+.heapBox .heap .heapOptions .heapOption a:hover{
+background:@headergrey;
+}
+
+.heapBox .heap .heapOptions .heapOption a.selected{
+background:@headergrey;
+}
+
+.heapBox .heap .heapOptions .heapOption a.disabled{
+  color:#37D278;
+}
+/*drop down styling ends*/
+
+/*SELECT AMOUNT SECTION*/
+form{
+  section{
+    float:left;
+    width:100%;
+    h3.donateTitle{
+      text-transform: none;
+      color:@donateTitle;
+      /*width:65%;*/
+      margin:0 auto;
+      padding-bottom: 15px;
+    }
+    .line{
+      border-top: 2px solid @donateTitle;
+      width:82%;
+      margin:0 auto 30px;
+    }
+    input, textarea{
+      .border-radius(@radius:8px);
+      border:2px solid @lightgrey;
+      background-color: #f1efef;
+      color:@headergrey;
+      float:left;
+      padding:10px 15px;
+      margin-top: 10px;
+    }
+    input{
+      width:325px;
+    }
+    label{
+      padding: 22.5px 50px 0 10px;
+    }
+    p, label, input, textarea{
+      color:@headerlightgrey;
+      font-size:.6em; //14px
+      float:left;
+    }
+  }
+}
+.pinkColour{
+  color:@pink;
+}
+/*button styles*/
+section#selectAmount{
+  width:100%;
+  float:left;
+  .buttons{
+    font-family: @fontgothic;
+    display: block;
+    margin:0 auto;
+    text-align: justify;
+    &:after{
+      content:"";
+      width:100%;
+      display: inline-block;
+    }
+    button.donateButts{
+      display: inline-block;
+      font-size: 36px;
+      color:@white;
+      border:none;
+      border-radius:8px;
+      font-family: inherit;
+      background-color: @pink;
+      cursor: pointer;
+      padding: 5px 0;
+      margin: 10px 0;
+      width:125px;
+      letter-spacing: 1px;
+      -webkit-transition: 0.25s linear;
+      -moz-transition: all 0.25s linear;
+      transition: 0.25s linear;
+        &:hover{
+          background-color:darken(@pink, 10%); 
+        }
+    }
+  }
+  .yourDonationAmount{
+    overflow: hidden;
+    padding:0 7%;
+    p#yourDonationPara{
+      padding-top: 13px;
+    }
+    h4{
+      font-size: 36px;
+      font-family: @fontgothic; 
+      float:left;
+      padding:5px 0 0 20px;
+    }
+    input[type="text"]{
+      padding:0 25px;
+      font-size: 30px;
+      font-family: @fontgothic;
+      margin: 0 20px 0 10px;
+    }
+    p#canadianDollars{
+      font-size:.5em; //12px
+      padding-top: 30px;
+    }
+    .radio{
+      width:50%;
+      margin:0 auto 30px;
+      overflow: hidden;
+      input[type="radio"]{
+        float:left;
+        width:20px;
+        height:20px;
+        margin-top: 20px;
+      }
+      label{
+        font-size:.5em; //12px
+      }
+    }
+  }
+}
+ /*YOUR INFORMATION SECTION*/
+ section#yourInformation, section#paymentDetails{
+  .donateContainer{
+    display: block;
+    label{
+      text-align: right;
+      padding-right:10px;
+      padding-left:0;
+      width:13%;
+    }
+    input{
+      margin-right:11px;
+      &:nth-child(3){
+        margin-right:0;
+      } 
+    }
+    .oneInputLine{
+      margin-right: 40%;
+    }
+    textarea{
+      width:87%;
+      height:100px;
+      margin-bottom: 50px;
+    }
+  }
+ }
+
+ /*PAYMENT DETAILS*/
+ section#paymentDetails{
+    margin-bottom: 35px;
+    label.longerLabel{
+      width:16%;
+    }
+    .smallInput{
+      width:100px;
+    }
+    a{
+      color:@pink;
+      text-decoration: underline;
+      padding-top: 22.5px;
+      font-size:.6em; //14px
+      float:left;
+    }
+    img{
+      float:left;
+      padding:10px 20px;
+      &:last-of-type{
+        padding-right:0;
+    }
+  }
+ }
+
 
 /*-------FOOTER-------*/
 
