@@ -28,11 +28,13 @@ body {
 }
 .innerContainer {
   margin: 0 auto;
-  max-width:65%;
+  max-width:900px;
+  width:77%;
 }
 .largeInnerContainer {
   margin: 0 auto;
-  max-width:88%;
+  max-width:1170px;
+  width:88%;
 }
 .parallelogram {
   height: auto;
@@ -59,7 +61,7 @@ body {
   }
   p {
      .widthfloat(67%);
-    padding: 10px 10% 10px 20px;
+    padding: 10px 7% 10px 20px;
     text-transform: none;
     margin:0;
     font-size: 0.8em;
@@ -320,7 +322,7 @@ section#iconNav {
 
 section#what {
   width:100%;
-  min-height:755px;
+  min-height:800px;
   background: url(../../images/pattern.png);
   margin:0;
   padding:0;
@@ -361,19 +363,19 @@ section#what {
     font-family: @fontgothic;
   }
   img {
-    margin-bottom: -10px;
+    margin:0 10px -15px 0
   }
 }
 .peoplegraph{
-  clear:both;
-  text-align: center;
-  padding-top: 25px;
-  vertical-align:middle;
+  float:left;
+  margin:0 auto;
+  padding-top: 50px;
+  width:100%;
   ul{
     float: left;
     text-transform: uppercase;
     font-size: 19px;
-    margin-right: 20px;
+    margin: 0 7% 0 0%;
     li{
       width:150px;
       display: block;
@@ -383,6 +385,16 @@ section#what {
       p{
         width:20px;
         float: left;
+        margin:17px 12%;
+      }
+      p.blue{
+        color:@blue;
+      }
+      p.pink{
+        color:@pink;
+      }
+      p.grey{
+        color:#4d4d4d;
       }
     }
   }
@@ -422,7 +434,8 @@ section#why {
     margin: 25px 0 0 20%;
     .percent {
       font-family:"Georgia Italic",Georgia, serif;
-      font-size: 3.3em;
+      font-weight: bold;
+      font-size: 3.1em;
       .widthfloat(30%);
       color:@worldgrey;
     }
@@ -430,12 +443,12 @@ section#why {
       float:right;
       font-size: 1.1em;
       .widthfloat(60%);
-      padding: 12px 0 12px 10px;
+      padding: 7px 0 12px 17px;
     }
   }
   .toronto{
-    float:right;
-    margin:3% 13% 0 0;
+    float:left;
+    margin: 6% 11% 0 0;
     img{
       z-index: 1000;
       display:block;
@@ -452,7 +465,7 @@ section#why {
   .womenPink{
     width:380px;
     float:left;
-    margin:27% 0 0 10%;
+    margin:9% 0 0 10%;
     img{
       float:left;
       margin-right:10px;
@@ -625,7 +638,7 @@ section#how {
   .greyline{
     width:100%;
     clear:both;
-    background:rgba(89,91,91, 0.09);
+    background:rgba(89,91,91, 0.13);
     height:15px;
     margin:15px 0;
     float: left;
@@ -634,11 +647,11 @@ section#how {
     margin-top: 90px;
   }
   .howbottom{
-     margin-bottom: 75px;
+     margin-bottom: 90px;
   }
   .heart{
      width:100%; 
-     background:rgba(89,91,91, 0.05);
+     background:rgba(89,91,91, 0.11);
      max-height:190px;
      float: left;
 
@@ -680,6 +693,7 @@ section#how {
         .facts{
           margin-bottom: 15px;
           height:90px;
+          font-size: 0.9em;
          }
         p{
           text-align: center;
@@ -779,8 +793,6 @@ section#cta{
 
 
 /*PROGRAMS PAGE ---------------------------------------------------*/
-
-/*programs.less*/
 
 body#programsPage{
   background: url(../../images/pattern.png);

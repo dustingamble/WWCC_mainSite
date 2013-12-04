@@ -95,11 +95,13 @@ body {
 }
 .innerContainer {
   margin: 0 auto;
-  max-width: 65%;
+  max-width: 900px;
+  width: 77%;
 }
 .largeInnerContainer {
   margin: 0 auto;
-  max-width: 88%;
+  max-width: 1170px;
+  width: 88%;
 }
 .parallelogram {
   height: auto;
@@ -132,7 +134,7 @@ body {
   display: inline-block;
   width: 67%;
   margin: 0 3.685%;
-  padding: 10px 10% 10px 20px;
+  padding: 10px 7% 10px 20px;
   text-transform: none;
   margin: 0;
   font-size: 0.8em;
@@ -377,7 +379,7 @@ section#iconNav ul.icon-grid li h3 a:hover {
 /*-------WHAT SECTION-------*/
 section#what {
   width: 100%;
-  min-height: 755px;
+  min-height: 800px;
   background: url(../../images/pattern.png);
   margin: 0;
   padding: 0;
@@ -418,19 +420,19 @@ section#what p.main {
   font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
 }
 .locations img {
-  margin-bottom: -10px;
+  margin: 0 10px -15px 0;
 }
 .peoplegraph {
-  clear: both;
-  text-align: center;
-  padding-top: 25px;
-  vertical-align: middle;
+  float: left;
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 100%;
 }
 .peoplegraph ul {
   float: left;
   text-transform: uppercase;
   font-size: 19px;
-  margin-right: 20px;
+  margin: 0 7% 0 0%;
 }
 .peoplegraph ul li {
   width: 150px;
@@ -442,6 +444,16 @@ section#what p.main {
 .peoplegraph ul li p {
   width: 20px;
   float: left;
+  margin: 17px 12%;
+}
+.peoplegraph ul li p.blue {
+  color: #008db3;
+}
+.peoplegraph ul li p.pink {
+  color: #b60050;
+}
+.peoplegraph ul li p.grey {
+  color: #4d4d4d;
 }
 .peoplegraph img {
   float: left;
@@ -479,7 +491,8 @@ section#why .world .boxWhy {
 }
 section#why .world .boxWhy .percent {
   font-family: "Georgia Italic", Georgia, serif;
-  font-size: 3.3em;
+  font-weight: bold;
+  font-size: 3.1em;
   float: left;
   display: inline-block;
   width: 30%;
@@ -493,11 +506,11 @@ section#why .world .boxWhy p {
   display: inline-block;
   width: 60%;
   margin: 0 3.3%;
-  padding: 12px 0 12px 10px;
+  padding: 7px 0 12px 17px;
 }
 section#why .world .toronto {
-  float: right;
-  margin: 3% 13% 0 0;
+  float: left;
+  margin: 6% 11% 0 0;
 }
 section#why .world .toronto img {
   z-index: 1000;
@@ -514,7 +527,7 @@ section#why .world .toronto .boxWhyTwo p {
 section#why .world .womenPink {
   width: 380px;
   float: left;
-  margin: 27% 0 0 10%;
+  margin: 9% 0 0 10%;
 }
 section#why .world .womenPink img {
   float: left;
@@ -682,7 +695,7 @@ section#how p.main {
 section#how .greyline {
   width: 100%;
   clear: both;
-  background: rgba(89, 91, 91, 0.09);
+  background: rgba(89, 91, 91, 0.13);
   height: 15px;
   margin: 15px 0;
   float: left;
@@ -691,11 +704,11 @@ section#how .howtop {
   margin-top: 90px;
 }
 section#how .howbottom {
-  margin-bottom: 75px;
+  margin-bottom: 90px;
 }
 section#how .heart {
   width: 100%;
-  background: rgba(89, 91, 91, 0.05);
+  background: rgba(89, 91, 91, 0.11);
   max-height: 190px;
   float: left;
 }
@@ -746,6 +759,7 @@ section#how .helped ul li img {
 section#how .helped ul li .facts {
   margin-bottom: 15px;
   height: 90px;
+  font-size: 0.9em;
 }
 section#how .helped ul li p {
   text-align: center;
@@ -834,7 +848,6 @@ section#cta .involved .donate:hover {
   background-color: #047796;
 }
 /*PROGRAMS PAGE ---------------------------------------------------*/
-/*programs.less*/
 body#programsPage {
   background: url(../../images/pattern.png);
 }
