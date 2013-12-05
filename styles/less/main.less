@@ -1147,7 +1147,7 @@ font-size: .6em; //14px
 .heapBox .handler
 {
 width:45px; //supposed to be 45px
-background:@headergrey url(../../images/heapbox_handler_bg.jpg) no-repeat;
+background:@headergrey url(../../images/heapbox_handler_bg.png) no-repeat;
 height:35px;
 .border-radius(@radius:0 8px 8px 0);
 }
@@ -1511,70 +1511,112 @@ section#selectAmount{
 footer#footer{
   background-color:@headerlightgrey;
   overflow: hidden;
-
+  margin:0 auto;
+  width:100%;
   .emailSignUp{
-    float:left;
-    width:100%;
     background-color: @headergrey;
-    p{
-      font-family: @bodyfont;
-      color:@white;
-      text-transform: none;
-      float:left;
-      font-size: .8em;
-      padding: 15px 15px 15px 21%
-    }
+    width:100%;
     form{
-        font-family: @bodyfont;
+      width:80%;
+      display:block;
+      margin: 0 auto;
+      font-family: @bodyfont;
+      padding:10px 0;
+      p{
+        color:@white;
+        text-transform: none;
         float:left;
-        padding:7px;
+        font-size: .65em;//16px
+        padding: 10px 30px 0 0;
+        letter-spacing: 2px;
+        width:45%;
+        text-align: right;
+      }
         label{
-          width:100%;
           input[type="text"]{
-            height:38px;
-            margin-top: -5px;
-            width:200px;
+            height:39px;
+            width:21%;
             font-size: 12px;
             text-transform: lowercase;
             border:none;
             padding-left: 10px;
             color:@headergrey;
+            .border-radius(@radius: 8px 0 0 8px);
           }
         }
         input[type="submit"]{
-          width:100px;
+          width:15.5%;//100px;
           height:40px;
           margin-left:-10px;
           background-color: @pink;
           border:none;
           color:@white;
           text-transform: uppercase;
-          font-size: 16px;
+          font-size: .65em;//16px
           letter-spacing: 1px;
-        }    
-    }
-}
-  .containText{
-      ul.column{
-        color:@white;
-        text-align: center;
-        line-height: 1.5em;
-        font-size: .625em;
-        padding: 30px 14% 50px 0;
-        float:left;
-        display:inline-block;
-         &:last-of-type{
-          padding-right:0;
+          .border-radius(@radius: 0 8px 8px 0);
+          &:hover{
+            background-color:darken(@pink, 10%);
+            -webkit-transition: 0.25s linear;
+            -moz-transition: 0.25s linear;
+            transition: 0.25s linear;
           }
-        li{
-          display: block;
-          a{
-            color:@white;
+        }
+      }    
+    }
+  
+  h4, a{
+     font-size: .55em;
+  }
+  h4{
+    text-transform: uppercase;
+    color:@white;
+  }
+  .containText{
+    width:80%;
+    display:block;
+    margin: 0 auto;
+    ul.column{
+      margin:20px 0;
+      float:left;
+      width:20%;
+      display: inline-block;
+      line-height: 1.2em;
+      li{
+        text-align: center;
+        display: block;
+        a{
+          color:@white;
+          &:hover{
+            text-decoration:underline;
           }
         }
       }
     }
-}
+  }
+
+  .bottomFooter{
+    background-color: @headergrey;
+    width:100%;
+    float:left;
+    /*padding:5px 5%;*/
+    p {
+      width:50%;
+      float:left;
+      padding:0 1%;
+      &:last-of-type{
+        text-align:right;
+      }
+      a{
+        font-size: .55em;
+        color:@white;
+        &:hover{
+          text-decoration:underline;
+        }
+      }
+    }
+  }
+} /*footer*/
 
 
 
