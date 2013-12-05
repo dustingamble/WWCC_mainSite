@@ -1371,6 +1371,20 @@ section#selectAmount{
     .oneInputLine{
       margin-right: 40%;
     }
+    input[type="radio"]{
+      float:left;
+      width:20px;
+      height:20px;
+      margin-top: 20px;
+    }
+    #radioLabel{
+      float:left;
+      width:38%;
+      text-align: left;
+      padding:15px 10px 10px 10px;
+      font-size: 12px;
+      line-height: 15px;
+    }
     textarea{
       width:87%;
       height:100px;
@@ -1388,22 +1402,109 @@ section#selectAmount{
     .smallInput{
       width:100px;
     }
+    img{
+      float:left;
+      padding:10px 20px;
+      &:last-of-type{
+        padding-right:0;
+      }
+    }
+    .whatIsThisBox{
+        text-decoration: none;
+        float:right;
+        width:178px;
+        position: absolute;
+        .border-radius(@radius:8px);
+        background-color: #f1efef;
+        color:@pink;
+        font-size: .8em;
+        text-align: center;
+        padding:8px;
+        line-height: 15px;
+        margin-top: 25px;
+        display: none;
+    }
+    .whatIsThisBox:after{
+      content:'';
+      position:absolute;
+      top:-7px;
+      width:15px;
+      height:15px;
+      background-color: #f1efef;
+      left:18%;
+      -moz-transform:rotate(225deg);
+      -webkit-transform:rotate(225deg);
+      transform:rotate(225deg);
+    }
     a{
       color:@pink;
       text-decoration: underline;
       padding-top: 22.5px;
       font-size:.6em; //14px
       float:left;
-    }
-    img{
+      cursor: pointer;
       float:left;
-      padding:10px 20px;
-      &:last-of-type{
-        padding-right:0;
+      position: relative
     }
-  }
+    a:hover .whatIsThisBox{
+        display: block;
+    }
  }
 
+ /*DONATE NOW SECTION*/
+ section#donateNow{
+  .donateContainer{
+    overflow: hidden;
+    button{
+      float:left;
+      font-size: 36px;
+      color:@white;
+      border:none;
+      border-radius:8px;
+      font-family: @bodyfont;
+      font-size: 24px;
+      background-color: @blue;
+      cursor: pointer;
+      margin:0 30px 0 100px;
+      width:315px;
+      height:100px;
+      letter-spacing: 1px;
+      -webkit-transition: 0.25s linear;
+      -moz-transition: all 0.25s linear;
+      transition: 0.25s linear;
+        &:hover{
+          background-color:darken(@blue, 10%); 
+        }
+      }
+      input[type="text"]{
+        height:100px;
+        margin-top: 0;
+        width:215px;
+        font-size: 15px;
+      }
+      p{
+        margin: 35px auto 0;    
+        text-align: center;
+        width:100%;
+        font-size:.5em; //12px
+
+      }
+      ul li{
+        display: inline-block;
+        padding-left:65px;
+        &:last-of-type{
+          float:right;
+          text-align: right;
+          padding-right:65px;
+          padding-left: 0;
+        }
+        p{
+          margin: 10px 0 20px 0;
+          text-align: left;
+        }
+      }
+   }
+}
 
 /*-------FOOTER-------*/
 

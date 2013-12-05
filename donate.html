@@ -79,9 +79,9 @@
           <p id="canadianDollars">Canadian dollars</p>
 
           <div class="radio">
-            <input type="radio" checked="checked" align="baseline" name="group1" value="one-time donation" tabindex="">  
+            <input type="radio" id="one-time donation"checked="checked" align="baseline" name="group1" value="one-time donation" tabindex="">  
             <label>One-time</label>
-            <input type="radio" checked="checked" align="baseline" name="group1" value="monthly donation">  
+            <input type="radio" id="montly donation"checked="checked" align="baseline" name="group1" value="monthly donation">  
             <label>Monthly</label>
           </div> <!--radio-->
 
@@ -101,7 +101,10 @@
           <input type="text" name="name" placeholder="Last Name"></input>
 
         <label>Email <span class="pinkColour">*</span></label>
-        <input type="email" name="email" class="oneInputLine"></input>
+        <input type="email" name="email"></input>
+
+        <input type="radio" checked="checked" name="group2">  
+        <label id="radioLabel">I would like to receive information from Working Women.</label>
 
         <label>Phone</label>
         <input type="tel" name="telephone" class="oneInputLine"></input>
@@ -134,7 +137,8 @@
 
           <label class="longerLabel">Security Code <span class="pinkColour">*</span></label>
           <input type="text" class="smallInput" maxlength="4"></input>
-          <a>What is this?</a>
+
+          <a>What is this?<span class="whatIsThisBox">The card security code is located on the back of MasterCard or Visa credit or debit cards and is typically a separate group of 3 digits to the right of the signature strip.</span></a>
 
           <label>Country <span class="pinkColour">*</span></label>
           <input type="text" name="name" class="oneInputLine" placeholder="Canada"></input>
@@ -149,7 +153,7 @@
           <input type="text" name="name" placeholder="Province"></input>
 
           <label class="longerLabel">Postal Code <span class="pinkColour">*</span></label>
-          <input type="text" class="smallInput" maxlength="4"></input>
+          <input type="text" class="smallInput" maxlength="6"></input>
         </div> <!--donateContainer-->
       </section> <!--paymentDetails-->
 
@@ -157,13 +161,78 @@
       <section id="donateNow">
         <div class="line"></div>
 
-        <button>DONATE NOW!</button>
+        <div class="donateContainer">
+          <button>DONATE NOW!</button>
+          <input type="text" name="donationAmount" placeholder="Amount:"></input>
+
+          <p>If you have questions regarding donating please contact <a href="mailto:paola@workingwomencc.org?subject=Donation Questions">paola@workingwomencc.org</a></p>
+          <ul>
+            <li><p>You can also donate online through <a href="https://www.canadahelps.org/CharityProfilePage.aspx?CharityID=s35970">Canada Helps</a></p></li>
+            <li><p>Donations of $25 &amp; up receive a taxable receipt</p></li>
+          </ul>
+        </div> <!--donateContainer-->
         
 
       </section> <!--donateNow-->
 
   </form>
    </div><!--wrapper-->
+
+   <!-- FOOTER -->
+      <footer id="footer">
+      
+        <div class="emailSignUp">
+        <div class="containText">
+          <p>Sign up for our newsletter</p>
+          <form>
+            <label>
+              <input type="text" name="inputBox" placeholder="Email Address">
+            </label> 
+              <input type="submit" value="Sign Up">
+          </form>
+          </div> <!--containText-->
+        </div><!--emailSignUp-->
+
+<div class="containText">
+          <ul class="column">
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">twitter</a></li>
+            <li><a href="#">linkedIn</a></li>
+            <li><a href="#">youtube</a></li>
+          </ul>
+
+          <ul class="column">
+            <li><h4>CONTACT US<h4></li>
+            <li><a href="#">contact info</a></li>
+            <li><a href="#">416.532.2824</a></li>
+            <li><a href="#">locations</a></li>
+          </ul>
+
+          <ul class="column">
+            <li><h4>RESOURCES<h4></li>
+            <li><a href="#">helpful links</a></li>
+            <li><a href="#">learn more</a></li>
+            <li><a href="#">FAQ's</a></li>
+          </ul>
+
+          <ul class="column">
+            <li><h4>FINANCIALS<h4></li>
+            <li><a href="#">donors</a></li>
+            <li><a href="#">supporters</a></li>
+            <li><a href="#">annual report</a></li>
+          </ul>
+
+          <ul class="column">
+            <li><h4>GET INVOLVED<h4></li>
+            <li><a href="#">fundraise</a></li>
+            <li><a href="#">donate</a></li>
+            <li><a href="#">volunteer</a></li>
+          </ul>
+ 
+        </div> <!--containText-->
+
+
+      </footer>
 
 <!-- dropdown functionality -->
 <script type="text/javascript">
