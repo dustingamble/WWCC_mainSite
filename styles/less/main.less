@@ -352,7 +352,7 @@ section#what {
 }
 
 .languages {
-  margin-top: 25px;
+  margin: 25px 5% 0 0;
   float: left;
   .boxWhat{
     width: 206px;
@@ -390,7 +390,7 @@ section#what {
     float: left;
     text-transform: uppercase;
     font-size: 19px;
-    margin: 0 7% 0 0%;
+    margin: 0 7% 0 2%;
     li{
       width:150px;
       display: block;
@@ -418,8 +418,10 @@ section#what {
   }
   .people{
     float:right;
+    margin-right: 2%;
   }
 }
+
 
 
 /*-------WHY SECTION-------*/
@@ -662,24 +664,23 @@ section#how {
     float: left;
   }
   .howtop{
-    margin-top: 90px;
+    margin-top: 5%;
   }
   .howbottom{
-     margin-bottom: 90px;
+     margin-bottom: 3%;
   }
   .heart{
-     width:100%; 
-     background:rgba(89,91,91, 0.11);
-     max-height:190px;
-     float: left;
-
+    width:100%; 
+    background:rgba(89,91,91, 0.11);
+    max-height:190px;
+    float: left;
     .heartText{
       .widthfloat(30%);
       p{
         font-family: @fontgothic;
         color:@headergrey;
+        margin:2%;
         font-size: 1.2em;
-        margin:10px;
       }
     }
     img{
@@ -727,7 +728,6 @@ section#how {
           }
           .btn:hover{
             background:@pink;
-            color:@darkestgrey;
           }
         } 
       }
@@ -747,7 +747,7 @@ section#years{
     text-align: center;
     font-size: 1.5em;
     margin: 70px 0 30px;
-    color:@headerlightgrey;
+    color:@headergrey;
   }
   .yearsHeader{
     color:@darkestgrey;
@@ -802,7 +802,7 @@ section#cta{
         background-color: @blue;
         padding:10px 20px;
         border-radius: 8px;
-        margin:30px 0 0 10px;
+        margin:30px 0 0 3px;
         &:hover{
           background-color: #047796;
         }
@@ -1646,24 +1646,32 @@ footer#footer{
           }
       }
     }
-  }
-
-     section#how {  
-    .heart{
-      .heartText{
-        .widthfloat(32%);
-        p{
-          font-size: 1.1em;
+    section#how {  
+       min-height:845px;
+      .howtop{
+          margin-top: 5%;
         }
-      }
-      img{
-       .widthfloat(25%);
-       margin-top:-1%;
-       max-width:350px;
-       height:auto;
+      .howbottom{
+           margin-bottom: 0;
+        }
+      .heart{
+        .heartText{
+          .widthfloat(32%);
+          p{
+            font-size: 1.1em;
+          }
+        }
+        img{
+         .widthfloat(25%);
+         margin-top:-1%;
+         max-width:350px;
+         height:auto;
+        }
       }
     }
   }
+
+
 
 
   /*----*/
@@ -1690,15 +1698,20 @@ footer#footer{
     }
 
     section#how {  
+      min-height:845px;
+  .howtop{
+    margin-top: 5%;
+  }
+  .howbottom{
+     margin-bottom: 0;
+  }
     .heart{
       .heartText{
-        .widthfloat(33%);
-        p{
-          font-size: 1.1em;
-        }
+        .widthfloat(34%);
+         font-size: 0.95em;
       }
       img{
-       .widthfloat(24%);
+       .widthfloat(22%);
        margin-top:0;
        max-width:350px;
        height:auto;
@@ -1708,28 +1721,200 @@ footer#footer{
   
 }
 
- @media only screen and (max-width: 982px) and (min-width: 768px){
+ @media only screen and (max-width: 982px) and (min-width: 767px){
    .titles p{
-      font-size: 0.63em;
-      padding: 16px 1% 10px 7px;
-      line-height: 20px;    
+      font-size: 0.6em;
+      padding: 16px 1% 10px 1%;
+      line-height: 19px;    
     }
+    h1{
+      font-size: 1.375em;
+    }
+
 
     section#iconNav {
       min-height:275px;
-   
-      ul.icon-grid {
-      
-        li {
-          margin: 15px 3%;
-         
+        ul.icon-grid {
+          li {
+            margin: 15px 3%;
+            }
+          }
+        }
+/*what section*/
+  section#what {
+    min-height:800px;
+    .languages {
+      margin: 25px 5% 0 0;
+      margin-left:5%;
+      float: left;
+      .boxWhat{
+        width: 206px;
+      }
+      p{
+        padding:5px 19px 5px 27px;
+        font-size: 1.1em;
+        font-family: @fontgothic;
+      }
+      img {
+        margin: -10px 0 0 75px;
+      }
+    }
+    .locations {
+      margin: 25px 5% 0 0;
+      float: right;
+      .boxWhatTwo{
+        width: 231px;
+      }
+      p{
+        padding:5px 19px 5px 27px;
+        font-size: 1.1em;
+        font-family: @fontgothic;
+      }
+      img {
+        margin:0 10px -15px 0
+      }
+    }
+    .peoplegraph{
+      float:left;
+      margin:0 auto;
+      padding-top: 50px;
+      width:100%;
+      ul{
+        float: left;
+        text-transform: uppercase;
+        font-size: 19px;
+        margin: 0 7% 0 2%;
+        li{
+          width:150px;
+          display: block;
+          float:left;
+          clear:both;
+          padding:4px;
+          img{
+            float:left;
+            width: 23%;
+
+          }
+          p{
+            width:20px;
+            float: left;
+            margin:17px 12%;
+          }
+          p.blue{
+            color:@blue;
+          }
+          p.pink{
+            color:@pink;
+          }
+          p.grey{
+            color:#4d4d4d;
           }
         }
       }
- }
+      .people{
+      float:right;
+      margin-right: 2%;
+      width:69%;
+      }
+    }
+  } /*<---what section*/
+  .boxWhy{
+    margin: 25px 0 0 15%;
+  }
 
- 
+  /*why*/
 
+   section#why {  
+      .world {
+        .boxWhy{
+          margin: 25px 0 0 15%;
+        }
+        .toronto{
+          float: right;
+          margin: -7% -6% 0 0;
+        }
+        .womenPink{
+          width:380px;
+          float:left;
+          margin: 45% 0 7% 3%;
+          }
+      }
+      .skyline{
+        .barriers{
+          font-size: 0.9em;
+        }
+      }
+      .settle{
+          p{
+            font-size: 1.43em;
+          }
+      }
+  }
+
+/*how*/
+    section#how { 
+         min-height:775px; 
+       .howtop{
+         margin-top: 5%;
+        }
+      .howbottom{
+         margin-bottom: 0;
+       }
+    .heart{
+      .heartText{
+        .widthfloat(35%);
+        p{
+          font-size: 0.9em;
+        }
+      }
+      img{
+       .widthfloat(20%);
+       margin-top:1%;
+       height:auto;
+      }
+    }
+    .helped{
+      .support{
+      text-align: center;
+      font-size: 1em;
+      color:@headergrey;
+      padding-top: 50px;
+      text-transform: uppercase;
+      clear:both;
+      }
+      ul{
+        text-align: center;
+        color: @headergrey;
+        font-size: 0.9em;
+        margin-top: 35px;
+        li{
+          .widthfloat(30%);
+        }
+      }
+    }
+  }
+  section#graphs{
+    padding:5% 2%;
+  }
+
+  /* -- years--- */
+  section#years{
+    min-height:275px;
+    h3{
+      text-align: center;
+      margin: 1% 0 30px;
+    }
+  }
+
+/*------------ CTA'S -------------*/
+section#cta{
+   .involved{
+      .ctaLeft{
+        margin:0 1%;
+      }
+    }   
+  }
+}
 
 
 

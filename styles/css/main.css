@@ -408,7 +408,7 @@ section#what p.main {
   color: #ffffff;
 }
 .languages {
-  margin-top: 25px;
+  margin: 25px 5% 0 0;
   float: left;
 }
 .languages .boxWhat {
@@ -447,7 +447,7 @@ section#what p.main {
   float: left;
   text-transform: uppercase;
   font-size: 19px;
-  margin: 0 7% 0 0%;
+  margin: 0 7% 0 2%;
 }
 .peoplegraph ul li {
   width: 150px;
@@ -475,6 +475,7 @@ section#what p.main {
 }
 .peoplegraph .people {
   float: right;
+  margin-right: 2%;
 }
 /*-------WHY SECTION-------*/
 section#why {
@@ -719,10 +720,10 @@ section#how .greyline {
   float: left;
 }
 section#how .howtop {
-  margin-top: 90px;
+  margin-top: 5%;
 }
 section#how .howbottom {
-  margin-bottom: 90px;
+  margin-bottom: 3%;
 }
 section#how .heart {
   width: 100%;
@@ -739,8 +740,8 @@ section#how .heart .heartText {
 section#how .heart .heartText p {
   font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
   color: #505353;
+  margin: 2%;
   font-size: 1.2em;
-  margin: 10px;
 }
 section#how .heart img {
   float: left;
@@ -794,7 +795,6 @@ section#how .helped ul li p .btn {
 }
 section#how .helped ul li p .btn:hover {
   background: #b60050;
-  color: #343433;
 }
 /*------------ 35 YEARS SECTION -------------*/
 section#years {
@@ -809,7 +809,7 @@ section#years h3 {
   text-align: center;
   font-size: 1.5em;
   margin: 70px 0 30px;
-  color: #7c807f;
+  color: #505353;
 }
 section#years .yearsHeader {
   color: #343433;
@@ -861,7 +861,7 @@ section#cta .involved .donate {
   background-color: #008db3;
   padding: 10px 20px;
   border-radius: 8px;
-  margin: 30px 0 0 10px;
+  margin: 30px 0 0 3px;
 }
 section#cta .involved .donate:hover {
   background-color: #047796;
@@ -1640,24 +1640,33 @@ footer#footer .bottomFooter p a:hover {
     float: left;
     margin: 33% 0 5% 3%;
   }
-}
-section#how .heart .heartText {
-  float: left;
-  display: inline-block;
-  width: 32%;
-  margin: 0 1.76%;
-}
-section#how .heart .heartText p {
-  font-size: 1.1em;
-}
-section#how .heart img {
-  float: left;
-  display: inline-block;
-  width: 25%;
-  margin: 0 1.375%;
-  margin-top: -1%;
-  max-width: 350px;
-  height: auto;
+  section#how {
+    min-height: 845px;
+  }
+  section#how .howtop {
+    margin-top: 5%;
+  }
+  section#how .howbottom {
+    margin-bottom: 0;
+  }
+  section#how .heart .heartText {
+    float: left;
+    display: inline-block;
+    width: 32%;
+    margin: 0 1.76%;
+  }
+  section#how .heart .heartText p {
+    font-size: 1.1em;
+  }
+  section#how .heart img {
+    float: left;
+    display: inline-block;
+    width: 25%;
+    margin: 0 1.375%;
+    margin-top: -1%;
+    max-width: 350px;
+    height: auto;
+  }
 }
 /*----*/
 @media only screen and (max-width: 1095px) and (min-width: 983px) {
@@ -1674,35 +1683,207 @@ section#how .heart img {
     float: left;
     margin: 33% 0 5% 3%;
   }
+  section#how {
+    min-height: 845px;
+  }
+  section#how .howtop {
+    margin-top: 5%;
+  }
+  section#how .howbottom {
+    margin-bottom: 0;
+  }
   section#how .heart .heartText {
     float: left;
     display: inline-block;
-    width: 33%;
-    margin: 0 1.815%;
-  }
-  section#how .heart .heartText p {
-    font-size: 1.1em;
+    width: 34%;
+    margin: 0 1.87%;
+    font-size: 0.95em;
   }
   section#how .heart img {
     float: left;
     display: inline-block;
-    width: 24%;
-    margin: 0 1.32%;
+    width: 22%;
+    margin: 0 1.21%;
     margin-top: 0;
     max-width: 350px;
     height: auto;
   }
 }
-@media only screen and (max-width: 982px) and (min-width: 768px) {
+@media only screen and (max-width: 982px) and (min-width: 767px) {
   .titles p {
-    font-size: 0.63em;
-    padding: 16px 1% 10px 7px;
-    line-height: 20px;
+    font-size: 0.6em;
+    padding: 16px 1% 10px 1%;
+    line-height: 19px;
+  }
+  h1 {
+    font-size: 1.375em;
   }
   section#iconNav {
     min-height: 275px;
   }
   section#iconNav ul.icon-grid li {
     margin: 15px 3%;
+  }
+  /*what section*/
+  section#what {
+    min-height: 800px;
+  }
+  section#what .languages {
+    margin: 25px 5% 0 0;
+    margin-left: 5%;
+    float: left;
+  }
+  section#what .languages .boxWhat {
+    width: 206px;
+  }
+  section#what .languages p {
+    padding: 5px 19px 5px 27px;
+    font-size: 1.1em;
+    font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
+  }
+  section#what .languages img {
+    margin: -10px 0 0 75px;
+  }
+  section#what .locations {
+    margin: 25px 5% 0 0;
+    float: right;
+  }
+  section#what .locations .boxWhatTwo {
+    width: 231px;
+  }
+  section#what .locations p {
+    padding: 5px 19px 5px 27px;
+    font-size: 1.1em;
+    font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
+  }
+  section#what .locations img {
+    margin: 0 10px -15px 0;
+  }
+  section#what .peoplegraph {
+    float: left;
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 100%;
+  }
+  section#what .peoplegraph ul {
+    float: left;
+    text-transform: uppercase;
+    font-size: 19px;
+    margin: 0 7% 0 2%;
+  }
+  section#what .peoplegraph ul li {
+    width: 150px;
+    display: block;
+    float: left;
+    clear: both;
+    padding: 4px;
+  }
+  section#what .peoplegraph ul li img {
+    float: left;
+    width: 23%;
+  }
+  section#what .peoplegraph ul li p {
+    width: 20px;
+    float: left;
+    margin: 17px 12%;
+  }
+  section#what .peoplegraph ul li p.blue {
+    color: #008db3;
+  }
+  section#what .peoplegraph ul li p.pink {
+    color: #b60050;
+  }
+  section#what .peoplegraph ul li p.grey {
+    color: #4d4d4d;
+  }
+  section#what .peoplegraph .people {
+    float: right;
+    margin-right: 2%;
+    width: 69%;
+  }
+  /*<---what section*/
+  .boxWhy {
+    margin: 25px 0 0 15%;
+  }
+  /*why*/
+  section#why .world .boxWhy {
+    margin: 25px 0 0 15%;
+  }
+  section#why .world .toronto {
+    float: right;
+    margin: -7% -6% 0 0;
+  }
+  section#why .world .womenPink {
+    width: 380px;
+    float: left;
+    margin: 45% 0 7% 3%;
+  }
+  section#why .skyline .barriers {
+    font-size: 0.9em;
+  }
+  section#why .settle p {
+    font-size: 1.43em;
+  }
+  /*how*/
+  section#how {
+    min-height: 775px;
+  }
+  section#how .howtop {
+    margin-top: 5%;
+  }
+  section#how .howbottom {
+    margin-bottom: 0;
+  }
+  section#how .heart .heartText {
+    float: left;
+    display: inline-block;
+    width: 35%;
+    margin: 0 1.925%;
+  }
+  section#how .heart .heartText p {
+    font-size: 0.9em;
+  }
+  section#how .heart img {
+    float: left;
+    display: inline-block;
+    width: 20%;
+    margin: 0 1.1%;
+    margin-top: 1%;
+    height: auto;
+  }
+  section#how .helped .support {
+    text-align: center;
+    font-size: 1em;
+    color: #505353;
+    padding-top: 50px;
+    text-transform: uppercase;
+    clear: both;
+  }
+  section#how .helped ul {
+    text-align: center;
+    color: #505353;
+    font-size: 0.9em;
+    margin-top: 35px;
+  }
+  section#how .helped ul li {
+    float: left;
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.65%;
+  }
+  section#graphs {
+    padding: 5% 2%;
+  }
+  /* -- years--- */
+  section#years {
+    min-height: 275px;
+  }
+  section#years h3 {
+    text-align: center;
+    margin: 1% 0 30px;
+  }
+  /*------------ CTA'S -------------*/
+  section#cta .involved .ctaLeft {
+    margin: 0 1%;
   }
 }
