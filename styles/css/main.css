@@ -991,7 +991,7 @@ body#programsPage {
   position: relative;
   width: auto;
   margin: -400px 0 0 120px;
-  height: 780px;
+  height: 700px;
   z-index: 5;
   overflow: hidden;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
@@ -1886,6 +1886,46 @@ footer#footer .bottomFooter p a:hover {
   section#cta .involved .ctaLeft {
     margin: 0 1%;
   }
+<<<<<<< HEAD
+=======
+  /*PROGRAMS PAGE*/
+  /*@media only screen and (max-width: 982px) and (min-width: 767px){*/
+  #programsPage {
+    background: green;
+    width: 100%;
+  }
+  .tabs {
+    width: 92%;
+  }
+  /*.tabs input {
+  width: 27%;
+}*/
+  .content div p {
+    font-size: 12px;
+  }
+  section.tabs .content h3 {
+    font-size: .75em;
+  }
+  section.tabs .content h4 {
+    font-size: .45em;
+  }
+  strong {
+    font-weight: bold;
+  }
+  .content .content-5 ul,
+  .content .content-9 ul,
+  .content .content-10 ul {
+    padding: 20px 0 20px 35px;
+  }
+  .content .content-5 ul li,
+  .content .content-9 ul li,
+  .content .content-10 ul li {
+    list-style: circle;
+    font-size: 14px;
+    line-height: 25px;
+    padding-bottom: 10px;
+  }
+>>>>>>> 1e337f7958a198aa014bcb1c7f0374f67b4e85f1
 }
 @media only screen and (max-width: 776px) and (min-width: 551px) {
   .titles p {
@@ -2020,13 +2060,67 @@ footer#footer .bottomFooter p a:hover {
   .boxWhy {
     margin: 25px 0 0 15%;
   }
+<<<<<<< HEAD
   /*why*/
+=======
+  section#why {
+    position: relative;
+  }
+<<<<<<< HEAD
+=======
+  section#why .largeInnerContainer {
+    width: 96%;
+  }
+>>>>>>> f237f412be4033c5f015b0dc72243813b1fce8d5
+  section#why h1 {
+    width: 100%;
+  }
+  section#why p.main {
+    width: 100%;
+  }
+  section#why .world {
+    background-position: 50% 277px;
+  }
+>>>>>>> 1e337f7958a198aa014bcb1c7f0374f67b4e85f1
   section#why .world .boxWhy {
     margin: 25px 0 0 15%;
   }
   section#why .world .toronto {
+<<<<<<< HEAD
     float: right;
     margin: -7% -6% 0 0;
+=======
+<<<<<<< HEAD
+    float: right;
+    margin: 70px 0% 0 0;
+=======
+    float: left;
+>>>>>>> f237f412be4033c5f015b0dc72243813b1fce8d5
+  }
+  section#why .world .toronto img {
+    display: block;
+    width: 175px;
+    height: auto;
+  }
+  section#why .world .toronto .boxWhyTwo {
+<<<<<<< HEAD
+    width: 270px;
+    height: 150px;
+    float: left;
+    margin: -197px 0 0 0;
+  }
+  section#why .world .toronto .boxWhyTwo p {
+    font-size: 1.1em;
+=======
+    width: 350px;
+    height: 100px;
+  }
+  section#why .world .toronto .boxWhyTwo p {
+    font-size: 1.1em;
+    width: 75%;
+    text-align: center;
+>>>>>>> f237f412be4033c5f015b0dc72243813b1fce8d5
+>>>>>>> 1e337f7958a198aa014bcb1c7f0374f67b4e85f1
   }
   section#why .world .womenPink {
     width: 380px;
