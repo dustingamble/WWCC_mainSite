@@ -14,23 +14,19 @@ body {
   font-size: 1.5em;
   color: @lightgrey;
    -webkit-font-smoothing: antialiased;
-
 }
 .container {
   max-width: 100%;
   margin: 0 auto;
   overflow: hidden;
   text-align: center;
-   transition:all .5s ease-in-out; 
-    -o-transition:all .5s ease-in-out; 
-    -moz-transition:all .5s ease-in-out; 
-    -webkit-transition:all .5s ease-in-out;
 }
 .innerContainer {
   margin: 0 auto;
   max-width:900px;
   width:100%;
   display:block;
+
 }
 .donateContainer{
   margin:0 auto;
@@ -222,6 +218,10 @@ section#hero {
 section#iconNav {
   min-height:295px;
   background:@white;
+     transition:all .5s ease-in-out; 
+    -o-transition:all .5s ease-in-out; 
+    -moz-transition:all .5s ease-in-out; 
+    -webkit-transition:all .5s ease-in-out;
   ul.icon-grid {
     margin: 20px 0 0 0;
     padding: 0;
@@ -341,6 +341,10 @@ section#what {
   background: url(../../images/pattern.png);
   margin:0;
   padding:0;
+  transition:all .5s ease-in-out; 
+  -o-transition:all .5s ease-in-out; 
+  -moz-transition:all .5s ease-in-out; 
+  -webkit-transition:all .5s ease-in-out;
   h1{
     background:@headergrey;
     color:#fff;
@@ -349,7 +353,6 @@ section#what {
     background:@pink;
     color:@white;
   }
-}
 
 .languages {
   margin: 25px 5% 0 0;
@@ -393,7 +396,7 @@ section#what {
     margin: 0 7% 0 2%;
     li{
       width:150px;
-      display: block;
+      /*display: block;*/
       float:left;
       clear:both;
       padding:4px;
@@ -413,16 +416,16 @@ section#what {
       }
       p.grey{
         color:#4d4d4d;
+        }
       }
     }
+    .people{
+      float:right;
+      margin-right: 2%;
+    }
   }
-  .people{
-    float:right;
-    margin-right: 2%;
-  }
+
 }
-
-
 
 /*-------WHY SECTION-------*/
 section#why {
@@ -431,6 +434,10 @@ section#why {
   background-color: @worldgrey;
   margin:0;
   padding:0;
+  transition:all .5s ease-in-out; 
+  -o-transition:all .5s ease-in-out; 
+  -moz-transition:all .5s ease-in-out; 
+  -webkit-transition:all .5s ease-in-out;
   p{
     font-family: @fontgothic;
   }
@@ -572,6 +579,10 @@ section#graphs{
   background: url(../../images/pattern.png);
   font-family: @fontgothic;
   padding-top: 47px;
+  transition:all .5s ease-in-out; 
+  -o-transition:all .5s ease-in-out; 
+  -moz-transition:all .5s ease-in-out; 
+  -webkit-transition:all .5s ease-in-out;
   .circleGraphLeft{
     float: left;
     text-transform: uppercase;
@@ -647,6 +658,10 @@ section#how {
   background: url(../../images/pattern.png);
   margin:0;
   padding:0;
+  transition:all .5s ease-in-out; 
+  -o-transition:all .5s ease-in-out; 
+  -moz-transition:all .5s ease-in-out; 
+  -webkit-transition:all .5s ease-in-out;
   h1{
     background:@headerlightgrey;
     color:@white;
@@ -764,6 +779,10 @@ section#years{
 section#cta{
   padding: 50px 0;
   background: url(../../images/pattern.png);
+  transition:all .5s ease-in-out; 
+  -o-transition:all .5s ease-in-out; 
+  -moz-transition:all .5s ease-in-out; 
+  -webkit-transition:all .5s ease-in-out;
    .involved{
       margin: 0 auto;   
       overflow:hidden;
@@ -1972,9 +1991,291 @@ section.tabs{
   }
 }
 
+<<<<<<< HEAD
 strong{
   font-weight: bold;
 }
+=======
+@media only screen and (max-width: 776px) and (min-width: 551px){
+   .titles p{
+      font-size: 0.6em;
+      padding: 16px 1% 10px 1%;
+      line-height: 19px;    
+    }
+    h1{
+      font-size: 1.375em;
+    }
+
+
+    section#iconNav {
+      min-height:275px;
+        ul.icon-grid {
+          li {
+            margin: 15px 1%;
+            }
+          }
+        }
+
+
+
+/*----------------FixThis__________*/
+
+
+
+/*what section*/
+  section#what {
+    width:100%;
+    min-height:1200px;
+    background:@pink;
+    border-top: 13px solid @pink;
+     h1{
+        background:@headergrey;
+        color:#fff;
+        width:100%;
+      }
+      p.main{
+        background:@pink;
+        color:@white;
+        width:100%;
+        padding:15px;
+        font-size: 0.7em;
+        line-height: 23px;
+      }
+    .phoneBorder{
+      min-height:1100px;
+      background: url(../../images/pattern.png);
+      margin:10px;
+      .languages {
+        margin: 25px 5% 0 0;
+        margin-left:5%;
+        float: left;
+        .boxWhat{
+          width: 206px;
+        }
+        p{
+          padding:5px 19px 5px 27px;
+          font-size: 1.1em;
+          font-family: @fontgothic;
+        }
+        img {
+          margin: -10px 0 0 75px;
+        }
+      }
+      .locations {
+        margin: -81px 3% 0 0;
+        float: right;
+        .boxWhatTwo{
+          width: 231px;
+        }
+        p{
+          padding:5px 19px 5px 27px;
+          font-size: 1.1em;
+          font-family: @fontgothic;
+        }
+        img {
+          margin:0 10px -15px 0
+        }
+      }
+      .innerContainer{
+        background-color: pink;
+        overflow: hidden;
+      .peoplegraph{
+        margin:0 auto;
+        padding-top: 50px;
+        background-color: blue;
+        width:100%;
+        /*display: block;*/
+        /*clear:none;*/
+        ul.test{
+          background-color: green;
+          width:100%;
+          /*width: 700px;*/
+          margin: 0 auto;
+
+          li{
+            /*background-color: red;*/
+            margin: 10px 0;
+            width:33%;
+            padding: 0;
+            clear:none;
+            img{
+            
+              
+              background-color: pink;
+              margin: 0;
+              padding: 0;
+            }
+            p{
+             /* width:100%;*/
+            /* clear:both;*/
+              /*float: left*/;
+              /*margin:17px 12%;*/
+              background-color: yellow;
+              margin:0;
+              padding:0;
+              text-align: left;
+             
+            }
+            p.blue{
+              color:@blue;
+            }
+            p.pink{
+              color:@pink;
+            }
+            p.grey{
+              color:#4d4d4d;
+            }
+          } /*li*/
+        } /*ul*/
+        .people{
+        float:left;
+        margin-right: 0;
+        width:100%;
+        }
+      }
+      } /*innerContainer*/
+    } /*<--phone border*/
+  } /*<---what section*/
+  .boxWhy{
+    margin: 25px 0 0 15%;
+  }
+
+
+
+
+
+  /*why*/
+
+   section#why {  
+      position: relative;
+      h1{
+        width:100%;
+      }
+      p.main{
+        width:100%;
+      }
+      .world {
+        background-position: 50% 277px;
+        .boxWhy{
+          margin: 25px 0 0 7%;
+        }
+        .toronto{
+          float: right;
+          margin: 70px 0% 0 0;
+          img{
+          display:block;
+          width:175px;
+          height:auto;
+     }
+     .boxWhyTwo{
+        width: 270px;
+        height: 150px;
+        float: left;
+        margin: -197px 0 0 0;
+       p{
+         font-size: 1.1em;
+        } 
+      }
+          }
+        .womenPink{
+          width:300px;
+          position: absolute;
+          top: 375px;
+          left:0;
+          font-size: 0.85em;
+          img{
+            width:75px;
+          }
+          }
+      }
+      .skyline{
+        .barriers{
+          font-size: 0.9em;
+        }
+      }
+      .settle{
+          p{
+            font-size: 1.43em;
+          }
+      }
+  }
+
+/*how*/
+    section#how { 
+         min-height:775px; 
+       .howtop{
+         margin-top: 5%;
+        }
+      .howbottom{
+         margin-bottom: 0;
+       }
+    .heart{
+      .heartText{
+        .widthfloat(35%);
+        p{
+          font-size: 0.9em;
+        }
+      }
+      img{
+       .widthfloat(20%);
+       margin-top:1%;
+       height:auto;
+      }
+    }
+    .helped{
+      .support{
+      text-align: center;
+      font-size: 1em;
+      color:@headergrey;
+      padding-top: 50px;
+      text-transform: uppercase;
+      clear:both;
+      }
+      ul{
+        text-align: center;
+        color: @headergrey;
+        font-size: 0.9em;
+        margin-top: 35px;
+        li{
+          .widthfloat(30%);
+        }
+      }
+    }
+  }
+  section#graphs{
+    padding:5% 2%;
+  }
+
+  /* -- years--- */
+  section#years{
+    min-height:275px;
+    h3{
+      text-align: center;
+      margin: 1% 0 30px;
+    }
+  }
+
+/*------------ CTA'S -------------*/
+section#cta{
+   .involved{
+      .ctaLeft{
+        margin:0 1%;
+      }
+    }   
+  }
+}
+
+
+@media only screen and (max-width: 550px) and (min-width: 300px){
+
+  
+}
+
+
+
+
+
+>>>>>>> fce061c9ee968e38ea5d05bd26fda4c1a6076e6a
 
 .content{
   .content-5, .content-9, .content-10{
