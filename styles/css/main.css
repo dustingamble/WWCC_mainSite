@@ -88,10 +88,6 @@ body {
   margin: 0 auto;
   overflow: hidden;
   text-align: center;
-  transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
 }
 .innerContainer {
   margin: 0 auto;
@@ -288,6 +284,10 @@ section#hero {
 section#iconNav {
   min-height: 295px;
   background: #ffffff;
+  transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
 }
 section#iconNav ul.icon-grid {
   margin: 20px 0 0 0;
@@ -398,6 +398,10 @@ section#what {
   background: url(../../images/pattern.png);
   margin: 0;
   padding: 0;
+  transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
 }
 section#what h1 {
   background: #505353;
@@ -407,73 +411,73 @@ section#what p.main {
   background: #b60050;
   color: #ffffff;
 }
-.languages {
+section#what .languages {
   margin: 25px 5% 0 0;
   float: left;
 }
-.languages .boxWhat {
+section#what .languages .boxWhat {
   width: 206px;
 }
-.languages p {
+section#what .languages p {
   padding: 5px 19px 5px 27px;
   font-size: 1.1em;
   font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
 }
-.languages img {
+section#what .languages img {
   margin: -10px 0 0 75px;
 }
-.locations {
+section#what .locations {
   margin-top: 25px;
   float: right;
 }
-.locations .boxWhatTwo {
+section#what .locations .boxWhatTwo {
   width: 231px;
 }
-.locations p {
+section#what .locations p {
   padding: 5px 19px 5px 27px;
   font-size: 1.1em;
   font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
 }
-.locations img {
+section#what .locations img {
   margin: 0 10px -15px 0;
 }
-.peoplegraph {
+section#what .peoplegraph {
   float: left;
   margin: 0 auto;
   padding-top: 50px;
   width: 100%;
 }
-.peoplegraph ul {
+section#what .peoplegraph ul {
   float: left;
   text-transform: uppercase;
   font-size: 19px;
   margin: 0 7% 0 2%;
 }
-.peoplegraph ul li {
+section#what .peoplegraph ul li {
   width: 150px;
-  display: block;
+  /*display: block;*/
   float: left;
   clear: both;
   padding: 4px;
 }
-.peoplegraph ul li img {
+section#what .peoplegraph ul li img {
   float: left;
 }
-.peoplegraph ul li p {
+section#what .peoplegraph ul li p {
   width: 20px;
   float: left;
   margin: 17px 12%;
 }
-.peoplegraph ul li p.blue {
+section#what .peoplegraph ul li p.blue {
   color: #008db3;
 }
-.peoplegraph ul li p.pink {
+section#what .peoplegraph ul li p.pink {
   color: #b60050;
 }
-.peoplegraph ul li p.grey {
+section#what .peoplegraph ul li p.grey {
   color: #4d4d4d;
 }
-.peoplegraph .people {
+section#what .peoplegraph .people {
   float: right;
   margin-right: 2%;
 }
@@ -484,6 +488,10 @@ section#why {
   background-color: #40403f;
   margin: 0;
   padding: 0;
+  transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
 }
 section#why p {
   font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
@@ -629,6 +637,10 @@ section#graphs {
   background: url(../../images/pattern.png);
   font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
   padding-top: 47px;
+  transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
 }
 section#graphs .circleGraphLeft {
   float: left;
@@ -702,6 +714,10 @@ section#how {
   background: url(../../images/pattern.png);
   margin: 0;
   padding: 0;
+  transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
 }
 section#how h1 {
   background: #7c807f;
@@ -824,6 +840,10 @@ section#years p {
 section#cta {
   padding: 50px 0;
   background: url(../../images/pattern.png);
+  transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
 }
 section#cta .involved {
   margin: 0 auto;
@@ -1816,6 +1836,253 @@ footer#footer .bottomFooter p a:hover {
     width: 380px;
     float: left;
     margin: 45% 0 7% 3%;
+  }
+  section#why .skyline .barriers {
+    font-size: 0.9em;
+  }
+  section#why .settle p {
+    font-size: 1.43em;
+  }
+  /*how*/
+  section#how {
+    min-height: 775px;
+  }
+  section#how .howtop {
+    margin-top: 5%;
+  }
+  section#how .howbottom {
+    margin-bottom: 0;
+  }
+  section#how .heart .heartText {
+    float: left;
+    display: inline-block;
+    width: 35%;
+    margin: 0 1.925%;
+  }
+  section#how .heart .heartText p {
+    font-size: 0.9em;
+  }
+  section#how .heart img {
+    float: left;
+    display: inline-block;
+    width: 20%;
+    margin: 0 1.1%;
+    margin-top: 1%;
+    height: auto;
+  }
+  section#how .helped .support {
+    text-align: center;
+    font-size: 1em;
+    color: #505353;
+    padding-top: 50px;
+    text-transform: uppercase;
+    clear: both;
+  }
+  section#how .helped ul {
+    text-align: center;
+    color: #505353;
+    font-size: 0.9em;
+    margin-top: 35px;
+  }
+  section#how .helped ul li {
+    float: left;
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.65%;
+  }
+  section#graphs {
+    padding: 5% 2%;
+  }
+  /* -- years--- */
+  section#years {
+    min-height: 275px;
+  }
+  section#years h3 {
+    text-align: center;
+    margin: 1% 0 30px;
+  }
+  /*------------ CTA'S -------------*/
+  section#cta .involved .ctaLeft {
+    margin: 0 1%;
+  }
+}
+@media only screen and (max-width: 776px) and (min-width: 551px) {
+  .titles p {
+    font-size: 0.6em;
+    padding: 16px 1% 10px 1%;
+    line-height: 19px;
+  }
+  h1 {
+    font-size: 1.375em;
+  }
+  section#iconNav {
+    min-height: 275px;
+  }
+  section#iconNav ul.icon-grid li {
+    margin: 15px 1%;
+  }
+  /*----------------FixThis__________*/
+  /*what section*/
+  section#what {
+    width: 100%;
+    min-height: 1200px;
+    background: #b60050;
+    border-top: 13px solid #b60050;
+    /*<--phone border*/
+  }
+  section#what h1 {
+    background: #505353;
+    color: #fff;
+    width: 100%;
+  }
+  section#what p.main {
+    background: #b60050;
+    color: #ffffff;
+    width: 100%;
+    padding: 15px;
+    font-size: 0.7em;
+    line-height: 23px;
+  }
+  section#what .phoneBorder {
+    min-height: 1100px;
+    background: url(../../images/pattern.png);
+    margin: 10px;
+    /*innerContainer*/
+  }
+  section#what .phoneBorder .languages {
+    margin: 25px 5% 0 0;
+    margin-left: 5%;
+    float: left;
+  }
+  section#what .phoneBorder .languages .boxWhat {
+    width: 206px;
+  }
+  section#what .phoneBorder .languages p {
+    padding: 5px 19px 5px 27px;
+    font-size: 1.1em;
+    font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
+  }
+  section#what .phoneBorder .languages img {
+    margin: -10px 0 0 75px;
+  }
+  section#what .phoneBorder .locations {
+    margin: -81px 3% 0 0;
+    float: right;
+  }
+  section#what .phoneBorder .locations .boxWhatTwo {
+    width: 231px;
+  }
+  section#what .phoneBorder .locations p {
+    padding: 5px 19px 5px 27px;
+    font-size: 1.1em;
+    font-family: 'league_gothicregular', 'Open Sans Condensed', 'Arial Narrow', Helvetica, sans-serif;
+  }
+  section#what .phoneBorder .locations img {
+    margin: 0 10px -15px 0;
+  }
+  section#what .phoneBorder .innerContainer {
+    background-color: pink;
+    overflow: hidden;
+  }
+  section#what .phoneBorder .innerContainer .peoplegraph {
+    margin: 0 auto;
+    padding-top: 50px;
+    background-color: blue;
+    width: 100%;
+    /*display: block;*/
+    /*clear:none;*/
+    /*ul*/
+  }
+  section#what .phoneBorder .innerContainer .peoplegraph ul.test {
+    background-color: green;
+    width: 100%;
+    /*width: 700px;*/
+    margin: 0 auto;
+    /*li*/
+  }
+  section#what .phoneBorder .innerContainer .peoplegraph ul.test li {
+    /*background-color: red;*/
+    margin: 10px 0;
+    width: 33%;
+    padding: 0;
+    clear: none;
+  }
+  section#what .phoneBorder .innerContainer .peoplegraph ul.test li img {
+    background-color: pink;
+    margin: 0;
+    padding: 0;
+  }
+  section#what .phoneBorder .innerContainer .peoplegraph ul.test li p {
+    /* width:100%;*/
+    /* clear:both;*/
+    /*float: left*/
+    /*margin:17px 12%;*/
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  section#what .phoneBorder .innerContainer .peoplegraph ul.test li p.blue {
+    color: #008db3;
+  }
+  section#what .phoneBorder .innerContainer .peoplegraph ul.test li p.pink {
+    color: #b60050;
+  }
+  section#what .phoneBorder .innerContainer .peoplegraph ul.test li p.grey {
+    color: #4d4d4d;
+  }
+  section#what .phoneBorder .innerContainer .peoplegraph .people {
+    float: left;
+    margin-right: 0;
+    width: 100%;
+  }
+  /*<---what section*/
+  .boxWhy {
+    margin: 25px 0 0 15%;
+  }
+  /*why*/
+  section#why {
+    position: relative;
+  }
+  section#why h1 {
+    width: 100%;
+  }
+  section#why p.main {
+    width: 100%;
+  }
+  section#why .world {
+    background-position: 50% 277px;
+  }
+  section#why .world .boxWhy {
+    margin: 25px 0 0 7%;
+  }
+  section#why .world .toronto {
+    float: right;
+    margin: 70px 0% 0 0;
+  }
+  section#why .world .toronto img {
+    display: block;
+    width: 175px;
+    height: auto;
+  }
+  section#why .world .toronto .boxWhyTwo {
+    width: 270px;
+    height: 150px;
+    float: left;
+    margin: -197px 0 0 0;
+  }
+  section#why .world .toronto .boxWhyTwo p {
+    font-size: 1.1em;
+  }
+  section#why .world .womenPink {
+    width: 300px;
+    position: absolute;
+    top: 375px;
+    left: 0;
+    font-size: 0.85em;
+  }
+  section#why .world .womenPink img {
+    width: 75px;
   }
   section#why .skyline .barriers {
     font-size: 0.9em;
