@@ -2044,6 +2044,9 @@ footer#footer .bottomFooter p a:hover {
   section#why {
     position: relative;
   }
+  section#why .largeInnerContainer {
+    width: 96%;
+  }
   section#why h1 {
     width: 100%;
   }
@@ -2057,8 +2060,7 @@ footer#footer .bottomFooter p a:hover {
     margin: 25px 0 0 7%;
   }
   section#why .world .toronto {
-    float: right;
-    margin: 70px 0% 0 0;
+    float: left;
   }
   section#why .world .toronto img {
     display: block;
@@ -2066,13 +2068,13 @@ footer#footer .bottomFooter p a:hover {
     height: auto;
   }
   section#why .world .toronto .boxWhyTwo {
-    width: 270px;
-    height: 150px;
-    float: left;
-    margin: -197px 0 0 0;
+    width: 350px;
+    height: 100px;
   }
   section#why .world .toronto .boxWhyTwo p {
     font-size: 1.1em;
+    width: 75%;
+    text-align: center;
   }
   section#why .world .womenPink {
     width: 300px;
