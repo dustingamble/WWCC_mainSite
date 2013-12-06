@@ -1640,6 +1640,7 @@ footer#footer .bottomFooter p a:hover {
 /*footer*/
 /****************** MEDIA QUERIES ****************/
 @media only screen and (max-width: 1185px) and (min-width: 1096px) {
+  /*HOME PAGE*/
   section#why .world {
     background: url(../../images/worldmap.png) no-repeat;
     background-position: 50% 186px;
@@ -1686,9 +1687,15 @@ footer#footer .bottomFooter p a:hover {
     max-width: 350px;
     height: auto;
   }
+  /*NO MEDIA QUERIES NEEDED FOR PROGRAMS PAGE*/
+  #programsPage {
+    background: red;
+  }
 }
+/*media query ender*/
 /*----*/
 @media only screen and (max-width: 1095px) and (min-width: 983px) {
+  /*HOME PAGE*/
   .titles p {
     font-size: 0.75em;
     padding: 10px 1% 10px 10px;
@@ -1727,8 +1734,20 @@ footer#footer .bottomFooter p a:hover {
     max-width: 350px;
     height: auto;
   }
+  /*PROGRAMS PAGE MEDIA QUERIES*/
+  /*@media only screen and (max-width: 1095px) and (min-width: 983px){*/
+  #programsPage {
+    background-color: purple;
+    width: 100%;
+  }
+  .tabs {
+    /* margin: 40px auto;*/
+    width: 92%;
+  }
 }
+/*media query ending*/
 @media only screen and (max-width: 982px) and (min-width: 767px) {
+  /*HOME PAGE*/
   .titles p {
     font-size: 0.6em;
     padding: 16px 1% 10px 1%;
@@ -1905,8 +1924,51 @@ footer#footer .bottomFooter p a:hover {
   section#cta .involved .ctaLeft {
     margin: 0 1%;
   }
+  /*PROGRAMS PAGE*/
+  /*@media only screen and (max-width: 982px) and (min-width: 767px){*/
+  #programsPage {
+    background: green;
+    width: 100%;
+  }
+  .tabs {
+    width: 92%;
+  }
+  /*.tabs input {
+  width: 27%;
+}*/
+  .content div p {
+    font-size: 12px;
+  }
+  section.tabs .content h3 {
+    font-size: .75em;
+  }
+  section.tabs .content h4 {
+    font-size: .45em;
+  }
+  section.tabs .content ul li {
+    display: list-item;
+  }
+  section.tabs .content ul li p {
+    padding-bottom: 0;
+  }
+  strong {
+    font-weight: bold;
+  }
+  .content .content-5 ul,
+  .content .content-9 ul,
+  .content .content-10 ul {
+    padding: 20px 0 20px 35px;
+  }
+  .content .content-5 ul li,
+  .content .content-9 ul li,
+  .content .content-10 ul li {
+    list-style: circle;
+    font-size: 14px;
+    line-height: 25px;
+    padding-bottom: 10px;
+  }
 }
-@media only screen and (max-width: 776px) and (min-width: 551px) {
+@media only screen and (max-width: 982px) and (min-width: 767px) and only screen and (max-width: 776px) and (min-width: 551px) {
   .titles p {
     font-size: 0.6em;
     padding: 16px 1% 10px 1%;
@@ -1921,8 +1983,6 @@ footer#footer .bottomFooter p a:hover {
   section#iconNav ul.icon-grid li {
     margin: 15px 1%;
   }
-  /*----------------FixThis__________*/
-  /*what section*/
   section#what {
     width: 100%;
     min-height: 1200px;
@@ -2036,11 +2096,9 @@ footer#footer .bottomFooter p a:hover {
     margin-right: 0;
     width: 100%;
   }
-  /*<---what section*/
   .boxWhy {
     margin: 25px 0 0 15%;
   }
-  /*why*/
   section#why {
     position: relative;
   }
@@ -2092,7 +2150,6 @@ footer#footer .bottomFooter p a:hover {
   section#why .settle p {
     font-size: 1.43em;
   }
-  /*how*/
   section#how {
     min-height: 775px;
   }
@@ -2142,7 +2199,6 @@ footer#footer .bottomFooter p a:hover {
   section#graphs {
     padding: 5% 2%;
   }
-  /* -- years--- */
   section#years {
     min-height: 275px;
   }
@@ -2150,8 +2206,8 @@ footer#footer .bottomFooter p a:hover {
     text-align: center;
     margin: 1% 0 30px;
   }
-  /*------------ CTA'S -------------*/
   section#cta .involved .ctaLeft {
     margin: 0 1%;
   }
 }
+/*media query ender*/
