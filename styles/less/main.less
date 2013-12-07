@@ -13,7 +13,8 @@ body {
   font-family: @bodyfont;
   font-size: 1.5em;
   color: @lightgrey;
-   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; 
 
 }
 .container {
@@ -21,10 +22,6 @@ body {
   margin: 0 auto;
   overflow: hidden;
   text-align: center;
-   transition:all .5s ease-in-out; 
-    -o-transition:all .5s ease-in-out; 
-    -moz-transition:all .5s ease-in-out; 
-    -webkit-transition:all .5s ease-in-out;
 }
 .innerContainer {
   margin: 0 auto;
@@ -94,9 +91,12 @@ header#header{
     background:@headergrey;
   text-transform: uppercase;
   font-size: 16px;
+  transition:all .5s ease-in-out; 
+    -o-transition:all .5s ease-in-out; 
+    -moz-transition:all .5s ease-in-out; 
+    -webkit-transition:all .5s ease-in-out;
   -webkit-font-smoothing: antialiased;
-  nav#topNav {
-   
+  nav#topNav { 
     img {
       padding:10px;
       background-color: @white;
@@ -222,6 +222,10 @@ section#hero {
 section#iconNav {
   min-height:295px;
   background:@white;
+  transition:all .5s ease-in-out; 
+    -o-transition:all .5s ease-in-out; 
+    -moz-transition:all .5s ease-in-out; 
+    -webkit-transition:all .5s ease-in-out;
   ul.icon-grid {
     margin: 20px 0 0 0;
     padding: 0;
@@ -341,6 +345,10 @@ section#what {
   background: url(../../images/pattern.png);
   margin:0;
   padding:0;
+  transition:all .5s ease-in-out; 
+    -o-transition:all .5s ease-in-out; 
+    -moz-transition:all .5s ease-in-out; 
+    -webkit-transition:all .5s ease-in-out;
   h1{
     background:@headergrey;
     color:#fff;
@@ -430,6 +438,10 @@ section#why {
   background-color: @worldgrey;
   margin:0;
   padding:0;
+  transition:all .5s ease-in-out; 
+    -o-transition:all .5s ease-in-out; 
+    -moz-transition:all .5s ease-in-out; 
+    -webkit-transition:all .5s ease-in-out;
   p{
     font-family: @fontgothic;
   }
@@ -571,6 +583,10 @@ section#graphs{
   background: url(../../images/pattern.png);
   font-family: @fontgothic;
   padding-top: 47px;
+  transition:all .5s ease-in-out; 
+    -o-transition:all .5s ease-in-out; 
+    -moz-transition:all .5s ease-in-out; 
+    -webkit-transition:all .5s ease-in-out;
   .circleGraphLeft{
     float: left;
     text-transform: uppercase;
@@ -646,6 +662,10 @@ section#how {
   background: url(../../images/pattern.png);
   margin:0;
   padding:0;
+  transition:all .5s ease-in-out; 
+    -o-transition:all .5s ease-in-out; 
+    -moz-transition:all .5s ease-in-out; 
+    -webkit-transition:all .5s ease-in-out;
   h1{
     background:@headerlightgrey;
     color:@white;
@@ -1914,8 +1934,7 @@ section#cta{
     }   
   }
 }
-<<<<<<< HEAD
-=======
+
 /*.tabs input {
   width: 27%;
 }*/
@@ -1935,20 +1954,10 @@ section.tabs{
   }
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> f237f412be4033c5f015b0dc72243813b1fce8d5
 strong{
   font-weight: bold;
 }
 
-<<<<<<< HEAD
-=======
->>>>>>> 1e337f7958a198aa014bcb1c7f0374f67b4e85f1
-
-
->>>>>>> f237f412be4033c5f015b0dc72243813b1fce8d5
 @media only screen and (max-width: 776px) and (min-width: 551px){
    .titles p{
       font-size: 0.6em;
@@ -1971,9 +1980,10 @@ strong{
 /*what section*/
   section#what {
     width:100%;
-    min-height:1200px;
+    min-height:1230px;
     background:@pink;
     border-top: 13px solid @pink;
+    margin-bottom: -10px;
      h1{
         background:@headergrey;
         color:#fff;
@@ -2023,40 +2033,25 @@ strong{
         }
       }
       .innerContainer{
-        background-color: pink;
         overflow: hidden;
       .peoplegraph{
         margin:0 auto;
         padding-top: 50px;
-        background-color: blue;
         width:100%;
-        /*display: block;*/
-        /*clear:none;*/
-        ul.test{
-          background-color: green;
+        ul.graphList{
           width:100%;
-          /*width: 700px;*/
           margin: 0 auto;
-
+          padding:10px;
           li{
-            /*background-color: red;*/
             margin: 10px 0;
             width:33%;
             padding: 0;
             clear:none;
             img{
-            
-              
-              background-color: pink;
               margin: 0;
               padding: 0;
             }
             p{
-             /* width:100%;*/
-            /* clear:both;*/
-              /*float: left*/;
-              /*margin:17px 12%;*/
-              background-color: yellow;
               margin:0;
               padding:0;
               text-align: left;
@@ -2077,6 +2072,7 @@ strong{
         float:left;
         margin-right: 0;
         width:100%;
+        padding:5px 5px 10px 5px;
         }
       }
       } /*innerContainer*/
@@ -2089,6 +2085,16 @@ strong{
   /*why*/
 
    section#why {  
+      h1{
+        width:100%;
+        background-color: @headergrey;
+      }
+      p.main{
+        width:100%;
+        padding:15px;
+        font-size: 0.7em;
+        line-height: 23px;
+      }
       .world {
         .boxWhy{
           margin: 25px 0 0 15%;
@@ -2118,6 +2124,15 @@ strong{
 /*how*/
     section#how { 
          min-height:775px; 
+          h1{
+        width:100%;
+      }
+      p.main{
+        width:100%;
+        padding:15px;
+        font-size: 0.7em;
+        line-height: 23px;
+      }
        .howtop{
          margin-top: 5%;
         }
@@ -2185,28 +2200,6 @@ section#cta{
 
 
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> f237f412be4033c5f015b0dc72243813b1fce8d5
-.content{
-  .content-5, .content-9, .content-10{
-    ul{
-      padding: 20px 0 20px 35px;
-      li{
-        list-style: circle;
-        font-size: 14px;
-        line-height: 25px; 
-        padding-bottom: 10px;
-      }
-    }
-  }
-}
->>>>>>> 1e337f7958a198aa014bcb1c7f0374f67b4e85f1
 
 
 
