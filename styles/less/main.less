@@ -22,6 +22,10 @@ body {
   margin: 0 auto;
   overflow: hidden;
   text-align: center;
+  transition:all .5s ease-in-out; 
+    -o-transition:all .5s ease-in-out; 
+    -moz-transition:all .5s ease-in-out; 
+    -webkit-transition:all .5s ease-in-out;
 }
 .innerContainer {
   margin: 0 auto;
@@ -282,7 +286,7 @@ section#iconNav {
 .icon-info {
   position: absolute;
   background: #b70050;
-    background-image: url(../../images/qmark.png);
+  background-image: url(../../images/qmark.png);
   width: inherit;
   height: inherit;
   border-radius: 50%;
@@ -477,9 +481,22 @@ section#why {
       padding: 7px 0 12px 17px;
     }
   }
+  .womenPink{
+    width:380px;
+    float:left;
+    margin:33% 0 0 10%;
+    img{
+      float:left;
+      margin-right:10px;
+    }
+    p{
+      font-size:1.2em;
+      color:@white;
+    }
+  }
   .toronto{
     float:left;
-    margin: 6% 11% 0 0;
+    margin: -3% 0 0 19%;
     img{
       z-index: 1000;
       display:block;
@@ -491,19 +508,6 @@ section#why {
      p{
        font-size: 1.1em;
       } 
-    }
-  }
-  .womenPink{
-    width:380px;
-    float:left;
-    margin:9% 0 0 10%;
-    img{
-      float:left;
-      margin-right:10px;
-    }
-    p{
-      font-size:1.2em;
-      color:@white;
     }
   }
   .boxWhyThree{
@@ -1645,24 +1649,21 @@ footer#footer{
   
     section#why {  
       .world {
-        background: url(../../images/worldmap.png)no-repeat;
-        background-position: 50% 186px;
-        background-size: 100%;
         min-height:800px;
+         .womenPink{
+          width:380px;
+          float:left;
+          margin:33% 0 5% 3%;
+          }
         .toronto{
-          float: right;
-          margin: 6% 3% 0 0;
+          float:left;
+          margin: -3% 0 0 19%;
           img{
             height:auto;
          /*   width:80%;*/
            }
         }
-        .womenPink{
-          width:380px;
-          float:left;
-          margin:33% 0 5% 3%;
-
-          }
+       
       }
     }
     section#how {  
@@ -1702,42 +1703,48 @@ footer#footer{
      padding: 10px 1% 10px 10px;
     }
 
-      section#why {  
+    section#why {  
       .world {
-        .toronto{
-          float: right;
-          margin: 0 0% 0 0;
-        }
-        .womenPink{
+        min-height:800px;
+         .womenPink{
           width:380px;
           float:left;
-          margin: 33% 0 5% 3%;
+          margin:33% 0 5% 3%;
           }
+        .toronto{
+          float:left;
+          margin: -3% 0 0 19%;
+          img{
+            height:auto;
+         /*   width:80%;*/
+           }
+        }
+       
       }
     }
 
+      
     section#how {  
       min-height:845px;
-  .howtop{
-    margin-top: 5%;
-  }
-  .howbottom{
-     margin-bottom: 0;
-  }
-    .heart{
-      .heartText{
-        .widthfloat(34%);
-         font-size: 0.95em;
+      .howtop{
+        margin-top: 5%;
       }
-      img{
-       .widthfloat(22%);
-       margin-top:0;
-       max-width:350px;
-       height:auto;
+      .howbottom{
+         margin-bottom: 0;
       }
-    }
-  }
-  
+        .heart{
+          .heartText{
+            .widthfloat(34%);
+             font-size: 0.95em;
+          }
+          img{
+           .widthfloat(22%);
+           margin-top:0;
+           max-width:350px;
+           height:auto;
+          }
+        }
+      }
 }
 
  @media only screen and (max-width: 982px) and (min-width: 767px){
@@ -1763,8 +1770,7 @@ footer#footer{
   section#what {
     min-height:800px;
     .languages {
-      margin: 25px 5% 0 0;
-      margin-left:5%;
+      margin: 25px 5% 0 5%;
       float: left;
       .boxWhat{
         width: 206px;
@@ -1837,9 +1843,6 @@ footer#footer{
       }
     }
   } /*<---what section*/
-  .boxWhy{
-    margin: 25px 0 0 15%;
-  }
 
   /*why*/
 
@@ -1848,15 +1851,15 @@ footer#footer{
         .boxWhy{
           margin: 25px 0 0 15%;
         }
-        .toronto{
-          float: right;
-          margin: -7% -6% 0 0;
-        }
         .womenPink{
           width:380px;
           float:left;
-          margin: 45% 0 7% 3%;
+          margin: 41% 0 7% 3%;
           }
+        .toronto{
+          float: right;
+          margin: -10% -3% 0 0;
+        }
       }
       .skyline{
         .barriers{
@@ -1868,6 +1871,7 @@ footer#footer{
             font-size: 1.43em;
           }
       }
+       
   }
 
 /*how*/
@@ -1958,7 +1962,8 @@ strong{
   font-weight: bold;
 }
 
-@media only screen and (max-width: 776px) and (min-width: 551px){
+
+@media only screen and (max-width: 766px) and (min-width: 553px){
    .titles p{
       font-size: 0.6em;
       padding: 16px 1% 10px 1%;
@@ -1980,14 +1985,14 @@ strong{
 /*what section*/
   section#what {
     width:100%;
-    min-height:1230px;
+    min-height:1265px;
     background:@pink;
     border-top: 13px solid @pink;
     margin-bottom: -10px;
      h1{
         background:@headergrey;
         color:#fff;
-        width:100%;
+         width:100%;
       }
       p.main{
         background:@pink;
@@ -2002,8 +2007,7 @@ strong{
       background: url(../../images/pattern.png);
       margin:10px;
       .languages {
-        margin: 25px 5% 0 0;
-        margin-left:5%;
+        margin: 25px 15% 0 5%;
         float: left;
         .boxWhat{
           width: 206px;
@@ -2066,6 +2070,382 @@ strong{
             p.grey{
               color:#4d4d4d;
             }
+            .picGrey{
+              margin-left: 20px;
+            }
+          } /*li*/
+        } /*ul*/
+        .people{
+        float:left;
+        margin-right: 0;
+        width:100%;
+        padding:5px 5px 10px 5px;
+        }
+      }
+    } /*innerContainer*/
+  } /*<--phone border*/
+} /*<---what section*/
+
+  /*why*/
+
+   section#why {  
+        h1{
+        background-color: @headergrey;
+         width:100%;
+      }
+      p.main{
+        width:100%;
+        padding:15px;
+        font-size: 0.7em;
+        line-height: 23px;
+      }
+      .world {
+        background-position: 50% 278px;
+        .boxWhy{
+          margin: 23px 0 0 7%;
+        }
+         .womenPink{
+            width:260px;
+            float:left;
+            margin: 29% 0 39% 0;
+            font-size: 0.8em;
+            img{
+              width:75px;
+            }
+          }
+        .toronto{
+          float: right;
+          margin: 10% 0 0 0;
+          img{
+            width:225px;
+          }
+          .boxWhyTwo{
+            margin:-200px 0 0 -170px;
+          }
+        }
+           .boxWhyThree{
+            clear: both;
+            width: 430px;
+        }
+      }
+      .skyline{
+        .largeInnerContainer{
+          width:94%;
+        }
+        .barriers{
+          font-size: 0.9em;
+          ul{
+            font-size: 0.8em;
+            display:block;
+          }
+        }
+      }
+      .settle{
+          p{
+            font-size: 1em;
+          }
+      .more{
+        font-size: 1.8em;
+      }
+      }
+  }
+
+/*PieGraphs-----------------------*/
+section#graphs{
+    min-height:268px;
+    padding:5% 2% 0;
+    img{
+      width:170px;
+    }
+    .circleGraphLeft{
+      max-width: 400px;
+      min-height:240px;
+      margin-top: 15px;
+      ul{
+        float:left;
+        li{
+          display:block;
+          padding-top:27px;
+          font-size: 1em;
+        }
+        li.TO{
+          color:@blue;
+        }
+        li.ML{
+          color:@lightgrey;
+        }
+        li.VN{
+          color:@pink;
+        }
+      }
+      .circleGraph{
+        float:right;
+      }
+    }
+    .circleGraphRight{ 
+         margin-top: 15px;
+      .stackedText{
+        margin-left: 10px;
+        font-size: 0.9em;
+        width:100px;
+        line-height: 18px;
+        .number{
+          font-size: 2.9em;
+          line-height: 57px;
+        }
+        .canadas{
+          padding-left: 5px;
+          line-height: 15px;
+        }
+        .pop{
+          font-size: 1.05em;
+
+        }
+        .by{
+          font-size: 1em;
+          vertical-align: top;
+          padding-right: 5px;
+        }
+        .year{
+          font-size: 2.15em;
+          line-height: 39px;
+        }
+      }
+    }
+  }
+
+
+/*how*/
+    section#how {
+         min-height:800px; 
+
+      h1{
+        width:100%;
+      }
+      p.main{
+        width:100%;
+        padding:15px;
+        font-size: 0.7em;
+        line-height: 23px;
+      }
+      .largeInnerContainer{
+        width:98%;
+      }
+       .howtop{
+         margin-top: 5%;
+        }
+      .howbottom{
+         margin-bottom: 0;
+       }
+    .heart{
+      .heartText{
+        .widthfloat(35%);
+        p{
+          font-size: 0.8em;
+        }
+      }
+      img{
+       .widthfloat(20%);
+       margin-top:1%;
+       height:auto;
+      }
+    }
+    .helped{
+      .support{
+      text-align: center;
+      font-size: 0.75em;
+      color:@headergrey;
+      padding-top: 40px;
+      text-transform: uppercase;
+      clear:both;
+      }
+      ul{
+        text-align: center;
+        color: @headergrey;
+        font-size: 0.70em;
+        margin-top: 30px;
+        li{
+          .widthfloat(30%);
+          .facts{
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+ 
+
+  /* -- years--- */
+  section#years{
+    min-height:275px;
+    h3{
+      text-align: center;
+      margin: 5% 0 30px;
+      font-size: 1.3em;
+    }
+    p{
+      max-width: 90%;
+    }
+  }
+
+/*------------ CTA'S -------------*/
+  section#cta{
+     .involved{
+        .ctaLeft{
+          margin:0 5%;
+        }
+        .ctaRight{
+          float:right;
+          margin:0 5% ;
+        img{
+          float:right;
+        }
+      } 
+    }
+  }
+
+
+} /*<----end of media Query*/
+
+
+@media only screen and (max-width: 552px) and (min-width: 320px){
+   
+  section#hero{
+    display:none;
+  }
+
+   .titles {
+      h1{
+        font-size: 1.375em;
+        padding: 13px 0 11px;
+        min-height: 45px;
+        width:100%;
+      }
+    }
+
+    /*-------ICON NAV SECTION----------------------*/
+  section#iconNav {
+    min-height:260px;
+    ul.icon-grid {
+      margin: 20px 0 0 0;
+      li {
+        width: 73px;
+        height: 73px;
+        display: inline-block;
+        margin: 15px 3%;
+        h3 {
+          margin-top: 10px;
+          font-size: 0.68em;
+        }
+        .icon-img-1 { 
+          background-image: url(../../images/what-icon.png);
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
+        .icon-img-2 { 
+          background-image: url(../../images/why-icon.png);
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
+        .icon-img-3 { 
+          background-image: url(../../images/how-icon.png);
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+  .icon-item {
+    box-shadow: 
+      inset 0 0 0 3px rgba(255,255,255,0.7),
+      0 1px 2px rgba(0,0,0,0.1);
+  }
+  .icon-info {
+    background-size:100%;
+    background-repeat: no-repeat;
+    p {
+      color: #fff;
+      padding-top: 25px;
+      a {
+        font-size: 1em;
+      }
+    }
+  }      
+
+/*what section*/
+  section#what {
+    width:100%;
+    min-height:1030px;
+    background:@pink;
+    border-top: 13px solid @pink;
+    margin-bottom: -10px;
+     h1{
+        background:@headergrey;
+        color:#fff;
+      }
+      p.main{
+        background:@pink;
+        color:@white;
+        width:100%;
+        padding:15px;
+        font-size: 0.5em;
+        line-height: 17px;
+      }
+    .phoneBorder{
+      min-height:985px;
+      background: url(../../images/pattern.png);
+      margin:10px;
+      .languages {
+        margin: 25px 8% 0 2%;
+        .boxWhat{
+          width: 275px;
+        }
+        p{
+          padding:5px 19px 5px 27px;
+          font-size: 0.8em;
+        }
+        img {
+          margin: -10px 0 0 9%;
+        }
+      }
+      .locations {
+        margin: 10px 0 0 0;
+        float: right;
+        .boxWhatTwo{
+          width: 275px;
+          margin: -270px 0 200px;
+        }
+        p{
+          padding:5px 19px 5px 27px;
+          font-size: 0.8em;
+        }
+        img {
+          margin:30px 0 0;
+        }
+      }
+      .innerContainer{
+      .peoplegraph{
+        padding-top: 30px;
+        ul.graphList{
+          width:100%;
+          padding:10px;
+          li{
+            margin: 10px 0 0 0;
+            width:32%;
+            padding: 10px 0 0 3px;
+            clear:none;
+            img{
+             width:20px;
+            }
+            p{
+              margin:5px 0 0;
+              padding-left:5px;
+              text-align: left;
+              font-size: 0.65em;             
+            }
+             .picGrey{
+              margin-left: 20px;
+            }
           } /*li*/
         } /*ul*/
         .people{
@@ -2078,131 +2458,295 @@ strong{
       } /*innerContainer*/
     } /*<--phone border*/
   } /*<---what section*/
-  .boxWhy{
-    margin: 25px 0 0 15%;
-  }
 
   /*why*/
 
    section#why {  
-      h1{
-        width:100%;
+    min-height: 1200px;
+        h1{
         background-color: @headergrey;
       }
       p.main{
         width:100%;
         padding:15px;
-        font-size: 0.7em;
-        line-height: 23px;
+        font-size: 0.5em;
+        line-height: 17px;
       }
       .world {
+        background-position: 50% 232px;
+        min-height: 770px;
         .boxWhy{
-          margin: 25px 0 0 15%;
+          width:289px;
+          margin: 15px 0 3% 0;
+          .percent {
+            font-size: 2em;
+            padding-top: 5px;
+          }
+          p{ 
+            font-size: 0.8em;
+            padding: 7px 0 12px 17px;
+          }
         }
+         .womenPink{
+            width:228px;
+            margin: 29% 0 0 0;
+            font-size: 0.79em;
+            img{
+              width:50px;
+            }
+          }
         .toronto{
           float: right;
-          margin: -7% -6% 0 0;
-        }
-        .womenPink{
-          width:380px;
-          float:left;
-          margin: 45% 0 7% 3%;
+          margin: -100px -10px 0 0;
+          img{
+            width:125px;
           }
+          .boxWhyTwo{
+            margin:-100px 0 50px -190px;
+            p{
+              width:200px;
+              font-size: 1em;
+              text-align: center;
+            }
+          }
+        }
+        .boxWhyThree{
+            clear: both;
+            width: 120%;
+            margin-left: -30px;
+            p{
+              font-size: 1em;
+            }
       }
+    }
       .skyline{
+        .city{
+          width:103%;
+          margin-left:-10px;
+        }
+        .largeInnerContainer{
+          width:94%;
+        }
         .barriers{
           font-size: 0.9em;
+          margin-top:0;
+          .pinkline{
+            display:none;
+          }
+          .blackline{
+            display:none;
+          }
+          ul{
+            font-size: 0.83em;
+            li{
+              display:block;
+              width:100%;
+              margin-top:0;
+              p{
+                margin-top:11px;
+                text-align: left;
+                height:25px;
+              }
+              img{
+                width:50px;
+                height:auto;
+                float:left;
+                margin:5px;
+              }
+            }
+          }
         }
       }
       .settle{
           p{
-            font-size: 1.43em;
+            font-size: 0.6em;
           }
+      .more{
+        font-size: 1em;
       }
+    }
   }
 
-/*how*/
-    section#how { 
-         min-height:775px; 
-          h1{
-        width:100%;
+/*PieGraphs-----------------------*/
+section#graphs{
+    min-height:430px;
+    padding:4% 6% 0;
+    img{
+      width:170px;
+    }
+    .circleGraphLeft{
+      min-height:175px;
+      margin-top: 15px;
+      ul{
+        float:left;
+        margin:0 12px;
+        li{
+          display:block;
+          padding-top:27px;
+          font-size: 1em;
+        }
+        li.TO{
+          color:@blue;
+        }
+        li.ML{
+          color:@lightgrey;
+        }
+        li.VN{
+          color:@pink;
+        }
       }
+      .circleGraph{
+        float:right;
+      }
+    }
+    .circleGraphRight{ 
+         margin-top: 15px;
+         min-height: 175px;
+      .stackedText{
+        margin-left: 10px;
+        font-size: 0.9em;
+        width:100px;
+        line-height: 18px;
+        .number{
+          font-size: 2.9em;
+          line-height: 57px;
+        }
+        .canadas{
+          padding-left: 5px;
+          line-height: 15px;
+        }
+        .pop{
+          font-size: 1.05em;
+
+        }
+        .by{
+          font-size: 1em;
+          vertical-align: top;
+          padding-right: 5px;
+        }
+        .year{
+          font-size: 2.15em;
+          line-height: 39px;
+        }
+      }
+    }
+  }
+
+
+/*how*/
+    section#how {
+         min-height:850px; 
+          position:relative;
       p.main{
         width:100%;
         padding:15px;
-        font-size: 0.7em;
-        line-height: 23px;
+        font-size: 0.5em;
+        line-height: 17px;
       }
-       .howtop{
-         margin-top: 5%;
-        }
-      .howbottom{
-         margin-bottom: 0;
+      .largeInnerContainer{
+        width:98%;
+      }
+      .greyline{
+         display:none;
        }
     .heart{
+      margin-top: 30px;
+      padding-top:50px;
+      position: relative;
       .heartText{
-        .widthfloat(35%);
+        .widthfloat(95%);
+        margin:0 2%;
         p{
-          font-size: 0.9em;
+          font-size: 0.7em;
         }
       }
       img{
-       .widthfloat(20%);
-       margin-top:1%;
-       height:auto;
+        position: absolute;
+        top:2px;
+        left:38%;
+        width:60px;
+        height:auto;
       }
     }
     .helped{
       .support{
-      text-align: center;
-      font-size: 1em;
-      color:@headergrey;
-      padding-top: 50px;
-      text-transform: uppercase;
+      font-size: 0.8em;
+      padding-top: 40px;
       clear:both;
       }
       ul{
         text-align: center;
         color: @headergrey;
-        font-size: 0.9em;
-        margin-top: 35px;
+        font-size: 0.70em;
+        margin-top: 30px;
         li{
-          .widthfloat(30%);
+          .widthfloat(94%);
+          img{
+            width:44px;
+            height:auto;
+            float:left;
+            margin:0 7px;
+          }
+          .facts{
+            margin-bottom: 0px;
+            height:auto;
+          }
+          p{
+            text-align: left;
+            margin-top:5px;
+            .btn{
+            padding:8px 20px;
+            width:45%;
+            font-size: 0.9em;
+            margin:3px 65px 25px 0;
+            float: right;
+            }
+          } 
         }
       }
     }
   }
-  section#graphs{
-    padding:5% 2%;
-  }
+ 
 
   /* -- years--- */
   section#years{
-    min-height:275px;
+    background-size: 97%;
+    background-position: 50% -10px;
+    min-height:175px;
     h3{
       text-align: center;
-      margin: 1% 0 30px;
+      margin: 1% 0 25px;
+      font-size: 0.77em;
+    }
+    p{
+      max-width: 90%;
+      font-size: 0.56em;
     }
   }
 
 /*------------ CTA'S -------------*/
-section#cta{
-   .involved{
-      .ctaLeft{
-        margin:0 1%;
-      }
-    }   
+  section#cta{
+    padding:15px 0;
+     .involved{
+       img{
+            width:90px;
+            height:auto;
+          }
+        .ctaLeft{
+          margin:0 5%;
+        }
+        .ctaRight{
+          float:right;
+          margin:0 5% ;
+        img{
+          float:right;
+        }
+      } 
+    }
   }
-}
 
 
-
-
-
-
-
-
-
+} /*<----end of media Query*/
 
 
 
