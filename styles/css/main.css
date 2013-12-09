@@ -166,6 +166,9 @@ header#header {
   background: #505353;
   text-transform: uppercase;
   font-size: 0.67em;
+  display: inline-block;
+  width: 100%;
+  max-height: 151px;
   transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -226,10 +229,16 @@ header#header nav#topNav ul.social li a.twitter {
 header#header nav#topNav ul.social li a.twitter:hover {
   background: url(../../images/wwccSocialSprites.png) -120px -40px no-repeat;
 }
+header#header .sticky-wrapper {
+  display: block;
+  float: left;
+  width: 100%;
+}
 header#header nav#mainNav {
   background: #7c807f;
   height: 50px;
   clear: both;
+  float: left;
   z-index: 100;
   width: 100%;
 }

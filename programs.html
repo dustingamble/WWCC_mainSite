@@ -370,28 +370,35 @@
     </div><!--bottomFooter-->
   </footer>
 
-   <!-- <-sticky header js-> -->
-  <script src="js/jquery.js"></script>
-  <script src="js/stickUp.min.js"></script>   
 
   <script type="text/javascript">
-    jQuery(function($) {
-      $(document).ready( function() {
-        $('#mainNav').stickUp({                       
-          }); 
-        });
-      });  
+    $("#iconNav").find("a").click(function(e) {
+      e.preventDefault();
+      var section = $(this).attr("href");
+      $("html, body").animate({
+          scrollTop: $(section).offset().top
+      });
+  });
   </script>
 
-	  
-   <!--  <-- dropdown menu nav phone size--> 
+  <!--  < dropdown menu nav phone size-->
   <script>
   $(document).ready(function(){
     $(".menuButton").click(function(){
       $("#dropdownNav").slideToggle();
     });
   });
-</script> 
+</script>
+
+<!--   <- sticky -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.sticky.js"></script>
+
+    <script>
+      $(window).load(function(){
+        $("#mainNav").sticky({ topSpacing: 0});
+      });
+    </script>
 
 
 </body>

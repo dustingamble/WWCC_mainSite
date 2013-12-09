@@ -248,32 +248,20 @@
     </div><!--bottomFooter-->
   </footer>
 
-<!-- dropdown functionality -->
-<script type="text/javascript">
-  $(document).ready(function() {
-    
-  $(".dropdown").heapbox();
-  json = '[{"value":"value_1","text":"Any program is fine with me"},{"value":"value_2","text":"On Your Mark"},{"value":"value_3","text":"Community Garden"},{"value":"value_4","text":"HIPPY"}]';
-  $(".dropdown").heapbox("set",json);
 
+
+   
+  <script type="text/javascript">
+    $("#iconNav").find("a").click(function(e) {
+      e.preventDefault();
+      var section = $(this).attr("href");
+      $("html, body").animate({
+          scrollTop: $(section).offset().top
+      });
   });
   </script>
 
-   <!-- <-sticky header js-> -->
-  <script src="js/jquery.js"></script>
-  <script src="js/stickUp.min.js"></script>   
-
-  <script type="text/javascript">
-    jQuery(function($) {
-      $(document).ready( function() {
-        $('#mainNav').stickUp({                       
-          }); 
-        });
-      });  
-  </script>
-
-	
-   <!--  <-dropdown menu nav phone size--> 
+  <!--  < dropdown menu nav phone size-->
   <script>
   $(document).ready(function(){
     $(".menuButton").click(function(){
@@ -281,6 +269,27 @@
     });
   });
 </script>
+
+<!--   <- sticky -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.sticky.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#mainNav").sticky({ topSpacing: 0
+        });
+      });
+    </script>
+
+    <!-- dropdown functionality -->
+<script type="text/javascript">
+  $(document).ready(function() {
+  $(".dropdown").heapbox();
+  json = '[{"value":"value_1","text":"Any program is fine with me"},{"value":"value_2","text":"On Your Mark"},{"value":"value_3","text":"Community Garden"},{"value":"value_4","text":"HIPPY"}]';
+  $(".dropdown").heapbox("set",json);
+
+  });
+  </script>
 
 </body>
 </html>

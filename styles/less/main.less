@@ -95,6 +95,9 @@ header#header{
     background:@headergrey;
   text-transform: uppercase;
   font-size: 0.67em;
+  display: inline-block;
+  width: 100%;
+  max-height: 151px;
   transition:all .5s ease-in-out; 
     -o-transition:all .5s ease-in-out; 
     -moz-transition:all .5s ease-in-out; 
@@ -156,10 +159,17 @@ header#header{
       }
     }
   }
+.sticky-wrapper {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
   nav#mainNav {
     background:@headerlightgrey;
     height:50px;
     clear:both;
+    float:left;
     z-index: 100;
     width:100%;
     ul.navigation{
