@@ -24,7 +24,7 @@
 <body>
   <header id="header">
       <div class="menuButton">Menu</div>
-      <nav id="dropNav">
+      <nav id="dropdownNav">
         <ul>
           <li><a href="index.html">home</a></li>
           <li><a href="#">about</a></li>
@@ -191,24 +191,26 @@
 
 
 
-   <!-- FOOTER -->
+  <!-- FOOTER -->
   <footer id="footer">
     <div class="emailSignUp">
-      <form>
-        <p>Sign up for our newsletter</p>
-        <label>
-          <input type="text" name="inputBox" placeholder="Email Address">
-        </label> 
-        <input type="submit" value="Sign Up" class="newsletterButton">
-      </form>
+      <div class="newsletter">
+        <form>
+          <p>Sign up for our newsletter</p>
+          <label>
+            <input type="text" name="inputBox" placeholder="Email Address">
+          </label> 
+          <input type="submit" value="Sign Up" class="newsletterButton">
+        </form>
+      </div> <!-- <-newsletter (container) -->
     </div><!--emailSignUp-->
 
     <div class="containText">
       <ul class="column socialButtons">
-        <li><a href="#">facebook</a></li>
-        <li><a href="#">twitter</a></li>
-        <li><a href="#">linkedIn</a></li>
-        <li><a href="#">youtube</a></li>
+        <li><a href="#" class="facebook">facebook</a></li>
+        <li><a href="#" class="twitter">twitter</a></li>
+        <li><a href="#" class="linkedin">linkedIn</a></li>
+        <li><a href="#" class="youtube">youtube</a></li>
       </ul>
 
       <ul class="column">
@@ -275,7 +277,7 @@
   <script>
   $(document).ready(function(){
     $(".menuButton").click(function(){
-      $("#dropNav").slideToggle();
+      $("#dropdownNav").slideToggle();
     });
   });
 </script>

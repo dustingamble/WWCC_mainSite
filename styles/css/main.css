@@ -175,7 +175,7 @@ header#header {
 header#header .menuButton {
   display: none;
 }
-header#header nav#dropNav {
+header#header nav#dropdownNav {
   display: none;
 }
 header#header nav#topNav img {
@@ -2025,7 +2025,7 @@ footer#footer .bottomFooter p a:hover {
     width: 100%;
     z-index: 300;
   }
-  header#header nav#dropNav {
+  header#header nav#dropdownNav {
     display: none;
     position: fixed;
     z-index: 1000;
@@ -2035,19 +2035,19 @@ footer#footer .bottomFooter p a:hover {
     text-align: center;
     background: #ffffff;
   }
-  header#header nav#dropNav li {
+  header#header nav#dropdownNav li {
     padding: 13px 31px 11px 31px;
     display: block;
     border-bottom: solid 1px #343433;
   }
-  header#header nav#dropNav li a {
+  header#header nav#dropdownNav li a {
     color: #343433;
     padding: 11px 85px 10px 85px;
   }
-  header#header nav#dropNav li a:hover {
+  header#header nav#dropdownNav li a:hover {
     background-color: #b60050;
   }
-  header#header nav#dropNav li:hover {
+  header#header nav#dropdownNav li:hover {
     background: #b60050;
   }
   header#header nav#topNav {
@@ -2511,7 +2511,7 @@ footer#footer .bottomFooter p a:hover {
     z-index: 300;
     top: 0;
   }
-  header#header nav#dropNav {
+  header#header nav#dropdownNav {
     display: none;
     position: fixed;
     z-index: 1000;
@@ -2521,19 +2521,19 @@ footer#footer .bottomFooter p a:hover {
     text-align: center;
     background: #ffffff;
   }
-  header#header nav#dropNav li {
+  header#header nav#dropdownNav li {
     padding: 13px 31px 11px 31px;
     display: block;
     border-bottom: solid 1px #343433;
   }
-  header#header nav#dropNav li a {
+  header#header nav#dropdownNav li a {
     color: #343433;
     padding: 11px 85px 10px 85px;
   }
-  header#header nav#dropNav li a:hover {
+  header#header nav#dropdownNav li a:hover {
     background-color: #b60050;
   }
-  header#header nav#dropNav li:hover {
+  header#header nav#dropdownNav li:hover {
     background: #b60050;
   }
   header#header nav#topNav img {
