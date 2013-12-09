@@ -16,10 +16,24 @@
   <link rel="stylesheet" href="styles/css/main.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="styles/css/print.css" type="text/css" media="print" >
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script src="js/jquery.heapbox-0.9.3.min.js"></script>
+ 
 </head>
+
 <body>
   <header id="header">
+      <div class="menuButton">Menu</div>
+      <nav id="dropNav">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">events</a></li>
+          <li><a href="programs.html">programs</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+
       <nav id="topNav">
         <a href="index.html"><img src="images/wwcc-logo.png" alt="logo"></a>
         <ul class="social">
@@ -190,7 +204,7 @@
     </div><!--emailSignUp-->
 
     <div class="containText">
-      <ul class="column">
+      <ul class="column socialButtons">
         <li><a href="#">facebook</a></li>
         <li><a href="#">twitter</a></li>
         <li><a href="#">linkedIn</a></li>
@@ -241,9 +255,30 @@
   $(".dropdown").heapbox("set",json);
 
   });
-
-
   </script>
+
+   <!-- <-sticky header js-> -->
+  <script src="js/jquery.js"></script>
+  <script src="js/stickUp.min.js"></script>   
+
+  <script type="text/javascript">
+    jQuery(function($) {
+      $(document).ready( function() {
+        $('#mainNav').stickUp({                       
+          }); 
+        });
+      });  
+  </script>
+
 	
+   <!--  <-dropdown menu nav phone size--> 
+  <script>
+  $(document).ready(function(){
+    $(".menuButton").click(function(){
+      $("#dropNav").slideToggle();
+    });
+  });
+</script>
+
 </body>
 </html>

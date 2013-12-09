@@ -165,12 +165,18 @@ body {
 header#header {
   background: #505353;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 0.67em;
   transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   -webkit-font-smoothing: antialiased;
+}
+header#header .menuButton {
+  display: none;
+}
+header#header nav#dropNav {
+  display: none;
 }
 header#header nav#topNav img {
   padding: 10px;
@@ -224,6 +230,8 @@ header#header nav#mainNav {
   background: #7c807f;
   height: 50px;
   clear: both;
+  z-index: 100;
+  width: 100%;
 }
 header#header nav#mainNav ul.navigation {
   margin-left: 18px;
@@ -1739,6 +1747,58 @@ footer#footer .bottomFooter p a:hover {
   }
 }
 @media only screen and (max-width: 982px) and (min-width: 767px) {
+  /*HEADER -----------------------------------------------*/
+  header#header {
+    font-size: 0.6em;
+  }
+  header#header nav#mainNav {
+    background: #7c807f;
+    height: 50px;
+    clear: both;
+    z-index: 100;
+    width: 100%;
+  }
+  header#header nav#mainNav ul.navigation {
+    margin-left: 1%;
+    float: left;
+  }
+  header#header nav#mainNav li {
+    padding: 17px 2% 18px 0;
+  }
+  header#header nav#mainNav li a {
+    color: #ffffff;
+    padding: 12px 7px;
+  }
+  header#header nav#mainNav li a:hover {
+    background-color: #b60050;
+  }
+  header#header nav#mainNav #btn {
+    float: right;
+    margin: 17px 3% 0 0;
+    -webkit-transition: 0.25s linear;
+    transition: 0.25s linear;
+  }
+  header#header nav#mainNav #btn a {
+    color: #ffffff;
+  }
+  header#header nav#mainNav #btn a:hover.volunteer {
+    background-color: #83003a;
+  }
+  header#header nav#mainNav #btn a:hover.donate {
+    background-color: #006580;
+  }
+  header#header nav#mainNav #btn .volunteer {
+    background-color: #b60050;
+    padding: 10px 8px;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+  header#header nav#mainNav #btn .donate {
+    background-color: #008db3;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  /*<-----header --*/
   .titles p {
     font-size: 0.6em;
     padding: 16px 1% 10px 1%;
@@ -1911,23 +1971,124 @@ footer#footer .bottomFooter p a:hover {
   section#cta .involved .ctaLeft {
     margin: 0 1%;
   }
+  .content div p {
+    font-size: 12px;
+  }
+  section.tabs .content h3 {
+    font-size: .75em;
+  }
+  section.tabs .content h4 {
+    font-size: .45em;
+  }
+  strong {
+    font-weight: bold;
+  }
+  /*-------FOOTER-------*/
+  footer#footer {
+    width: 100%;
+  }
+  footer#footer .emailSignUp form {
+    width: 95%;
+  }
+  footer#footer .emailSignUp form p {
+    width: 48%;
+    text-align: right;
+  }
+  footer#footer .emailSignUp form label input[type="text"] {
+    width: 30%;
+  }
+  footer#footer h4,
+  footer#footer a {
+    font-size: .55em;
+  }
+  footer#footer h4 {
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  footer#footer .containText {
+    width: 90%;
+  }
+  /*footer*/
 }
-/*.tabs input {
-  width: 27%;
-}*/
-.content div p {
-  font-size: 12px;
-}
-section.tabs .content h3 {
-  font-size: .75em;
-}
-section.tabs .content h4 {
-  font-size: .45em;
-}
-strong {
-  font-weight: bold;
-}
+/*<---- end of media Query*/
 @media only screen and (max-width: 766px) and (min-width: 553px) {
+  header#header {
+    background: #ffffff;
+    font-size: 0.65em;
+  }
+  header#header .menuButton {
+    display: block;
+    background: #505353;
+    padding: 7px;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 300;
+  }
+  header#header nav#dropNav {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 30px;
+    width: 100%;
+    height: 205px;
+    text-align: center;
+    background: #ffffff;
+  }
+  header#header nav#dropNav li {
+    padding: 13px 31px 11px 31px;
+    display: block;
+    border-bottom: solid 1px #343433;
+  }
+  header#header nav#dropNav li a {
+    color: #343433;
+    padding: 11px 85px 10px 85px;
+  }
+  header#header nav#dropNav li a:hover {
+    background-color: #b60050;
+  }
+  header#header nav#dropNav li:hover {
+    background: #b60050;
+  }
+  header#header nav#topNav {
+    height: 97px;
+  }
+  header#header nav#topNav img {
+    padding: 0px;
+    margin: 40px 0 -10px 5%;
+    width: 110px;
+    height: auto;
+  }
+  header#header nav#topNav ul.social {
+    margin-top: 40px;
+  }
+  header#header nav#mainNav {
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+  }
+  header#header nav#mainNav ul.navigation {
+    display: none;
+  }
+  header#header nav#mainNav #btn {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+    visibility: visible;
+  }
+  header#header nav#mainNav #btn .volunteer {
+    background-color: #b60050;
+    padding: 10px 13%;
+    border-radius: 0px;
+    margin: 0 -3px;
+  }
+  header#header nav#mainNav #btn .donate {
+    background-color: #008db3;
+    padding: 10px 13%;
+    border-radius: 0px;
+  }
+  /*<-----header --*/
   .titles p {
     font-size: 0.6em;
     padding: 16px 1% 10px 1%;
@@ -2169,7 +2330,7 @@ strong {
   }
   /*how*/
   section#how {
-    min-height: 800px;
+    min-height: 775px;
   }
   section#how h1 {
     width: 100%;
@@ -2226,6 +2387,10 @@ strong {
     width: 30%;
     margin: 0 1.65%;
   }
+  section#how .helped ul li img {
+    height: 100px;
+    width: auto;
+  }
   section#how .helped ul li .facts {
     margin-bottom: 5px;
   }
@@ -2252,9 +2417,166 @@ strong {
   section#cta .involved .ctaRight img {
     float: right;
   }
+  /*-------FOOTER-------*/
+  footer#footer {
+    width: 100%;
+  }
+  footer#footer .emailSignUp {
+    margin: 0 auto;
+  }
+  footer#footer .emailSignUp .newsletter {
+    width: 50%;
+    margin: 0 auto;
+  }
+  footer#footer .emailSignUp .newsletter form {
+    width: 100%;
+  }
+  footer#footer .emailSignUp .newsletter form p {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 10px 0;
+  }
+  footer#footer .emailSignUp .newsletter form label input[type="text"] {
+    width: 67%;
+  }
+  footer#footer .emailSignUp .newsletter form input[type="submit"] {
+    width: 31%;
+  }
+  footer#footer h4,
+  footer#footer a {
+    font-size: 0.5em;
+  }
+  footer#footer h4 {
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  footer#footer .containText {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+  }
+  footer#footer .containText ul.column {
+    margin: 20px 0;
+    float: left;
+    width: 20%;
+    display: inline-block;
+    line-height: 1.2em;
+  }
+  footer#footer .containText ul.column li {
+    text-align: center;
+    display: block;
+  }
+  footer#footer .containText ul.column li a {
+    color: #ffffff;
+  }
+  footer#footer .containText ul.column li a:hover {
+    text-decoration: underline;
+  }
+  footer#footer .bottomFooter {
+    background-color: #505353;
+    width: 100%;
+    float: left;
+    /*padding:5px 5%;*/
+  }
+  footer#footer .bottomFooter p {
+    width: 50%;
+    float: left;
+    padding: 0 1%;
+  }
+  footer#footer .bottomFooter p:last-of-type {
+    text-align: right;
+  }
+  footer#footer .bottomFooter p a {
+    font-size: .55em;
+    color: #ffffff;
+  }
+  footer#footer .bottomFooter p a:hover {
+    text-decoration: underline;
+  }
+  /*footer*/
 }
 /*<----end of media Query*/
 @media only screen and (max-width: 552px) and (min-width: 320px) {
+  header#header {
+    background: #ffffff;
+    font-size: 0.65em;
+  }
+  header#header .menuButton {
+    display: block;
+    background: #505353;
+    padding: 7px;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 300;
+    top: 0;
+  }
+  header#header nav#dropNav {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 30px;
+    width: 100%;
+    height: 205px;
+    text-align: center;
+    background: #ffffff;
+  }
+  header#header nav#dropNav li {
+    padding: 13px 31px 11px 31px;
+    display: block;
+    border-bottom: solid 1px #343433;
+  }
+  header#header nav#dropNav li a {
+    color: #343433;
+    padding: 11px 85px 10px 85px;
+  }
+  header#header nav#dropNav li a:hover {
+    background-color: #b60050;
+  }
+  header#header nav#dropNav li:hover {
+    background: #b60050;
+  }
+  header#header nav#topNav img {
+    padding: 0px;
+    margin: 40px 0 -10px 30%;
+    width: 110px;
+    height: auto;
+  }
+  header#header nav#topNav ul.social {
+    display: none;
+  }
+  header#header nav#mainNav {
+    background: none;
+    width: 100%;
+  }
+  header#header nav#mainNav ul.navigation {
+    display: none;
+  }
+  header#header nav#mainNav #btn {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+    visibility: visible;
+  }
+  header#header nav#mainNav #btn .volunteer {
+    background-color: #b60050;
+    padding: 10px 5%;
+    border-radius: 0px;
+    margin: 0 -4px;
+  }
+  header#header nav#mainNav #btn .donate {
+    background-color: #008db3;
+    padding: 10px 5%;
+    border-radius: 0px;
+  }
+  /*<-----header --*/
+  .divider {
+    display: none;
+  }
+  .divider2 {
+    display: none;
+  }
   section#hero {
     display: none;
   }
@@ -2266,7 +2588,8 @@ strong {
   }
   /*-------ICON NAV SECTION----------------------*/
   section#iconNav {
-    min-height: 260px;
+    min-height: 167px;
+    clear: both;
   }
   section#iconNav ul.icon-grid {
     margin: 20px 0 0 0;
@@ -2348,7 +2671,7 @@ strong {
     font-size: 0.8em;
   }
   section#what .phoneBorder .languages img {
-    margin: -10px 0 0 9%;
+    margin: -10px 0 0 13%;
   }
   section#what .phoneBorder .locations {
     margin: 10px 0 0 0;
@@ -2444,7 +2767,7 @@ strong {
     width: 125px;
   }
   section#why .world .toronto .boxWhyTwo {
-    margin: -100px 0 50px -190px;
+    margin: -105px 0 50px -190px;
   }
   section#why .world .toronto .boxWhyTwo p {
     width: 200px;
@@ -2674,5 +2997,120 @@ strong {
   section#cta .involved .ctaRight img {
     float: right;
   }
+  footer#footer {
+    width: 100%;
+  }
+  footer#footer .emailSignUp {
+    margin: 0 auto;
+  }
+  footer#footer .emailSignUp .newsletter {
+    width: 90%;
+    margin: 0 auto;
+  }
+  footer#footer .emailSignUp .newsletter form {
+    width: 100%;
+  }
+  footer#footer .emailSignUp .newsletter form p {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 10px 0;
+  }
+  footer#footer .emailSignUp .newsletter form label input[type="text"] {
+    width: 67%;
+  }
+  footer#footer .emailSignUp .newsletter form input[type="submit"] {
+    width: 31%;
+  }
+  footer#footer h4,
+  footer#footer a {
+    font-size: 0.6em;
+  }
+  footer#footer h4 {
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  footer#footer .containText {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+  }
+  footer#footer .containText ul.column {
+    margin: 15px 0;
+    float: left;
+    width: 50%;
+    display: inline-block;
+    line-height: 1.2em;
+  }
+  footer#footer .containText ul.column li {
+    text-align: center;
+    display: block;
+  }
+  footer#footer .containText ul.column li a {
+    color: #ffffff;
+  }
+  footer#footer .containText ul.column li a:hover {
+    text-decoration: underline;
+  }
+  footer#footer .containText ul.column:first-of-type {
+    text-align: center;
+    display: inline;
+    margin: 12px 2% 0;
+    width: 100%;
+  }
+  footer#footer .containText ul.column:first-of-type li {
+    display: inline;
+    width: 40px;
+    height: 40px;
+  }
+  footer#footer .containText ul.column:first-of-type li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+    text-indent: -9999px;
+  }
+  footer#footer .containText ul.column:first-of-type li a.facebook {
+    background: url(../../images/wwccSocialSprites.png) 0 0px no-repeat;
+  }
+  footer#footer .containText ul.column:first-of-type li a.facebook:hover {
+    background: url(../../images/wwccSocialSprites.png) 0 -40px no-repeat;
+  }
+  footer#footer .containText ul.column:first-of-type li a.youtube {
+    background: url(../../images/wwccSocialSprites.png) -40px 0px no-repeat;
+  }
+  footer#footer .containText ul.column:first-of-type li a.youtube:hover {
+    background: url(../../images/wwccSocialSprites.png) -40px -40px no-repeat;
+  }
+  footer#footer .containText ul.column:first-of-type li a.linkedin {
+    background: url(../../images/wwccSocialSprites.png) -80px 0px no-repeat;
+  }
+  footer#footer .containText ul.column:first-of-type li a.linkedin:hover {
+    background: url(../../images/wwccSocialSprites.png) -80px -40px no-repeat;
+  }
+  footer#footer .containText ul.column:first-of-type li a.twitter {
+    background: url(../../images/wwccSocialSprites.png) -120px 0px no-repeat;
+  }
+  footer#footer .containText ul.column:first-of-type li a.twitter:hover {
+    background: url(../../images/wwccSocialSprites.png) -120px -40px no-repeat;
+  }
+  footer#footer .bottomFooter {
+    padding: 0 5%;
+  }
+  footer#footer .bottomFooter p {
+    width: 50%;
+    float: left;
+    padding: 0 1%;
+  }
+  footer#footer .bottomFooter p:last-of-type {
+    text-align: right;
+  }
+  footer#footer .bottomFooter p a {
+    font-size: .55em;
+    color: #ffffff;
+  }
+  footer#footer .bottomFooter p a:hover {
+    text-decoration: underline;
+  }
+  /*footer*/
 }
 /*<----end of media Query*/

@@ -21,6 +21,17 @@
 </head>
 <body>
   <header id="header">
+    <div class="menuButton">Menu</div>
+      <nav id="dropNav">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">events</a></li>
+          <li><a href="programs.html">programs</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </div>
       <nav id="topNav">
         <a href="index.html"><img src="images/wwcc-logo.png" alt="logo"></a>
         <ul class="social">
@@ -247,21 +258,23 @@
   <!-- FOOTER -->
   <footer id="footer">
     <div class="emailSignUp">
-      <form>
-        <p>Sign up for our newsletter</p>
-        <label>
-          <input type="text" name="inputBox" placeholder="Email Address">
-        </label> 
-        <input type="submit" value="Sign Up" class="newsletterButton">
-      </form>
+      <div class="newsletter">
+        <form>
+          <p>Sign up for our newsletter</p>
+          <label>
+            <input type="text" name="inputBox" placeholder="Email Address">
+          </label> 
+          <input type="submit" value="Sign Up" class="newsletterButton">
+        </form>
+      </div> <!-- <-newsletter (container) -->
     </div><!--emailSignUp-->
 
     <div class="containText">
-      <ul class="column">
-        <li><a href="#">facebook</a></li>
-        <li><a href="#">twitter</a></li>
-        <li><a href="#">linkedIn</a></li>
-        <li><a href="#">youtube</a></li>
+      <ul class="column socialButtons">
+        <li><a href="#" class="facebook">facebook</a></li>
+        <li><a href="#" class="twitter">twitter</a></li>
+        <li><a href="#" class="linkedin">linkedIn</a></li>
+        <li><a href="#" class="youtube">youtube</a></li>
       </ul>
 
       <ul class="column">
@@ -301,14 +314,36 @@
 
 	
    
-<script type="text/javascript">
-  $("#iconNav").find("a").click(function(e) {
-    e.preventDefault();
-    var section = $(this).attr("href");
-    $("html, body").animate({
-        scrollTop: $(section).offset().top
+  <script type="text/javascript">
+    $("#iconNav").find("a").click(function(e) {
+      e.preventDefault();
+      var section = $(this).attr("href");
+      $("html, body").animate({
+          scrollTop: $(section).offset().top
+      });
+  });
+  </script>
+
+  <!-- <-sticky header js-> -->
+  <script src="js/jquery.js"></script>
+  <script src="js/stickUp.min.js"></script>   
+
+  <script type="text/javascript">
+    jQuery(function($) {
+      $(document).ready( function() {
+        $('#mainNav').stickUp({                       
+          }); 
+        });
+      });  
+  </script>
+
+ <!--  < dropdown menu nav phone size-->
+  <script>
+  $(document).ready(function(){
+    $(".menuButton").click(function(){
+      $("#dropNav").slideToggle();
     });
-});
+  });
 </script>
 
 
