@@ -576,16 +576,20 @@ section#why .world .womenPink p {
 }
 section#why .world .toronto {
   float: left;
-  margin: -3% 0 0 19%;
+  position: relative;
+  margin: 15% 0 0 9%;
 }
 section#why .world .toronto img {
-  z-index: 1000;
   display: block;
   height: auto;
+  z-index: 500;
+  position: absolute;
+  top: -225px;
+  left: 150px;
+  -webkit-transform: skew(-5deg);
 }
 section#why .world .toronto .boxWhyTwo {
   width: 270px;
-  margin: -310px 0 0 -145px;
 }
 section#why .world .toronto .boxWhyTwo p {
   font-size: 1.1em;
@@ -673,6 +677,7 @@ section#graphs .circleGraphLeft {
   text-transform: uppercase;
   max-width: 400px;
   min-height: 240px;
+  position: relative;
 }
 section#graphs .circleGraphLeft ul {
   float: left;
@@ -693,6 +698,11 @@ section#graphs .circleGraphLeft ul li.VN {
 }
 section#graphs .circleGraphLeft .circleGraph {
   float: right;
+}
+section#graphs .circleGraphLeft ul.citypercents {
+  position: absolute;
+  right: 31%;
+  color: #ffffff;
 }
 section#graphs .circleGraphRight {
   float: right;
@@ -909,7 +919,7 @@ section#cta .involved .donate:hover {
   background-color: #047796;
 }
 /*PROGRAMS PAGE ---------------------------------------------------*/
-body#programsPage {
+#programsPage {
   background: url(../../images/pattern.png);
 }
 .tabs {
@@ -1692,12 +1702,7 @@ footer#footer .bottomFooter p a:hover {
     margin: 33% 0 5% 3%;
   }
   section#why .world .toronto {
-    float: left;
-    margin: -3% 0 0 19%;
-  }
-  section#why .world .toronto img {
-    height: auto;
-    /*   width:80%;*/
+    margin: 19% 0 0 11%;
   }
   section#how {
     min-height: 845px;
@@ -1742,12 +1747,10 @@ footer#footer .bottomFooter p a:hover {
     margin: 33% 0 5% 3%;
   }
   section#why .world .toronto {
-    float: left;
-    margin: -3% 0 0 19%;
+    margin: 21% 0 0 8%;
   }
   section#why .world .toronto img {
     height: auto;
-    /*   width:80%;*/
   }
   section#how {
     min-height: 845px;
@@ -1774,7 +1777,14 @@ footer#footer .bottomFooter p a:hover {
     max-width: 350px;
     height: auto;
   }
-  /*donate page*/
+  /*PROGRAMS PAGE ---------------------------------------------------*/
+  .tabs {
+    width: 98%;
+  }
+  .content div {
+    padding: 10px 20px;
+  }
+  /*--DONATE page -----------------------------*/
   .donateContainer {
     max-width: 80%;
   }
@@ -1783,7 +1793,7 @@ footer#footer .bottomFooter p a:hover {
 @media only screen and (max-width: 982px) and (min-width: 767px) {
   /*HEADER -----------------------------------------------*/
   header#header {
-    font-size: 0.6em;
+    font-size: 0.58em;
   }
   header#header nav#mainNav {
     background: #7c807f;
@@ -1795,6 +1805,7 @@ footer#footer .bottomFooter p a:hover {
   header#header nav#mainNav ul.navigation {
     margin-left: 1%;
     float: left;
+    width: 57%;
   }
   header#header nav#mainNav li {
     padding: 17px 2% 18px 0;
@@ -1929,13 +1940,28 @@ footer#footer .bottomFooter p a:hover {
     margin: 25px 0 0 15%;
   }
   section#why .world .womenPink {
-    width: 380px;
+    width: 370px;
     float: left;
-    margin: 41% 0 7% 3%;
+    margin: 33% 0 3% 0;
+  }
+  section#why .world .womenPink img {
+    width: 90px;
   }
   section#why .world .toronto {
     float: right;
-    margin: -10% -3% 0 0;
+    margin: 45% 15% 0 0;
+  }
+  section#why .world .toronto img {
+    width: 225px;
+    top: -183px;
+    left: 165px;
+  }
+  section#why .world .toronto .boxWhyTwo {
+    margin: -200px 0 0 -170px;
+  }
+  section#why .world .boxWhyThree {
+    clear: both;
+    width: 430px;
   }
   section#why .skyline .barriers {
     font-size: 0.9em;
@@ -2017,11 +2043,21 @@ footer#footer .bottomFooter p a:hover {
   strong {
     font-weight: bold;
   }
-  /*donate page*/
+  /*PROGRAMS PAGE ---------------------------------------------------*/
+  .tabs {
+    width: 98%;
+  }
+  .content div {
+    padding: 10px 20px;
+  }
+  .content {
+    height: 590px;
+  }
+  /* DONATE page -----------------------------------------------------*/
   .donateContainer {
     max-width: 95%;
   }
-  /*-------FOOTER-------*/
+  /*---------- FOOTER  -----------*/
   footer#footer {
     width: 100%;
   }
@@ -2266,9 +2302,9 @@ footer#footer .bottomFooter p a:hover {
     margin: 23px 0 0 7%;
   }
   section#why .world .womenPink {
-    width: 260px;
+    width: 290px;
     float: left;
-    margin: 29% 0 39% 0;
+    margin: 29% 0 55% 0;
     font-size: 0.8em;
   }
   section#why .world .womenPink img {
@@ -2276,10 +2312,12 @@ footer#footer .bottomFooter p a:hover {
   }
   section#why .world .toronto {
     float: right;
-    margin: 10% 0 0 0;
+    margin: 100% 20% 0 0;
   }
   section#why .world .toronto img {
     width: 225px;
+    top: -183px;
+    left: 165px;
   }
   section#why .world .toronto .boxWhyTwo {
     margin: -200px 0 0 -170px;
@@ -2336,6 +2374,9 @@ footer#footer .bottomFooter p a:hover {
   }
   section#graphs .circleGraphLeft .circleGraph {
     float: right;
+  }
+  section#graphs .circleGraphLeft ul.citypercents {
+    right: 29%;
   }
   section#graphs .circleGraphRight {
     margin-top: 15px;
@@ -2455,24 +2496,7 @@ footer#footer .bottomFooter p a:hover {
   section#cta .involved .ctaRight img {
     float: right;
   }
-  /*donate page*/
-  /*donate page*/
-  /*donate page*/
-  /*donate page*/
-  /*donate page*/
-  /*donate page*/
-  /*donate page*/
-  /*donate page*/
-  /*donate page*/
-  /*donate page*/
-  /*donate page*/
-  /*donate page*/
-  /*donate page*/
-  /*donate page*/
-  /*donate page*/
-  /*donate page*/
-  /*donate page*/
-  /*donate page*/
+  /*--------- donate page --------------------------*/
   /*-------DONATE PAGE-------*/
   .donateContainer {
     max-width: 95%;
@@ -2944,10 +2968,12 @@ footer#footer .bottomFooter p a:hover {
   }
   section#why .world .toronto {
     float: right;
-    margin: -100px -10px 0 0;
+    margin: 60% 14% 0 0;
   }
   section#why .world .toronto img {
     width: 125px;
+    top: -150px;
+    left: 200px;
   }
   section#why .world .toronto .boxWhyTwo {
     margin: -105px 0 50px -190px;
@@ -3039,6 +3065,9 @@ footer#footer .bottomFooter p a:hover {
   }
   section#graphs .circleGraphLeft .circleGraph {
     float: right;
+  }
+  section#graphs .circleGraphLeft ul.citypercents {
+    right: 21%;
   }
   section#graphs .circleGraphRight {
     margin-top: 15px;

@@ -514,15 +514,19 @@ section#why {
   }
   .toronto{
     float:left;
-    margin: -3% 0 0 19%;
+    position:relative;
+    margin: 15% 0 0 9%;
     img{
-      z-index: 1000;
       display:block;
       height:auto;
+      z-index: 500;
+      position:absolute;
+      top:-225px;
+      left:150px;
+        -webkit-transform: skew(-5deg);
      }
     .boxWhyTwo{
       width:270px;
-      margin: -310px 0 0 -145px;
      p{
        font-size: 1.1em;
       } 
@@ -614,6 +618,7 @@ section#graphs{
     text-transform: uppercase;
     max-width: 400px;
     min-height:240px;
+    position:relative;
     ul{
       float:left;
       li{
@@ -633,6 +638,11 @@ section#graphs{
     }
     .circleGraph{
       float:right;
+    }
+    ul.citypercents{
+      position: absolute;
+      right:31%;
+      color:@white;
     }
   }
   .circleGraphRight{
@@ -854,7 +864,7 @@ section#cta{
 
 /*PROGRAMS PAGE ---------------------------------------------------*/
 
-body#programsPage{
+#programsPage{
   background: url(../../images/pattern.png);
 }
 .tabs {
@@ -1674,14 +1684,8 @@ footer#footer{
           margin:33% 0 5% 3%;
           }
         .toronto{
-          float:left;
-          margin: -3% 0 0 19%;
-          img{
-            height:auto;
-         /*   width:80%;*/
-           }
+          margin: 19% 0 0 11%;
         }
-       
       }
     }
     section#how {  
@@ -1730,11 +1734,9 @@ footer#footer{
           margin:33% 0 5% 3%;
           }
         .toronto{
-          float:left;
-          margin: -3% 0 0 19%;
+            margin: 21% 0 0 8%;
           img{
             height:auto;
-         /*   width:80%;*/
            }
         }
        
@@ -1764,11 +1766,21 @@ footer#footer{
         }
       }
 
-/*donate page*/
+/*PROGRAMS PAGE ---------------------------------------------------*/
 
-.donateContainer{
-  max-width: 80%;
-}
+  
+  .tabs {
+    width: 98%;
+  }
+  .content div {
+    padding: 10px 20px;
+  }
+     
+  /*--DONATE page -----------------------------*/
+
+  .donateContainer{
+    max-width: 80%;
+  }
 
 
 }/*media  query end*/
@@ -1777,7 +1789,7 @@ footer#footer{
 
   /*HEADER -----------------------------------------------*/
 header#header{
-  font-size:0.6em;
+  font-size:0.58em;
   nav#mainNav {
     background:@headerlightgrey;
     height:50px;
@@ -1787,6 +1799,7 @@ header#header{
     ul.navigation{
       margin-left: 1%;
       float:left;
+      width:57%;
     }
     li {
       padding:17px 2% 18px 0;
@@ -1930,14 +1943,29 @@ header#header{
           margin: 25px 0 0 15%;
         }
         .womenPink{
-          width:380px;
-          float:left;
-          margin: 41% 0 7% 3%;
+            width:370px;
+            float:left;
+            margin: 33% 0 3% 0;
+            img{
+              width:90px;
+            }
           }
-        .toronto{
+          .toronto{
           float: right;
-          margin: -10% -3% 0 0;
+          margin: 45% 15% 0 0;
+          img{
+            width:225px;
+            top: -183px;
+            left: 165px;
+          }
+          .boxWhyTwo{
+            margin:-200px 0 0 -170px;
+          }
         }
+           .boxWhyThree{
+            clear: both;
+            width: 430px;
+         }
       }
       .skyline{
         .barriers{
@@ -2036,13 +2064,26 @@ strong{
   font-weight: bold;
 }
 
-/*donate page*/
+/*PROGRAMS PAGE ---------------------------------------------------*/
+
+  
+  .tabs {
+    width: 98%;
+  }
+  .content div {
+    padding: 10px 20px;
+  }
+  .content {
+    height:590px;
+  }
+
+/* DONATE page -----------------------------------------------------*/
 
 .donateContainer{
   max-width: 95%;
 }
 
-  /*-------FOOTER-------*/
+  /*---------- FOOTER  -----------*/
 
   footer#footer{
     width:100%;
@@ -2300,19 +2341,21 @@ strong{
           margin: 23px 0 0 7%;
         }
          .womenPink{
-            width:260px;
+            width:290px;
             float:left;
-            margin: 29% 0 39% 0;
+            margin: 29% 0 55% 0;
             font-size: 0.8em;
             img{
               width:75px;
             }
           }
         .toronto{
-          float: right;
-          margin: 10% 0 0 0;
+           float: right;
+          margin:100% 20% 0 0;
           img{
             width:225px;
+            top: -183px;
+            left: 165px;
           }
           .boxWhyTwo{
             margin:-200px 0 0 -170px;
@@ -2375,6 +2418,9 @@ section#graphs{
       }
       .circleGraph{
         float:right;
+      }
+      ul.citypercents{
+      right:29%;
       }
     }
     .circleGraphRight{ 
@@ -2503,9 +2549,7 @@ section#graphs{
     }
   }
 
-/*donate page*//*donate page*//*donate page*//*donate page*//*donate page*//*donate page*/
-/*donate page*//*donate page*//*donate page*//*donate page*//*donate page*//*donate page*/
-/*donate page*//*donate page*//*donate page*//*donate page*//*donate page*//*donate page*/
+/*--------- donate page --------------------------*/
 
 /*-------DONATE PAGE-------*/
 .donateContainer{
@@ -3011,9 +3055,11 @@ section#selectAmount{
           }
         .toronto{
           float: right;
-          margin: -100px -10px 0 0;
+          margin:60% 14% 0 0;
           img{
             width:125px;
+            top: -150px;
+            left: 200px;
           }
           .boxWhyTwo{
             margin:-105px 0 50px -190px;
@@ -3111,6 +3157,9 @@ section#graphs{
       }
       .circleGraph{
         float:right;
+      }
+       ul.citypercents{
+      right:21%;
       }
     }
     .circleGraphRight{ 
