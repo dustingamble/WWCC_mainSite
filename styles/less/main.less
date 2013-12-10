@@ -35,7 +35,7 @@ body {
 }
 .donateContainer{
   margin:0 auto;
-  max-width: 65%;
+  max-width: 66%;
   display: block;
 }
 .largeInnerContainer {
@@ -1148,7 +1148,7 @@ strong{
   }
 }
 /*drop down styling*/
-.heapBox
+/*.heapBox
 {
 clear:both;
 display:inline-block;
@@ -1275,7 +1275,7 @@ background:@headergrey;
 
 .heapBox .heap .heapOptions .heapOption a.disabled{
   color:#37D278;
-}
+}*/
 /*drop down styling ends*/
 
 /*SELECT AMOUNT SECTION*/
@@ -1305,7 +1305,7 @@ form{
       margin-top: 10px;
     }
     input{
-      width:325px;
+      width:42%;
     }
     label{
       padding: 22.5px 50px 0 10px;
@@ -1441,7 +1441,7 @@ section#selectAmount{
       width:16%;
     }
     .smallInput{
-      width:100px;
+      width:15%;
     }
     img{
       float:left;
@@ -1763,7 +1763,15 @@ footer#footer{
           }
         }
       }
+
+/*donate page*/
+
+.donateContainer{
+  max-width: 80%;
 }
+
+
+}/*media  query end*/
 
 @media only screen and (max-width: 982px) and (min-width: 767px){
 
@@ -2026,6 +2034,12 @@ section.tabs{
 
 strong{
   font-weight: bold;
+}
+
+/*donate page*/
+
+.donateContainer{
+  max-width: 95%;
 }
 
   /*-------FOOTER-------*/
@@ -2489,7 +2503,152 @@ section#graphs{
     }
   }
 
-  /*-------FOOTER-------*/
+/*donate page*//*donate page*//*donate page*//*donate page*//*donate page*//*donate page*/
+/*donate page*//*donate page*//*donate page*//*donate page*//*donate page*//*donate page*/
+/*donate page*//*donate page*//*donate page*//*donate page*//*donate page*//*donate page*/
+
+/*-------DONATE PAGE-------*/
+.donateContainer{
+  max-width: 95%;
+}
+.wrapper{
+  form{
+    section#thanks{
+      .bkgd-square{
+        width:100%;
+        p{
+          font-size: .62em;
+        }
+      }
+    }
+  }
+}
+/*SELECT AMOUNT SECTION*/
+form{
+  section{
+    h3.donateTitle{
+      text-transform: none;
+      color:@donateTitle;
+    }
+    .line{
+      width:95%;
+    }
+    input, textarea{
+      color:@headergrey;
+      padding:10px 15px;
+      margin-top: 10px;
+    }
+    input{
+      width:90%;
+      margin: 10px 5%;
+    }
+    p, label, input, textarea{
+      color:@headerlightgrey;
+      font-size:.6em; //14px
+      float:left;
+    }
+  }
+}
+/*button styles*/
+section#selectAmount{
+  .buttons{  
+    button.donateButts{
+        &:last-of-type{
+          display:none;
+        }
+    }
+  }
+  .yourDonationAmount{
+    overflow: hidden;
+    padding:0 0;
+    input[type="text"]{
+      width:49%;
+    }
+    .radio{
+      width:55%;
+    }
+  }
+}
+ /*YOUR INFORMATION SECTION*/
+ section#yourInformation, section#paymentDetails{
+  .donateContainer{
+    display: block;
+    overflow: hidden;
+    label{
+      text-align: left;
+      width:100%;
+    }
+    input{
+      margin-right:0;
+      &:nth-child(3){
+        margin-right:0;
+      } 
+    }
+    .oneInputLine{
+      margin-right: 45%;
+    }
+    input[type="radio"]{
+      width:10%;
+      margin-left:30%;
+    }
+    #radioLabel{
+      width:40%;
+    }
+    textarea{
+      width:90%;
+      margin-left:5%;
+      margin-right:5%;
+    }
+  }
+ }
+
+ /*PAYMENT DETAILS*/
+ section#paymentDetails{
+    label.longerLabel{
+      width:100%;
+    }
+    img{
+      padding:10px 5%;
+    }
+    a{
+      padding-left: 20px;
+    }
+ }
+
+ /*DONATE NOW SECTION*/
+ section#donateNow{
+  .donateContainer{
+    button{
+      margin:0 30px 0 5%;
+      width:50%;
+      }
+      input[type="text"]{
+        width:30%;
+        margin-left:0;
+        margin-right: 5%;
+      }
+      p{
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+      ul li{
+        width:100%;
+        display: block;
+        padding-left:0;
+        &:last-of-type{
+          float:left;
+          padding-right:0;
+          margin:0;
+          margin-bottom: 20px;
+        }
+        p{
+          margin: 5px 0;
+          text-align: center;
+        }
+      }
+   }
+}
+/*-------FOOTER-------*/
 
   footer#footer{
     width:100%;
@@ -3365,7 +3524,146 @@ body#programsPage{
   transform: translateY(0px);
 }
 
+/*donate page*//*donate page*//*donate page*//*donate page*//*donate page*//*donate page*/
+/*donate page*//*donate page*//*donate page*//*donate page*//*donate page*//*donate page*/
+/*donate page*//*donate page*//*donate page*//*donate page*//*donate page*//*donate page*/
 
+/*-------DONATE PAGE-------*/
+.donateContainer{
+  max-width: 95%;
+}
+.wrapper{
+  form{
+    section#thanks{
+      h2{
+        width:90%;
+        font-size: .8em;
+      }
+      .bkgd-square{
+        width:100%;
+        padding:2%;
+        height:80px;
+        p{
+          font-size: .55em;
+        }
+      }
+    }
+  }
+}
+/*SELECT AMOUNT SECTION*/
+form{
+  section{
+    .line{
+      width:95%;
+    }
+    input{
+      width:100%;
+    }
+  }
+}
+/*button styles*/
+section#selectAmount{
+  .buttons{  
+    height:80px;
+    button.donateButts{
+      width:24%;
+        &:last-of-type{
+          display:none;
+        }
+    }
+  }
+  .yourDonationAmount{
+    overflow: hidden;
+    padding:0 0;
+    p{
+      width:100%;
+      padding-bottom: 8px;
+    }
+    h4{
+      padding-left: 0;
+    }
+    input[type="text"]{
+      width:92%;
+      margin-right: 0;
+    }
+    p#canadianDollars{
+      padding-top: 10px;
+      text-align: right;
+    }
+    .radio{
+      margin-top: 0;
+      width:100%;
+    }
+  }
+}
+ /*YOUR INFORMATION SECTION*/
+ section#yourInformation, section#paymentDetails{
+  .donateContainer{
+    overflow: hidden;
+    label{
+      text-align: left;
+      width:100%;
+    }
+    input[type="radio"]{
+      width:5%;
+      margin-left:10%;
+    }
+    #radioLabel{
+      width:80%;
+    }
+    textarea{
+      width:100%;
+      margin-left:0;
+      margin-right:0;
+    }
+  }
+ }
+
+ /*PAYMENT DETAILS*/
+ section#paymentDetails{
+    img{
+      padding:10px 5%;
+    }
+    .smallInput{
+      width:35%;
+    }
+ }
+ /*DONATE NOW SECTION*/
+ section#donateNow{
+  .donateContainer{
+    button{
+      margin:0;
+      width:55%;
+      height:80px;
+      }
+      input[type="text"]{
+        width:40%;
+        margin-left:0;
+        margin-right: 0;
+        float:right;
+        height:80px;
+      }
+      p{
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+      ul li{
+        width:100%;
+        display: block;
+        padding-left:0;
+        &:last-of-type{
+          float:left;
+          padding-right:0;
+          margin:0;
+          margin-bottom: 20px;
+        }
+        p{
+          margin: 5px 0;
+          text-align: center;
+        }
+      }
+   }
+}
 
 } /*<----end of media Query*/
 
