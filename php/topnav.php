@@ -1,4 +1,16 @@
- <header id="header">
+
+<header id="header">
+    <div class="menuButton">Menu</div>
+      <nav id="dropdownNav">
+        <ul>
+          <li><a href="index.php">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">events</a></li>
+          <li><a href="programs.php">programs</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </div>
       <nav id="topNav">
         <a href="index.php"><img src="images/wwcc-logo.png" alt="logo"></a>
         <ul class="social">
