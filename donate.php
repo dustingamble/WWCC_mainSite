@@ -7,7 +7,7 @@
 
 
     <div class="wrapper">
-    <form>
+    <form action="thankyou.php" method="post">
 
 <!-- THANKS SECTION -->
       <section id="thanks">
@@ -41,7 +41,7 @@
           <div class="radio">
             <input type="radio" id="one-time donation"checked="checked" align="baseline" name="group1" value="one-time donation" tabindex="">  
             <label>One-time</label>
-            <input type="radio" id="montly donation"checked="checked" align="baseline" name="group1" value="monthly donation">  
+            <input type="radio" id="montly donation" checked="checked" align="baseline" name="group1" value="monthly donation">  
             <label>Monthly</label>
           </div> <!--radio-->
 
@@ -57,8 +57,8 @@
         <div class="donateContainer">
           <label>Name <span class="pinkColour">*</span></label>
 
-          <input type="text" name="name" placeholder="First Name"></input>
-          <input type="text" name="name" placeholder="Last Name"></input>
+          <input type="text" name="firstname" placeholder="First Name"></input>
+          <input type="text" name="lastname" placeholder="Last Name"></input>
 
         <label>Email <span class="pinkColour">*</span></label>
         <input type="email" name="email"></input>
@@ -82,38 +82,38 @@
 
         <div class="donateContainer">
           <label>Name <span class="pinkColour">*</span></label>
-          <input type="text" name="name" placeholder="First Name"></input>
-          <input type="text" name="name" placeholder="Last Name"></input>
+          <input type="text" name="firstname" placeholder="First Name"></input>
+          <input type="text" name="lastname" placeholder="Last Name"></input>
 
           <label>Card <span class="pinkColour">*</span></label>
-          <input type="text" name="name" placeholder="xxxx-xxxx-xxxx"></input>
+          <input type="text" name="creditcard" placeholder="xxxx-xxxx-xxxx"></input>
 
           <img src="images/visa.png">
           <img src="images/mastercard.png">
           <img src="images/paypal.png">
 
           <label>Expiration <span class="pinkColour">*</span></label>
-          <input type="text" name="name" placeholder="month/year"></input>
+          <input type="text" name="expiration-date" placeholder="month/year"></input>
 
           <label class="longerLabel">Security Code <span class="pinkColour">*</span></label>
-          <input type="text" class="smallInput" maxlength="4"></input>
+          <input type="text" name="security-code" class="smallInput" maxlength="4"></input>
 
           <a>What is this?<span class="whatIsThisBox">The card security code is located on the back of MasterCard or Visa credit or debit cards and is typically a separate group of 3 digits to the right of the signature strip.</span></a>
 
           <label>Country <span class="pinkColour">*</span></label>
-          <input type="text" name="name" class="oneInputLine" placeholder="Canada"></input>
+          <input type="text" name="country" class="oneInputLine" placeholder="Canada"></input>
 
           <label>Address <span class="pinkColour">*</span></label>
-          <input type="text" name="name" class="oneInputLine" ></input>
+          <input type="text" name="address" class="oneInputLine"></input>
 
           <label>City <span class="pinkColour">*</span></label>
-          <input type="text" name="name" class="oneInputLine"></input>
+          <input type="text" name="city" class="oneInputLine"></input>
 
           <label>Province <span class="pinkColour">*</span></label>
-          <input type="text" name="name" placeholder="Province"></input>
+          <input type="text" name="province" placeholder="Province"></input>
 
           <label class="longerLabel">Postal Code <span class="pinkColour">*</span></label>
-          <input type="text" class="smallInput" maxlength="6"></input>
+          <input type="text" name="postal-code" class="smallInput" maxlength="6"></input>
         </div> <!--donateContainer-->
       </section> <!--paymentDetails-->
 
@@ -122,7 +122,7 @@
         <div class="line"></div>
 
         <div class="donateContainer">
-          <button>DONATE NOW!</button>
+          <button type="submit">DONATE NOW!</button>
           <input type="text" name="donationAmount" placeholder="Amount:"></input>
 
           <p>If you have questions regarding donating please contact <a href="mailto:paola@workingwomencc.org?subject=Donation Questions">paola@workingwomencc.org</a></p>
@@ -137,3 +137,6 @@
 
 
 <?php include("php/footer.php"); ?>
+
+
+
