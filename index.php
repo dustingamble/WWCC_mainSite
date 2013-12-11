@@ -180,9 +180,9 @@
           <h4 class="support">Through Your Support Working Women Helped:</h4>
           <ul>
             <li><img src="images/plant.png"><p class="facts">700 families grow their own food &#38;  get involved at the Peanut Community Garden</p>
-              <p><a href="programs.html" class="btn">Learn More</a></p></li>
-            <li><img src="images/graduate.png"><p class="facts">273 students stay in school  through the On Your Mark Community Program</p><p><a href="#" class="btn">Learn More</a></p></li>
-            <li><img src="images/family.png"><p class="facts">117 children start on the right path for school</p><p><a href="#" class="btn">Learn More</a></p></li>
+              <p><a href="programs.php" class="btn">Learn More</a></p></li>
+            <li><img src="images/graduate.png"><p class="facts">273 students stay in school  through the On Your Mark Community Program</p><p><a href="programs.php" class="btn">Learn More</a></p></li>
+            <li><img src="images/family.png"><p class="facts">117 children start on the right path for school</p><p><a href="programs.php" class="btn">Learn More</a></p></li>
           </ul>
         </div>
       </section>
