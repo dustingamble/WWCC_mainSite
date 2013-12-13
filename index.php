@@ -55,19 +55,25 @@
               <div class="parallelogram boxWhat">
                 <p>We provide programs &#38; services in over</p>
               </div>
-              <img src="images/language.png">
+              <img src="images/language.png" alt="language Icon">
             </div>
             <div class="locations">
-               <img src="images/map-to.svg">
+              <div class="mapper">
+                <img class="mapPin pin1" src="images/pin.png" alt="1527 Victoria Park Ave East, 2nd Floor Toronto, ON M2J 2Z1">
+                <img class="mapPin pin2" src="images/pin.png" alt="5 Fairview Mall Drive Suite 478 Toronto,On M2J 2Z1">
+                <img class="mapPin pin3" src="images/pin.png" alt="1 Yorkgate Blvd Suite 206 Toronto, On M3N 3A1">
+                <img class="mapPin pin4" src="images/pin.png" alt="533A Gladstone Ave, Toronto, ON M6H 3J1">
+                <img src="images/map-to.svg">
+              </div>
               <div class="parallelogram boxWhatTwo">
                 <p>throughout four locations across the city</p>
               </div>
             </div>
             <div class="peoplegraph">
               <ul class="graphList">
-                <li><img src="images/girlpink.svg"><p class="pink">10500 Clients</p></li>
-                <li><img src="images/girlblue.svg"><p class="blue">400 Volunteers</p></li>
-                <li><img src="images/girlgrey.svg" class="picGrey"><p class="grey">125 Staff</p></li>
+                <li><img src="images/girlpink.svg" alt="womanIcon"><p class="pink">10500 Clients</p></li>
+                <li><img src="images/girlblue.svg" alt="womanIcon"><p class="blue">400 Volunteers</p></li>
+                <li><img src="images/girlgrey.svg" class="picGrey" alt="womanIcon"><p class="grey">125 Staff</p></li>
               </ul>
               <img src="images/people.svg" class="people">
             </div>
@@ -103,16 +109,16 @@
           </div>
         </div>
         <div class="skyline">
-          <img src="images/cityscape.png" class="city">
+          <img src="images/cityscape.png" class="city" alt="cityscape">
           <div class="largeInnerContainer barriers">
           <div class="pinkline"></div>
           <div class="blackline"></div>
             <ul>
-              <li><img src="images/education-icon.png"><p>Employers not able to recognize international education, training &#38; experience</p></li>
-              <li><img src="images/skills-icon.png"><p>Difficulty obtaining Canadian work experience</p></li>
-              <li><img src="images/information-icon.png"><p>Insufficient information about employment opportunities &#38; requirements</p></li>
-              <li><img src="images/networking-icon.png"><p>Lack of a professional network</p></li>
-              <li><img src="images/language-icon.png"><p>Lack of English or French language skills</p></li>
+              <li><img src="images/education-icon.png" class="circles"><p>Employers not able to recognize international education, training &#38; experience</p></li>
+              <li><img src="images/skills-icon.png" class="circles"><p>Difficulty obtaining Canadian work experience</p></li>
+              <li><img src="images/information-icon.png" class="circles"><p>Insufficient information about employment opportunities &#38; requirements</p></li>
+              <li><img src="images/networking-icon.png" class="circles"><p>Lack of a professional network</p></li>
+              <li><img src="images/language-icon.png" class="circles"><p>Lack of English or French language skills</p></li>
             </ul>
           </div>
          
@@ -133,7 +139,7 @@
               <li class="ML">Montreal</li>
               <li class="VN">Vancouver</li>
             </ul>
-              <img src="images/circlegraph.png" class="circleGraph">
+              <img src="images/circleGraph.png" class="circleGraph circles" alt="graph">
               <ul class="citypercents">
                 <li>51&#37;</li>
                 <li>30&#37;</li>
@@ -141,7 +147,7 @@
               </ul>
           </div>
           <div class="circleGraphRight">
-            <img src="images/pieChart.png" class="pieChart">
+            <img src="images/piechart.png" class="pieChart circles" alt="graph">
             <p class="stackedText">
               <span class="uppercase">Immigrants </span> will make up <span class="number">22&#37; </span>of<span class="uppercase canadas">Canada's </span><span class="uppercase pop">population </span><span class="by">by</span><span class="year">2013</span>
             </p>
@@ -166,7 +172,7 @@
                 By understanding the individual as a whole, we encourage each newcomer to participate in a variety of programs, thereby ending their isolation and dependency.
               </p>
             </div>
-              <img src="images/hearthands.png">
+              <img src="images/hearthands.png" alt="holdingHands">
             <div class="heartText">
               <p>
                 This in turn, allows the women to not only help themselves and their families, but also to contribute to their community.
@@ -179,10 +185,10 @@
         <div class="helped innerContainer">
           <h4 class="support">Through Your Support Working Women Helped:</h4>
           <ul>
-            <li><img src="images/plant.png"><p class="facts">700 families grow their own food &#38;  get involved at the Peanut Community Garden</p>
+            <li><img src="images/plant.png" alt="gardenIcon" class="blueIcons"><p class="facts">700 families grow their own food &#38;  get involved at the Peanut Community Garden</p>
               <p><a href="programs.php" class="btn">Learn More</a></p></li>
-            <li><img src="images/graduate.png"><p class="facts">273 students stay in school  through the On Your Mark Community Program</p><p><a href="programs.php" class="btn">Learn More</a></p></li>
-            <li><img src="images/family.png"><p class="facts">117 children start on the right path for school</p><p><a href="programs.php" class="btn">Learn More</a></p></li>
+            <li><img src="images/graduate.png" alt="graduateIcon" class="blueIcons"><p class="facts">273 students stay in school  through the On Your Mark Community Program</p><p><a href="programs.php" class="btn">Learn More</a></p></li>
+            <li><img src="images/family.png" alt="familyIcon" class="blueIcons"><p class="facts">117 children start on the right path for school</p><p><a href="programs.php" class="btn">Learn More</a></p></li>
           </ul>
         </div>
       </section>
@@ -197,14 +203,49 @@
        <section id="cta">
         <div class="involved innerContainer">
           <div class="ctaLeft">
-            <img src="images/partypeople.png"></a>
+            <img src="images/partypeople.png" alt="volunteer People"></a>
             <a href="#" class="volunteer">volunteer now!</a>
           </div>
           <div class="ctaRight">
-            <img src="images/worldhands.png">
+            <img src="images/worldhands.png" alt="donate Icon">
             <a href="donate.php" class="donate">donate now!</a>
           </div>
         </div>
       </section>
+
+      <script>
+  $(window).scroll(function() {
+    $('.mapPin').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+600) {
+        $(this).addClass("hatch");
+      }
+    });
+   });
+
+  $(window).scroll(function() {
+    $('.circles').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+600) {
+        $(this).addClass("fadeIn");
+      }
+    });
+   });
+
+  $(window).scroll(function() {
+    $('.blueIcons').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+600) {
+        $(this).addClass("pullUp");
+      }
+    });
+   });
+</script>
 
 <?php include("php/footer.php"); ?>

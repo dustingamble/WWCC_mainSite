@@ -14,8 +14,8 @@
       <nav id="topNav">
         <a href="index.php"><img src="images/wwcc-logo.png" alt="logo"></a>
         <ul class="social">
-          <li><a href="#" class="facebook" target="_blank" title="facebook">wwcc on facebook</a></li>
-          <li><a href="#" class="youtube" target="_blank" title="youtube">wwcc on youtube</a></li>
+          <li><a href="https://www.facebook.com/WorkingWomenCommunityCentre" class="facebook" target="_blank" title="facebook">wwcc on facebook</a></li>
+          <li><a href="https://www.youtube.com/channel/UCnArFwwXd3I1sJJAuBAQwvQ?feature=hovercard" class="youtube" target="_blank" title="youtube">wwcc on youtube</a></li>
           <li><a href="#" class="linkedin" target="_blank" title="linkedin">wwcc on linkedin</a></li>
           <li><a href="#" class="twitter" target="_blank" title="twitter">wwcc on twitter</a></li>
         </ul>     

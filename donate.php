@@ -14,7 +14,14 @@
         <h2>Thank you for helping out!</h2>
         <div class="bkgd-square donateContainer">
           <p>Choose a project you would like to donate your funds to</p>
-          <div class="dropdown"></div>
+          <div class="dropdown">
+            <select name="selectname" class="selectName">
+            <option selected class="funds">Where funds are needed most</option>
+              <option value="Hippy program"  class="programOption">Hippy program</option>
+              <option value="On Your Mark program" class="programOption">On Your Mark program </option>
+              <option value="Hippy program" class="programOption">Community Garden</option>
+            </select>
+          </div>
         </div> <!--bkgd-square-->
       </section>
 

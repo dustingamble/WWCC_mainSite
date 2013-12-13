@@ -14,10 +14,10 @@
 
     <div class="containText">
       <ul class="column socialButtons">
-        <li><a href="#" class="facebook">facebook</a></li>
-        <li><a href="#" class="twitter">twitter</a></li>
-        <li><a href="#" class="linkedin">linkedIn</a></li>
-        <li><a href="#" class="youtube">youtube</a></li>
+        <li><a href="https://www.facebook.com/WorkingWomenCommunityCentre" class="facebook" target="_blank">facebook</a></li>
+        <li><a href="#" class="twitter" target="_blank">twitter</a></li>
+        <li><a href="#" class="linkedin" target="_blank">linkedIn</a></li>
+        <li><a href="https://www.youtube.com/channel/UCnArFwwXd3I1sJJAuBAQwvQ?feature=hovercard" class="youtube" target="_blank">youtube</a></li>
       </ul>
 
       <ul class="column">
