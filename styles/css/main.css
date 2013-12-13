@@ -2103,19 +2103,28 @@ footer#footer .bottomFooter p a:hover {
     float: left;
     width: 100%;
     text-align: center;
-    margin: 40px 0;
+    margin: 30px 0;
     visibility: visible;
+    background: #ffffff;
+  }
+  header#header nav#mainNav #btn a {
+    display: inline-block;
+    width: 49%;
+    margin: 0;
+    padding: 0;
   }
   header#header nav#mainNav #btn .volunteer {
     background-color: #b60050;
-    padding: 10px 13%;
+    padding: 10px 0px;
     border-radius: 0px;
-    margin: 0 -3px;
+    display: inline-block;
+    margin: 0;
   }
   header#header nav#mainNav #btn .donate {
     background-color: #008db3;
-    padding: 10px 13%;
+    padding: 10px 0px;
     border-radius: 0px;
+    margin: 0;
   }
   /*<-----header --*/
   section#hero {
@@ -2728,19 +2737,27 @@ footer#footer .bottomFooter p a:hover {
     float: left;
     width: 100%;
     text-align: center;
-    margin: 40px 0;
+    margin: 30px 0;
     visibility: visible;
+    background: #ffffff;
+  }
+  header#header nav#mainNav #btn a {
+    display: inline-block;
+    width: 49%;
+    margin: 0;
+    padding: 0;
   }
   header#header nav#mainNav #btn .volunteer {
     background-color: #b60050;
-    padding: 10px 5%;
+    padding: 10px 0px;
     border-radius: 0px;
-    margin: 0 -4px;
+    margin: 0;
   }
   header#header nav#mainNav #btn .donate {
     background-color: #008db3;
-    padding: 10px 5%;
+    padding: 10px 0px;
     border-radius: 0px;
+    margin: 0;
   }
   /*<-----header --*/
   .divider {
@@ -3135,8 +3152,8 @@ footer#footer .bottomFooter p a:hover {
     margin-top: 5px;
   }
   section#how .helped ul li p .btn {
-    padding: 8px 20px;
-    width: 45%;
+    padding: 8px 18px 8px 20px;
+    width: 47%;
     font-size: 0.9em;
     margin: 3px 65px 25px 0;
     float: right;
